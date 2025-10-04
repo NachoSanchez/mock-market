@@ -7,7 +7,7 @@ Pequeña guía para los endpoints del mock. Pensado para **App Router** y lectur
 1. Crear carpeta `data/` en la raíz del proyecto Next.
 2. Copiar allí:
    - `data/categories.json` (con `{ id, name, slug }`)
-   - `data/products-with-category-id.json` **o** `data/products.json` (con `{ id, name, brand, price, currency, image, category_id }`)
+   - `data/products.json` (con `{ id, name, brand, price, currency, image, category_id }`)
 3. Iniciar el proyecto y probar los endpoints listados abajo.
 
 > Los handlers cachean en memoria del proceso y envían `Cache-Control` público.
