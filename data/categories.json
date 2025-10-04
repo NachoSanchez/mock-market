@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "almacen",
+    "slug": "almacen"
+  },
+  {
+    "id": 2,
+    "name": "bebidas sin alcohol",
+    "slug": "bebidas-sin-alcohol"
+  },
+  {
+    "id": 3,
+    "name": "carnes",
+    "slug": "carnes"
+  },
+  {
+    "id": 4,
+    "name": "congelados",
+    "slug": "congelados"
+  },
+  {
+    "id": 5,
+    "name": "frutas y verduras",
+    "slug": "frutas-y-verduras"
+  },
+  {
+    "id": 6,
+    "name": "gaseosas",
+    "slug": "gaseosas"
+  },
+  {
+    "id": 7,
+    "name": "lacteos",
+    "slug": "lacteos"
+  },
+  {
+    "id": 8,
+    "name": "panaderia",
+    "slug": "panaderia"
+  },
+  {
+    "id": 9,
+    "name": "snacks",
+    "slug": "snacks"
+  },
+  {
+    "id": 10,
+    "name": "vinos tintos",
+    "slug": "vinos-tintos"
+  }
+]

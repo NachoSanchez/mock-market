@@ -1,0 +1,4061 @@
+[
+  {
+    "id": "2e19b305-94c1-4344-8d09-dffc4cc63cd7",
+    "name": "Vino tinto Malbec Alma Mora 750 ml",
+    "brand": "Malbec",
+    "price": 6899,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/272120-300-300?v=638101706479400000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "5f58fd43-9ad9-41c7-94fa-e6bcdfeaa124",
+    "name": "Vino tinto Malbec Cordero con piel de Lobo 750 ml",
+    "brand": "Malbec",
+    "price": 6300,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/416985-300-300?v=638355810181930000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "b19ecc25-4b5c-4b84-84d1-041a0a2152e2",
+    "name": "Vino tinto Malbec La Fusta 750 ml",
+    "brand": "Malbec",
+    "price": 3155,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/541126-300-300?v=638566616143630000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "eeda335a-78dc-4492-b86e-ff0a6968a979",
+    "name": "Vino tinto Malbec Elementos 750 ml",
+    "brand": "Malbec",
+    "price": 6239,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184169-300-300?v=637468592119770000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "90797e74-f638-4aaa-90cd-7e76c4fb4bda",
+    "name": "Vino tinto Malbec Portillo 750 ml",
+    "brand": "Malbec",
+    "price": 6600,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/314198-300-300?v=638174184010030000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "e76bb1bc-1c09-4885-86af-226f8601f776",
+    "name": "Vino tinto Malbec Fond de Cave 750 ml",
+    "brand": "Malbec",
+    "price": 9785,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/185278-300-300?v=637468594544470000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "5d9f4c54-cdc1-4dbe-b2bb-bb7cb5137ca2",
+    "name": "Vino tinto Malbec Los Árboles 750 ml",
+    "brand": "Malbec",
+    "price": 5919,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/267717-300-300?v=638066354620370000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "6e45b9e7-0d86-49d1-add7-ca77a98d62d1",
+    "name": "Vino tinto Borgona Viñas de Balbo 1,125 lts",
+    "brand": "Borgona",
+    "price": 3950,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/300055-300-300?v=638852699252100000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "9660fb00-e921-4829-9cde-cf56735e1b0e",
+    "name": "Vino tinto Clásico Viñas de Alvear 1.125 lts",
+    "brand": "Clásico",
+    "price": 3465,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/351705-300-300?v=638247742387370000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "75f9e4bb-dd83-4c6a-9db7-120ddcf297c2",
+    "name": "Vino tinto Malbec Benjamín 750 ml",
+    "brand": "Malbec",
+    "price": 5900,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/342920-300-300?v=638225228385470000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "e85c8947-abf8-4a20-968f-694dfa556434",
+    "name": "Vino tinto Malbec Sexy Fish 750 ml",
+    "brand": "Malbec",
+    "price": 6060,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/367139-300-300?v=638278069552170000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "868bc33a-fafe-47c5-8645-67eb4bb56ad6",
+    "name": "Vino tinto Malbec Emilia 750 ml",
+    "brand": "Malbec",
+    "price": 7900,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/342922-300-300?v=638225228403770000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "8a5b637b-3831-417b-a040-700cf61a4e76",
+    "name": "Vino tinto Cabernet Sauvignon La Fusta 750 ml",
+    "brand": "Cabernet",
+    "price": 3155,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/541127-300-300?v=638566616153030000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "68b8a1e6-5f21-4655-9bf7-8d7be0731dcb",
+    "name": "Vino tinto Termidor 2021 1 lt",
+    "brand": "Termidor",
+    "price": 2109,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/251090-300-300?v=637933358078500000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "b32d6f6e-dd0f-45ad-9b11-57aa60f68008",
+    "name": "Vino tinto Malbec Don David 750 ml",
+    "brand": "Malbec",
+    "price": 9799,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184162-300-300?v=637468592109930000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "0be2a17b-ea60-4f9e-9f3c-7e2f9d73a117",
+    "name": "Vino tinto Malbec Luigi Bosca 750 ml",
+    "brand": "Malbec",
+    "price": 16800,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/236440-300-300?v=638852707267370000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "24da0555-ead6-433f-b790-f4460ee8cc40",
+    "name": "Vino tinto Malbec Killka 750 ml",
+    "brand": "Malbec",
+    "price": 9200,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/364555-300-300?v=638265118780100000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "229bd248-bfe3-4a49-a4b9-29cece6c58b4",
+    "name": "Vino tinto Malbec Callia Esperado 750 ml",
+    "brand": "Malbec",
+    "price": 6350,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/364572-300-300?v=638265118937070000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "1fb04011-51d6-4980-824d-0930ed7a0e02",
+    "name": "Vino tinto Malbec Los Intocables Black 750 ml",
+    "brand": "Malbec",
+    "price": 11979,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/251085-300-300?v=637933358057230000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "cf678b1b-b870-4c6c-b982-d1b92c9e0a80",
+    "name": "Vino tinto Malbec Trapiche Reserva 750 ml",
+    "brand": "Malbec",
+    "price": 9699,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/185289-300-300?v=637468594564970000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "5135f4dc-15f1-4cd3-92ee-9db792342e8d",
+    "name": "Vino tinto Malbec Cantus 750 ml",
+    "brand": "Malbec",
+    "price": 3400,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/373365-300-300?v=638306741264030000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "63c745dc-fce5-42c6-a8bf-16396ef9ab82",
+    "name": "Vino tinto Malbec Nampe 1,125 lts",
+    "brand": "Malbec",
+    "price": 4679,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/515461-300-300?v=638501022294100000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "8e9c2136-84e3-4d4f-b0e3-5788315b02bf",
+    "name": "Vino tinto Malbec Cafayate 750 ml",
+    "brand": "Malbec",
+    "price": 5029,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/227563-300-300?v=638852699832830000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "1d1fb981-9715-4029-b52a-6932f93d24a7",
+    "name": "Vino tinto Dulce Santa Julia 750 ml",
+    "brand": "Dulce",
+    "price": 7285,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/408474-300-300?v=638343783245430000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "4248e33b-dd86-48cb-b2c5-b47dcb124e24",
+    "name": "Vino tinto Malbec Nieto Senetiner 750 ml",
+    "brand": "Malbec",
+    "price": 10000,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/323647-300-300?v=638193424472300000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "0bc6c0ae-4432-4a7c-8f9c-ec4e082ab27e",
+    "name": "Vino tinto Malbec López 750 ml",
+    "brand": "Malbec",
+    "price": 4750,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/625768-300-300?v=638755999030900000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "c748bdd6-af68-4719-962b-6805517d5831",
+    "name": "Vino tinto Malbec Fond de Cave reserva 750 ml",
+    "brand": "Malbec",
+    "price": 13295,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/185304-300-300?v=637468594596200000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "57d17cbb-76b4-4bef-8990-bcf7385a3fad",
+    "name": "Vino tinto Malbec Estancia Mendoza 750 ml",
+    "brand": "Malbec",
+    "price": 4099,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/513637-300-300?v=638496742587470000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "3d937ad5-3c6d-406a-8a4d-390173e3c70b",
+    "name": "Vino tinto Malbec Cosecha Elegido Nortón 750 ml",
+    "brand": "Malbec",
+    "price": 5055,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/300031-300-300?v=638852705645830000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "9a60ebdf-2122-41ab-abd7-97cf56b4e480",
+    "name": "Vino tinto Chocolate Dadá 750 ml",
+    "brand": "Chocolate",
+    "price": 6585,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/240366-300-300?v=637848590993070000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "54b8f71b-1281-418f-aa2a-43b44f8e094e",
+    "name": "Vino tinto Cabernet Franc Fabre Montmayou 750 ml",
+    "brand": "Cabernet",
+    "price": 13100,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/299818-300-300?v=638133805763570000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "eba9b636-7b58-48f7-bb3c-6d71746b0f2c",
+    "name": "Vino tinto Don Valentín Lacrado 750 ml",
+    "brand": "Don",
+    "price": 4119,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/666714-300-300?v=638838697071670000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "b5f0262d-ea0a-4645-b93b-bbe541b43096",
+    "name": "Vino tinto Malbec Dadá 750 ml",
+    "brand": "Malbec",
+    "price": 6585,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/240365-300-300?v=637848590764000000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "4842d683-02bf-40a1-8987-de4227bc0e0d",
+    "name": "Vino tinto Cabernet Sauvignon Alma Mora 750 ml",
+    "brand": "Cabernet",
+    "price": 6899,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184183-300-300?v=637468592144630000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "c71edf74-fb07-4a60-ad51-a6c5b01c7f92",
+    "name": "Vino tinto Malbec Alaris 750 ml",
+    "brand": "Malbec",
+    "price": 5409,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/185274-300-300?v=637468594536970000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "8597188f-5447-44b5-9116-67be36bb4c18",
+    "name": "Vino tinto Malbec Novecento 750 ml",
+    "brand": "Malbec",
+    "price": 4759,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/273585-300-300?v=638113013430030000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "c5626a83-fd71-4969-9cfb-5f36ce749d29",
+    "name": "Vino tinto Blend Canciller III 1,125 lts",
+    "brand": "Blend",
+    "price": 4169,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/513636-300-300?v=638496742577400000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "6d962688-db09-45b3-aef6-59d36dd953d8",
+    "name": "Vino tinto Malbec Reserva Álamos 750 ml",
+    "brand": "Malbec",
+    "price": 11640,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/299887-300-300?v=638852713201800000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "40369f56-abe0-4536-8b99-9be4e54bc657",
+    "name": "Vino tinto Malbec Nieto Senetiner 375 ml",
+    "brand": "Malbec",
+    "price": 7050,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/490010-300-300?v=638452578962270000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "bed6e1f2-75df-40b8-b34e-91b89403de93",
+    "name": "Vino tinto Malbec Don Valentín 750 ml",
+    "brand": "Malbec",
+    "price": 4459,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/666719-300-300?v=638838697782270000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "2a3375fa-eb61-45b6-9668-21cb23a1ea39",
+    "name": "Vino tinto Malbec Los Haroldos Estate 750 ml",
+    "brand": "Malbec",
+    "price": 5509,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/300025-300-300?v=638852723258470000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "5c8b590c-017d-4c8b-9741-227ac2131383",
+    "name": "Vino tinto Malbec Conejo Verde en botella 750 ml",
+    "brand": "Malbec",
+    "price": 5559,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/274310-300-300?v=638115602835570000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "29565fc7-6d02-47e7-aed3-98d680c31a98",
+    "name": "Vino tinto Cabernet Sauvignon Finca Las Moras 750 ml",
+    "brand": "Cabernet",
+    "price": 5179,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/185299-300-300?v=637468594588370000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "67f585ab-54d2-4732-9e60-8219ac49c54b",
+    "name": "Vino tinto Red Blend Finca Las Moras 750 ml",
+    "brand": "Red",
+    "price": 4940,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/542260-300-300?v=638568303580200000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "ea80a94d-7e19-48b3-9c81-1cdf68be3548",
+    "name": "Vino tinto Cosecha Tardía 750 ml",
+    "brand": "Cosecha",
+    "price": 5789,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/311922-300-300?v=638162166415500000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "9e33ee50-aaf0-4cfc-8311-977437de2beb",
+    "name": "Vino tinto Malbec Esmeralda 750 ml",
+    "brand": "Malbec",
+    "price": 8920,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/299961-300-300?v=638852712138500000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "dabf1499-a541-4f40-87c9-b76ec256e921",
+    "name": "Vino tinto Pinot Noir Don David 750 ml",
+    "brand": "Pinot",
+    "price": 9799,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/251083-300-300?v=637933358039570000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "087f154c-c8c4-46d1-8f60-084471cb2d44",
+    "name": "Vino tinto Malbec Los Horoldos Reserva 750 ml",
+    "brand": "Malbec",
+    "price": 7529,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/300003-300-300?v=638852729161270000&width=170&height=170&aspect=true",
+    "category_id": 10
+  },
+  {
+    "id": "e96e4444-48f7-43ec-85ca-fdfc811fca06",
+    "name": "Gaseosa cola Coca Cola sabor original 2,25 lts",
+    "brand": "Coca",
+    "price": 3450,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/332148-300-300?v=638211437412370000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "29ea7b50-6e41-45e3-82b0-4fb08d0a9eac",
+    "name": "Gaseosa cola Coca Cola Zero 2,25 lts",
+    "brand": "Coca",
+    "price": 3450,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/395283-300-300?v=638326494223030000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "e3f57fab-7e0c-4980-9b8d-50edacef20ee",
+    "name": "Gaseosa cola Pepsi Black pet 2 lts",
+    "brand": "Pepsi",
+    "price": 2274.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/683887-300-300?v=638889851919600000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "c08035b7-b573-4779-85a6-1e7b0be93e2e",
+    "name": "Gaseosa cola Pepsi regular pet 2 lts",
+    "brand": "Pepsi",
+    "price": 2274.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/515338-300-300?v=638500829410370000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "827b94f5-e26d-4c79-9051-4b6cffb8f3e5",
+    "name": "Gaseosa lima limón 7 Up sin azúcar 1,5 lts",
+    "brand": "limón",
+    "price": 2014.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/632868-300-300?v=638773803917230000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "060b51f7-300f-4cc9-bf47-572a621697cf",
+    "name": "Gaseosa cola Cunnington suave sin tacc 2,25 lts",
+    "brand": "Cunnington",
+    "price": 1999,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/359527-300-300?v=638258156831630000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "aa6a5f34-6338-4389-855a-cf236ea6a000",
+    "name": "Gaseosa pomelo Cunnignton suave sin tacc 2,25 lts",
+    "brand": "Cunnignton",
+    "price": 1999,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/359528-300-300?v=638258156841430000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "1fd39d51-141e-4507-887f-8c428a0ac106",
+    "name": "Gaseosa lima limón Sprite 2,25 lts",
+    "brand": "limón",
+    "price": 3450,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/368782-300-300?v=638290816908570000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "b740d0fa-f513-4ff6-8366-c5952ad55312",
+    "name": "Gaseosa cola Pepsi Black pet 1,5 lts",
+    "brand": "Pepsi",
+    "price": 2015,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/683886-300-300?v=638889851738300000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "a92c1e8c-d945-4255-9ed7-78bb6483235c",
+    "name": "Gaseosa cola Coca Cola Zero 1,25 lts",
+    "brand": "Coca",
+    "price": 2555,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/544871-300-300?v=638576029663100000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "d652283d-d665-4caf-a06d-fdd42433f0c1",
+    "name": "Gaseosa lima limón 7 Up sin azúcar 2.25 lts",
+    "brand": "limón",
+    "price": 2736.5,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/570943-300-300?v=638629613682870000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "a06aec51-5bb6-4d42-bd9f-4bbe083c07db",
+    "name": "Gaseosa cola Cunnington classic pet 2,25 lts",
+    "brand": "Cunnington",
+    "price": 1999,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/333914-300-300?v=638216542095370000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "3987453a-8544-4f57-8b6c-30d02defe971",
+    "name": "Gaseosa tónica Paso de los Toros 1,5 lts",
+    "brand": "Paso",
+    "price": 1936.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/308942-300-300?v=638146793675470000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "c57d95d2-4336-4b68-8f5e-a2415496bc68",
+    "name": "Gaseosa lima limón Sprite Zero 2,25 lts",
+    "brand": "limón",
+    "price": 3450,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/378989-300-300?v=638313434624800000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "f7414932-14f5-4a10-a242-485289f66a11",
+    "name": "Gaseosa cola Coca Cola 2,25 lts + gaseosa lima limón Sprite 2,25 lts",
+    "brand": "Coca",
+    "price": 6900,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/544876-300-300?v=638576038862270000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "f5cc6068-25e8-4e5b-8558-3935a6189789",
+    "name": "Gaseosa lima limón Cunnington classic pet 2,25 lts",
+    "brand": "limón",
+    "price": 1999,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/333917-300-300?v=638216542117570000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "40e6e442-8fdc-4256-aa0a-4be081d84ec5",
+    "name": "Gaseosa tónica Cunnington suave sin tacc 2,25 lts",
+    "brand": "Cunnington",
+    "price": 1999,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/366886-300-300?v=638277029906230000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "c8945ec0-8261-4899-a078-5a7d3b1a07ce",
+    "name": "Pack gaseosa Coca Cola zero 2.25 lts + Coca Cola zero 2.25 lts",
+    "brand": "Coca",
+    "price": 6900,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/635156-300-300?v=638779184076830000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "ab9fd88e-6783-40a3-8fa0-3bbfc4a9b3c8",
+    "name": "Gaseosa cola Coca Cola sabor liviano 2,25 lts",
+    "brand": "Coca",
+    "price": 3450,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/395275-300-300?v=638326494176500000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "34ba096d-0144-4e01-9eea-39edbea7bfa1",
+    "name": "Gaseosa pomelo Paso de los Toros 2,25 lts",
+    "brand": "Paso",
+    "price": 2736.5,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/308955-300-300?v=638146793744370000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "235d43a9-b7a0-4175-ad89-8fb01924504e",
+    "name": "Gaseosa cola Coca Cola Zero 1,75 lts",
+    "brand": "Coca",
+    "price": 3800,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/395286-300-300?v=638326494257370000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "f5f0c469-e174-4c38-a5d8-a422c39830ce",
+    "name": "Gaseosa cola Pepsi regular pet 1,5 lts",
+    "brand": "Pepsi",
+    "price": 1943.5,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/515336-300-300?v=638500829389530000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "6effddc8-047d-4dd7-9687-881f12ed683b",
+    "name": "Gaseosa pomelo Paso de los Toros 1,5 lts",
+    "brand": "Paso",
+    "price": 1936.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/308939-300-300?v=638146793673900000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "3edc654b-7a99-4533-88eb-1c6e63dbf7a0",
+    "name": "Gaseosa lima Cunnington suave sin tacc 2,25 lts",
+    "brand": "Cunnington",
+    "price": 1999,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/366888-300-300?v=638277029916870000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "f9d4974e-62b4-476d-b87d-e14edf40b05f",
+    "name": "Gaseosa cola Coca Cola sabor original 1,75 lts",
+    "brand": "Coca",
+    "price": 3800,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/332253-300-300?v=638211437709500000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "636ca5a9-8441-46b2-934a-44eba8059266",
+    "name": "Gaseosa pomelo Paso de los Toros sin azúcar pet 1,5 lts",
+    "brand": "Paso",
+    "price": 2007.85,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/308945-300-300?v=638146793700400000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "82e586a6-08ca-447f-9acb-294600416a0e",
+    "name": "Gaseosa Fanta naranja 2,25 lts",
+    "brand": "naranja",
+    "price": 3450,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/688029-300-300?v=638902606503270000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "e325ac90-d434-41ff-a4cc-60df5b6947a1",
+    "name": "Gaseosa cola Coca Cola regular 2,25 lts + Gaseosa cola Coca Cola Zero 2,25 lts",
+    "brand": "Coca",
+    "price": 6900,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/544877-300-300?v=638576040624070000&width=170&height=170&aspect=true",
+    "category_id": 6
+  },
+  {
+    "id": "07ec1a3d-a14b-46da-a25a-df12fbf71d3a",
+    "name": "Soda Carrefour Classic sifón 2 lts",
+    "brand": "Classic",
+    "price": 1444.4,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537789-300-300?v=638550209036500000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "395f7eb0-053d-4d28-bc88-3e6bd5619abb",
+    "name": "Agua de mesa sin gas Villa del Sur bidón 6,2 lts",
+    "brand": "mesa",
+    "price": 3999,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/328244-300-300?v=638204601951300000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "83b4c623-5691-46d3-8e36-dd9912981ad8",
+    "name": "Agua mineral sin gas Villavicencio 2 lts",
+    "brand": "sin",
+    "price": 1664,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/551788-300-300?v=638604675304900000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "7baa36ef-556c-45d0-acfc-c04206796d91",
+    "name": "Agua de mesa sin gas Bulnez bidón 6,5 lts",
+    "brand": "mesa",
+    "price": 1290,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/542357-300-300?v=638568433420700000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "21c26610-4c1a-4d6f-91ed-89e930dfc4a9",
+    "name": "Agua saborizada de pomelo Levité 2,25 lts",
+    "brand": "de",
+    "price": 1826.67,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/171611-300-300?v=637468540325730000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "28c51558-12d3-486a-ae24-bde8919459d4",
+    "name": "Agua mineralizada sin gas Cellier Favaloro 2 lts",
+    "brand": "sin",
+    "price": 1105,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/268842-300-300?v=638074040790130000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "9f0397b3-a822-43e6-beac-d5bd655aecdc",
+    "name": "Agua saborizada de pera Aquarius 2,25 lts",
+    "brand": "de",
+    "price": 2025,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/332328-300-300?v=638211437920170000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "ca88146c-38d0-4b4c-9c28-34fb674d6f49",
+    "name": "Soda saldan sifón 2 lts",
+    "brand": "sifón",
+    "price": 1249.0016,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/268887-300-300?v=638074041174300000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "ef516a3d-4298-46b1-83b7-bb3a2355ad52",
+    "name": "Agua mineral sin gas Villa del Sur 2,25 lts",
+    "brand": "sin",
+    "price": 1989,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/268942-300-300?v=638074041690500000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "e01d5863-55a2-4011-b9dc-7bd1d2cd79ef",
+    "name": "Agua mineral sin gas Carrefour Classic 2 lts",
+    "brand": "sin",
+    "price": 924,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/726660-300-300?v=638944292360430000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "2a68c384-9f4a-4349-9588-fb720c319b84",
+    "name": "Agua saborizada de manzana Levité 2,25 lts",
+    "brand": "de",
+    "price": 1826.67,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/171536-300-300?v=637468539844800000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "5f91dcd3-fc23-4d88-913b-a22319699031",
+    "name": "Agua mineralizada sin gas Glaciar bajo sodio 2 lts",
+    "brand": "sin",
+    "price": 1712.67,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/171445-300-300?v=637468539452530000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "2f3f69d9-b443-4b8c-8f36-0e8bc3390ca0",
+    "name": "Agua saborizada de pomelo Aquarius 2,25 lts",
+    "brand": "de",
+    "price": 2025,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/332350-300-300?v=638211437990600000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "0d122214-214b-4f4a-8538-acc0b59625fb",
+    "name": "Agua mineralizada bajo sodio sin gas Benedictino 6 lts",
+    "brand": "bajo",
+    "price": 3150,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/596598-300-300?v=638670128477700000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "e18bea77-a000-4fae-91ef-a353e5c2c2b5",
+    "name": "Agua de mesa sin gas Nestlé bidón 6,3 lts",
+    "brand": "mesa",
+    "price": 3883.33,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/669279-300-300?v=638846384124800000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "71c828f8-1b81-4cc8-a81a-29e5d643382e",
+    "name": "Agua saborizada de manzana Aquarius 2,25 lts",
+    "brand": "de",
+    "price": 2025,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/332288-300-300?v=638211437809770000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "527dedb7-1091-46d2-95ca-61997f43fcea",
+    "name": "Agua mineralizada sin gas Glaciar bajo sodio bidón 6,3 lts",
+    "brand": "sin",
+    "price": 4910,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/171449-300-300?v=637468539464570000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "1af0917e-b9c4-4c46-9175-5eed0e4e74cc",
+    "name": "Agua saborizada de naranja Levité 2,25 lts",
+    "brand": "de",
+    "price": 1826.67,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/171612-300-300?v=637468540331700000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "3769dd58-aec1-4400-bdfa-3a20096c66c7",
+    "name": "Agua de mesa sin gas Carrefour Classic bidón 6.5 lts",
+    "brand": "mesa",
+    "price": 2679,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537467-300-300?v=638549443620730000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "cf868c8c-ff1d-4454-b43e-596fc5f5aa0c",
+    "name": "Agua saborizada de pera Levité 2,25 lts",
+    "brand": "de",
+    "price": 1826.67,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/171614-300-300?v=637468540346400000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "56ae767f-a41f-4e85-b505-c7003f6d0870",
+    "name": "Agua mineral con gas Villavicencio 1,5 lts",
+    "brand": "con",
+    "price": 1547,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/551787-300-300?v=638604674814900000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "52d8ef0e-1669-4b1a-b8c0-2ce594445148",
+    "name": "Agua mineral sin gas Eco de los Andes 2 lts",
+    "brand": "sin",
+    "price": 1713.33,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/632913-300-300?v=638773808104230000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "a91a33ec-18da-4b5f-a83b-fd368ead08ac",
+    "name": "Agua mineralizada sin gas Carrefour Classic bajo sodio 2 lts",
+    "brand": "sin",
+    "price": 899.1,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537538-300-300?v=638550046199300000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "3e7c804c-23a8-4c3e-8423-4fe5770159e5",
+    "name": "Agua saborizada de pomelo Levité cero 2,25 lts",
+    "brand": "de",
+    "price": 1826.67,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/171539-300-300?v=637468539858270000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "43841862-132c-4db0-9e69-a895a6b86776",
+    "name": "Soda Bulnez 2,25 lts",
+    "brand": "2,25",
+    "price": 1050,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/551584-300-300?v=638603700864770000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "2300e326-ad66-4b92-92a4-4ced016a7cc5",
+    "name": "Agua mineral sin gas Villavicencio 1,5 lts",
+    "brand": "sin",
+    "price": 1475.5,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/551785-300-300?v=638604673690800000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "be461458-7b2d-4d8b-86e5-016fad6788a3",
+    "name": "Agua saborizada de manzana Levité cero 2,25 lts",
+    "brand": "de",
+    "price": 1826.67,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/171542-300-300?v=637468539876500000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "3379ef9a-9840-47f1-886e-b123f5de99ab",
+    "name": "Agua saborizada de pera Aquarius 1,5 lts",
+    "brand": "de",
+    "price": 2200,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/332341-300-300?v=638211437957700000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "e213c326-d165-4fb4-b983-fd0ec2efd77a",
+    "name": "Agua mineral Carrefour bidón 6,25 lts",
+    "brand": "Carrefour",
+    "price": 2856.9,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/613467-300-300?v=638733425003130000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "dfa0e993-84c8-4c49-8e6e-46ac412d6705",
+    "name": "Agua de mesa sin gas Nestlé 2,25 lts",
+    "brand": "mesa",
+    "price": 1470,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/171447-300-300?v=637468539459000000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "86578ddb-f70f-471d-96b7-f3fa95ff6cd3",
+    "name": "Agua saborizada Aquarius Naranja 2,25 lts",
+    "brand": "Aquarius",
+    "price": 2025,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/693100-300-300?v=638918115546200000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "14eb6cf0-0cf0-44fc-8619-1566fbc8d2fa",
+    "name": "Agua saborizada de pomelo rosado Levité sin gas pet 2,25 lts",
+    "brand": "de",
+    "price": 1826.67,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/543987-300-300?v=638572605574500000&width=170&height=170&aspect=true",
+    "category_id": 2
+  },
+  {
+    "id": "7497c4ee-f179-4656-93b6-f68b52260574",
+    "name": "Espinaca congelada Carrefour Classic 400 g.",
+    "brand": "Carrefour",
+    "price": 2083.9,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/581115-300-300?v=638639190007900000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "979b52de-83cd-44f7-b269-dc2b7fc67265",
+    "name": "Papas baston tradicional Carrefour classic 700 g.",
+    "brand": "tradicional",
+    "price": 2501.7,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386920-300-300?v=638859501755700000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "c9e9bd82-0f46-4faa-83fa-c246a1df2462",
+    "name": "Hamburguesa Paty clásico en caja 12 uni",
+    "brand": "clásico",
+    "price": 17670,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/348156-300-300?v=638237524908130000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "11876b27-ec54-4b99-86a4-2bbad8759856",
+    "name": "Papas noisettes Carrefour classic 500 g.",
+    "brand": "Carrefour",
+    "price": 4173.6,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386831-300-300?v=638859501987200000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "b7ddf902-48cc-4324-b0c9-0c488004618b",
+    "name": "Papa tradicional Mc cain 700 g.",
+    "brand": "Mc",
+    "price": 3919.5,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/448136-300-300?v=638404897261700000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "495e907a-09fd-46fe-b443-ae27da38ed6b",
+    "name": "Hamburguesa Swift clásica 12 u.",
+    "brand": "clásica",
+    "price": 16409,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/364115-300-300?v=638261487253170000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "50734c4b-1719-4aa5-807f-6dc13a8d6ce7",
+    "name": "Hamburguesa Carrefour Classic clásica 20 uni",
+    "brand": "Classic",
+    "price": 18202.5,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/597173-300-300?v=638672035717200000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "6f550c8d-cdbd-40e6-a617-8599311b5564",
+    "name": "Medallón de carne Paty express en caja 4 uni",
+    "brand": "carne",
+    "price": 3173.0024,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/416790-300-300?v=638355808375600000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "648c1ba2-8cc5-4506-b90d-1743a93bd196",
+    "name": "Hamburguesa Paty clásico en caja 4 uni",
+    "brand": "clásico",
+    "price": 6380,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/348155-300-300?v=638237524472500000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "9686b7ed-fcaa-4a8b-8ca3-fd91735caa01",
+    "name": "Papas Mc Cain air fryer 700 grs",
+    "brand": "Cain",
+    "price": 7629,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/690568-300-300?v=638913763949500000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "abd4f0df-5312-4fca-8878-5f86e8bf1a64",
+    "name": "Chauchas congeladas Carrefour Classic 350 g.",
+    "brand": "Carrefour",
+    "price": 2083.9,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/581113-300-300?v=638639189441530000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "6ac96fc7-e457-43d5-a3e5-dcf37d5aa307",
+    "name": "Milanesa de soja Mamá Lucchetti x 4 uni",
+    "brand": "soja",
+    "price": 3299,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/312527-300-300?v=638163243715500000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "5d951607-e11b-4f20-9ab6-9cb284308eea",
+    "name": "Brócoli congelado Granja del sol 400 g.",
+    "brand": "Granja",
+    "price": 5070,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/477010-300-300?v=638440341971330000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "5a5fb60f-09ee-45d6-84dc-c1eea36bf7b1",
+    "name": "Papas noisettes Mc Cain en bolsa 600 g.",
+    "brand": "Mc",
+    "price": 7799,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/448134-300-300?v=638404895745670000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "4762b135-c61b-4b56-bd2d-a213d945703d",
+    "name": "Milanesa de pollo congelada Carnes Carrefour 500 grs",
+    "brand": "pollo",
+    "price": 6600,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/617965-300-300?v=638743590304000000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "275c4ba4-7fd5-4591-9abd-278b25aec0f5",
+    "name": "Hamburguesa Carrefour Classic clásica 12 uni",
+    "brand": "Classic",
+    "price": 10500,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/597174-300-300?v=638672036008370000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "687ec7ee-d87a-403a-9142-103008a4dca7",
+    "name": "Hamburguesa congelada Carrefour 2 u.",
+    "brand": "Carrefour",
+    "price": 1720,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/176942-300-300?v=637468574870700000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "e67eac48-df84-45e7-9ad9-7852836bfa00",
+    "name": "Hamburguesa Swift clásica 4 u.",
+    "brand": "clásica",
+    "price": 5900,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/364112-300-300?v=638261486152170000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "f471f13d-e39e-4263-94ff-29434be0bf8a",
+    "name": "Bocaditos de pollo Patitas sabor original 400 grs",
+    "brand": "pollo",
+    "price": 7335,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/553706-300-300?v=638614887559000000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "3a255159-0228-4117-b71a-ebb74d50ed8c",
+    "name": "Brócoli Lucchetti en bolsa 300 g.",
+    "brand": "en",
+    "price": 3490,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/375013-300-300?v=638309120704170000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "166a56fb-fe8e-4eaf-a9d9-be2e4f7f899f",
+    "name": "Hamburguesa Paty clásico en caja 20 uni",
+    "brand": "clásico",
+    "price": 29055,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/353140-300-300?v=638247901187430000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "71565365-2243-4961-a6b1-47dee4ca405a",
+    "name": "Supremitas de pollo Granja de sol crocantes 480 g.",
+    "brand": "pollo",
+    "price": 10625,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/685582-300-300?v=638895638538070000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "cc98fcb0-a3b2-4ffa-aa14-0d716368e503",
+    "name": "Milanesa Granja del sol de soja tipo casera 8 uni",
+    "brand": "del",
+    "price": 7419,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/312483-300-300?v=638163243579630000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "51205187-bed6-4d49-8124-4aa9e8e690bc",
+    "name": "Pizza congelada Carrefour mozzarella estuche 600 g.",
+    "brand": "Carrefour",
+    "price": 6430.8,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386613-300-300?v=638872503176030000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "599498a7-2bd5-4cb0-9cb8-0217b479bf26",
+    "name": "Papas ondeadas Carrefour classic 700 g.",
+    "brand": "Carrefour",
+    "price": 2501.7,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386774-300-300?v=638859503022070000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "4539f00e-6756-4f9b-888b-443e4e863ffc",
+    "name": "Milanesa de soja Vegetalex 4 uni",
+    "brand": "soja",
+    "price": 2190,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/426269-300-300?v=638385202980100000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "291aaa0a-f66a-4167-946a-71f6f68f0607",
+    "name": "Hamburguesa de carne Unión ganadera 4 uni",
+    "brand": "carne",
+    "price": 7419,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/373391-300-300?v=638306741474330000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "fd1b952a-109a-49df-a1e3-aee8e52d366b",
+    "name": "Medallones de pollo Lucchetti en bolsa 280 g.",
+    "brand": "pollo",
+    "price": 2921.75,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/312529-300-300?v=638163243724070000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "1ef56005-9010-48a8-87bd-a95f774cba00",
+    "name": "Espinaca congelada Granja del sol 500 g.",
+    "brand": "Granja",
+    "price": 4399,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/328151-300-300?v=638204601147200000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "66cf4b15-8fa5-489f-b57e-07812e1a1d37",
+    "name": "Papas baston caseras Carrefour classic 700 g.",
+    "brand": "caseras",
+    "price": 2501.7,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386762-300-300?v=638859502821100000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "17cbacea-3c07-497c-8133-647545b33df5",
+    "name": "Milanesa Granja del sol de soja espinaca 4 uni",
+    "brand": "del",
+    "price": 4250,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/312526-300-300?v=638163243712400000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "4d9267d4-272b-4e38-8f38-0b57631cc1f3",
+    "name": "Hamburguesas de pollo Granja tres Arroyos 166 g.",
+    "brand": "pollo",
+    "price": 2750,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/547612-300-300?v=638592377445570000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "f3ea731f-640e-45c7-9b79-0943cb5d1594",
+    "name": "Papas baston Mc cain tradicional familiar 1.4 kg.",
+    "brand": "Mc",
+    "price": 7669.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/448140-300-300?v=638404899748430000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "e1687345-fdb5-435b-ac61-b4d8a569b0e7",
+    "name": "Formitas de pollo rebozadas Bulnez 360 g.",
+    "brand": "pollo",
+    "price": 3640,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/551606-300-300?v=638603782885400000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "c34b1e36-bfdd-484d-a168-be352e395367",
+    "name": "Papas smiles Mc Cain en bolsa 700 g.",
+    "brand": "Mc",
+    "price": 9849,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/448133-300-300?v=638404895253600000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "dada242b-78a0-4e67-a2f1-1a2b225e258a",
+    "name": "Nuggets de pollo Granja del sol en bolsa 900 g.",
+    "brand": "pollo",
+    "price": 18885,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/685581-300-300?v=638895638348870000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "7725c6af-cfc3-428a-97ad-afc683b37490",
+    "name": "Formitas de pollo Lucchetti en bolsa 350 g.",
+    "brand": "pollo",
+    "price": 4799,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/458236-300-300?v=638412071183900000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "d0b44c1e-70c1-447b-aece-ef8f9b4d5509",
+    "name": "Espinaca Lucchetti en bolsa 400 g.",
+    "brand": "en",
+    "price": 3069,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/620642-300-300?v=638745463869600000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "5be88ef7-5875-4256-a90d-50483d7bf07e",
+    "name": "Papas baston Mc cain horneables en bolsa 700 g.",
+    "brand": "Mc",
+    "price": 7419,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/448137-300-300?v=638404897790530000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "1cc9e328-aab4-4e60-8704-a71e61e83894",
+    "name": "Bocaditos de pollo rebozados Bulnez 360 g.",
+    "brand": "pollo",
+    "price": 3640,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/542712-300-300?v=638569269666330000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "e8cdfd97-b75f-42ac-b599-65a975b32542",
+    "name": "Acelga congelada Green life en bolsa 550 g.",
+    "brand": "Green",
+    "price": 4015,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/595269-300-300?v=638664245221900000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "9651b165-5c11-47cc-83e0-58c585352c2f",
+    "name": "Nuggets de pollo Carrefour Classic 300 g.",
+    "brand": "pollo",
+    "price": 4077,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/551601-300-300?v=638603776843870000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "b65ca092-094e-4333-8104-0775aaf22456",
+    "name": "Milanesa Granja del sol de soja y calabaza 4 uni",
+    "brand": "del",
+    "price": 4250,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/312407-300-300?v=638163243318900000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "3aeadc34-532d-4b9a-bc08-16a8b92fd660",
+    "name": "Papas fritas Mc Cain tradicional 400 g.",
+    "brand": "Mc",
+    "price": 2072.85,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/623317-300-300?v=638749707864670000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "6a4e0bd9-9ea1-4534-9c78-3d4358fce20d",
+    "name": "Hamburguesa de carne Unión ganadera 12 uni",
+    "brand": "carne",
+    "price": 22129,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/379149-300-300?v=638313568644370000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "b4c33314-f386-49b0-a4a2-0fee48ba81b0",
+    "name": "Nuggets de pollo Sadia crocantes 300 g.",
+    "brand": "pollo",
+    "price": 5079,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/346812-300-300?v=638236455653100000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "b8ca72af-eb1f-40c1-a1e9-f082bf6bca06",
+    "name": "Chicken fingers Sadia 900 g.",
+    "brand": "Sadia",
+    "price": 14369,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/346820-300-300?v=638236459023670000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "a723455b-79aa-4372-9138-80aa6af06d98",
+    "name": "Papas cubo Carrefour Classic 700 g.",
+    "brand": "Carrefour",
+    "price": 2501.7,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537540-300-300?v=638550047096400000&width=170&height=170&aspect=true",
+    "category_id": 4
+  },
+  {
+    "id": "25334f3c-d579-4862-88c2-d9540caab81f",
+    "name": "Pan Blanco Artesano con masa madre 500 grs",
+    "brand": "Artesano",
+    "price": 6925,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/671049-300-300?v=638853456876900000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "c0c5a0fc-68d5-4d18-b362-931b9b452302",
+    "name": "Pan con cereales y semillas Fargo 400 grs",
+    "brand": "cereales",
+    "price": 4799,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/687486-300-300?v=638900815850570000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "092a88f1-2508-4a30-b885-c9bf7a11d1bd",
+    "name": "Pan integral Fargo 400 grs",
+    "brand": "Fargo",
+    "price": 4799,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/687491-300-300?v=638900820361670000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "6413fe12-cb67-4240-9c4e-6f2203e9b78b",
+    "name": "Pan rallado Preferido fortificado 1 kg.",
+    "brand": "Preferido",
+    "price": 2163.85,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/476793-300-300?v=638440339343830000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "d3f5fdb8-511f-400d-9111-bb09391d6ef6",
+    "name": "Pan de mesa Carrefour classic blanco lacteado 600 g.",
+    "brand": "mesa",
+    "price": 3717,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/420221-300-300?v=638859473721170000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "faa05114-3789-4be7-a9f2-2dcd85a374ef",
+    "name": "Pan rallado Carrefour classic 1 kg.",
+    "brand": "Carrefour",
+    "price": 2131.2,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/394741-300-300?v=638859474822000000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "d7b22ee5-3d94-4960-b4f6-5f3c59fa7b28",
+    "name": "Pan de hamburguesa Bimbo Artesano 4 uni",
+    "brand": "hamburguesa",
+    "price": 3520,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/670115-300-300?v=638851759738400000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "0307d8eb-f17d-4c1e-bc3d-a03cfff82403",
+    "name": "Tortillas clásicas Rapiditas 10 uni",
+    "brand": "Rapiditas",
+    "price": 3405,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/670999-300-300?v=638853439097230000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "3b2c1658-c30f-417b-9c28-25285a8fe7f0",
+    "name": "Pan blanco Lactal 315 grs",
+    "brand": "Lactal",
+    "price": 3009,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/670148-300-300?v=638851769177200000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "249d1c6d-c524-4a5a-8479-d30fdc5ba919",
+    "name": "Pan de mesa Veneziana blanco 600 g.",
+    "brand": "mesa",
+    "price": 2518.75,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/179656-300-300?v=637468582929670000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "5e3d8fe9-ee98-40cd-bbce-5e1e729bb888",
+    "name": "Pan blanco Bimbo 610 grs",
+    "brand": "Bimbo",
+    "price": 6430,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/671040-300-300?v=638853454886430000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "81de0de2-d92d-452d-8dc8-7fc6ffe0a2b1",
+    "name": "Pan con semillas Oroweat 600 grs",
+    "brand": "semillas",
+    "price": 8249,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/670168-300-300?v=638851776989230000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "91b5a34c-383e-4918-b257-b4c3cb3ea081",
+    "name": "Pan rallado Mamá Cocina fortificado 1 kg.",
+    "brand": "Mamá",
+    "price": 2459,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/364928-300-300?v=638266701051530000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "a364228b-6835-47bc-97f7-fcc3d9ecf8bb",
+    "name": "Tortillas light Rapiditas 10 uni",
+    "brand": "Rapiditas",
+    "price": 3405,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/670175-300-300?v=638851778446670000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "e017454e-628f-4a70-8f77-08dfefbef0c8",
+    "name": "Pan rallado Mamá Cocina fortificado 500 g.",
+    "brand": "Mamá",
+    "price": 1255,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/364927-300-300?v=638266700610500000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "17110ead-ff7b-4d39-a557-be080d2e818e",
+    "name": "Pan salvado Lactal 560 grs",
+    "brand": "Lactal",
+    "price": 5000,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/670140-300-300?v=638851767465170000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "fda5fb80-8c8b-4ed6-8a0e-16fae7b92d3c",
+    "name": "Elaboración Carrefour",
+    "brand": "Carrefour",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 8
+  },
+  {
+    "id": "98e3e485-5116-49aa-af01-bdba6271c5be",
+    "name": "Especialidades dulces",
+    "brand": "dulces",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 8
+  },
+  {
+    "id": "2f8e78b9-78d4-4c8d-9aaa-1d2de31a7528",
+    "name": "Medialunas con manteca x 12 uni",
+    "brand": "manteca",
+    "price": 4320.0025,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/175073-300-300?v=637468568328400000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "1dfb1aee-ba63-416b-a94a-068d94b23069",
+    "name": "Palmeritas de manteca El Mercado 200 g.",
+    "brand": "manteca",
+    "price": 3990.0018,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386878-300-300?v=638318706400030000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "46e7ba99-6b52-4d7e-87e5-599d3d039d92",
+    "name": "Medialunas de manteca x 6 u.",
+    "brand": "manteca",
+    "price": 2160.0025,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/175070-300-300?v=637468568314470000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "cd15b03c-7e7d-4a0f-be44-d3b417b02ef6",
+    "name": "Facturas surtidas x 12 uni",
+    "brand": "x",
+    "price": 6720,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/204861-300-300?v=637601375246370000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "872882a3-73e5-4d30-9571-335138423436",
+    "name": "Facturas surtidas x 6 uni (lg)",
+    "brand": "x",
+    "price": 3360,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/255974-300-300?v=637986089709900000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "a25bd6e2-e2eb-4ce2-83a7-3eaf1819839a",
+    "name": "Palmeritas El Mercado en blíster 130 g.",
+    "brand": "Mercado",
+    "price": 3190,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386979-300-300?v=638318706840900000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "514f0a07-7d14-4412-8d5b-e226f5953fd1",
+    "name": "Torta matera de vainilla 400 grs",
+    "brand": "de",
+    "price": 2490.0021,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/655359-300-300?v=638827475278200000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "1ac10e66-a094-4b3f-afc6-f0b2fba4dbe8",
+    "name": "Medialuna de manteca x 3 uni (lg)",
+    "brand": "manteca",
+    "price": 1080.0025,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/255940-300-300?v=637986089340800000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "af73991e-506c-4f73-9aaf-cbe500b97646",
+    "name": "Alfajorcito de chocolate 6 uni",
+    "brand": "chocolate",
+    "price": 3790,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/522172-300-300?v=638509517318030000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "2e092119-59ae-4375-b188-2d0e062e6704",
+    "name": "Mini alfajores de maicena Il Vero Oriente 14 uni",
+    "brand": "de",
+    "price": 3990,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/679798-300-300?v=638871595041370000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "5e448309-d024-4f7b-b35b-ddffb0aa3547",
+    "name": "Merengues Recetas para tentarte super mini 125 g.",
+    "brand": "para",
+    "price": 2059,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/175039-300-300?v=637468567958070000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "f28fbaeb-c4a3-4dc4-a7f7-bfba8b10c370",
+    "name": "Biscuit en bolsa crital 142 g.",
+    "brand": "bolsa",
+    "price": 1590,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/528166-300-300?v=638530191740630000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "f046d67e-ea1c-4b37-8b74-e8b98700fb1a",
+    "name": "Persianitas de membrillo El Mercado 200 g.",
+    "brand": "membrillo",
+    "price": 3690,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386544-300-300?v=638318704887430000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "b6082fa0-726b-43a3-814a-eb23713f3512",
+    "name": "Pastafrola de membrillo 700 g.",
+    "brand": "membrillo",
+    "price": 11489,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/197308-300-300?v=637523692527300000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "996f12b8-cc4d-4d49-b116-7eaab42cedda",
+    "name": "Pepas de membrillo el Mercado 220 g.",
+    "brand": "membrillo",
+    "price": 4090,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386567-300-300?v=638318704988730000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "d9a93198-6c49-4f48-bca5-a75270551965",
+    "name": "Alfajores de maicena 280 g.",
+    "brand": "maicena",
+    "price": 5490,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/175060-300-300?v=637468568257530000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "dc2a4ce9-8d42-41bb-9e6d-84a8b0d606ce",
+    "name": "Elaboración Carrefour",
+    "brand": "Carrefour",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 8
+  },
+  {
+    "id": "0d5a4c6e-a41b-46e9-8a09-bc3b901741f6",
+    "name": "Especialidades saladas",
+    "brand": "saladas",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 8
+  },
+  {
+    "id": "399cc33e-dfdd-41d2-b5a6-635fd3c01568",
+    "name": "Baguette Tradición Francesa x u.",
+    "brand": "Francesa",
+    "price": 2890,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/191707-300-300?v=637515941390630000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "eb67c624-43a1-4092-88c5-dad30c1e7201",
+    "name": "Medialunas con grasa clásica x 6 uni",
+    "brand": "grasa",
+    "price": 2160.0025,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/214000-300-300?v=637677534582970000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "b119371e-5670-4b04-8b8d-6c3ea18dbcda",
+    "name": "Pan baguette x 1 u.",
+    "brand": "x",
+    "price": 1310,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/191721-300-300?v=637515941499870000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "b7e1c109-3da6-4f5a-9c9c-35df693dc765",
+    "name": "Bocaditos de calabaza y mozzarella 400 g.",
+    "brand": "calabaza",
+    "price": 5150,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/518894-300-300?v=638508681768370000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "0d503b79-a8c6-48d5-b119-71c197c49739",
+    "name": "Sorrentinos jamón y mozzarella 560 g.",
+    "brand": "y",
+    "price": 3350,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/531560-300-300?v=638532826824770000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "11287af4-48f0-49a4-91e1-2b6b6196fc8c",
+    "name": "Pollo al spiedo x kg.",
+    "brand": "spiedo",
+    "price": 10990,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/249961-300-300?v=637922857075300000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "4fb6a4d8-21ab-4b8a-bcd8-98eb8120319e",
+    "name": "Ravioles de pollo y verdura 500 g.",
+    "brand": "pollo",
+    "price": 2290,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/531546-300-300?v=638532793149970000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "b48ea5a4-6a22-4410-8ef9-74d08ba83d17",
+    "name": "Ravioles de ricotta 500 g.",
+    "brand": "ricotta",
+    "price": 2290,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/531544-300-300?v=638532789668000000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "e4bb7bbe-f98e-4a0c-b382-29cf05281e92",
+    "name": "Ravioles de jamón y mozzarella 500 g.",
+    "brand": "jamón",
+    "price": 2290,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/531545-300-300?v=638532791227230000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "f7c76ee6-d50b-45cc-b9cc-c8572f36ef60",
+    "name": "Pan Schär pevet sin TACC paquete 150 g.",
+    "brand": "pevet",
+    "price": 5559,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/254844-300-300?v=637974858813000000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "fd7a2fe6-8203-43c0-afe2-4b07930e9f83",
+    "name": "Ravioles cuatro quesos 500 g.",
+    "brand": "quesos",
+    "price": 2290,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/531543-300-300?v=638532787454400000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "c1033f29-6622-4d6d-a608-fbcc9557c5c9",
+    "name": "Filet de merluza rebozado 800 g.",
+    "brand": "merluza",
+    "price": 12990,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/524034-300-300?v=638513900840170000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "b7dee59c-e16f-46e3-98c6-8430b9c51813",
+    "name": "Capelletis de pollo y verduras 500 g.",
+    "brand": "pollo",
+    "price": 2350,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/528169-300-300?v=638530197034870000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "6d3c048c-75d7-43a8-b6e0-317b9c18c7b7",
+    "name": "Pan de miga blanco 10 fetas 20 cm x 20 cm",
+    "brand": "miga",
+    "price": 6390,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/273423-300-300?v=638109660440200000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "1db671e4-3cef-4978-af0d-5832ca8615db",
+    "name": "Bocaditos de epinaca rebozada 400 g.",
+    "brand": "epinaca",
+    "price": 4850,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/518895-300-300?v=638508683656470000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "a8109304-f5b4-4762-8761-62db916ff674",
+    "name": "Tarteletas chicas x 35 uni",
+    "brand": "x",
+    "price": 4680,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/261373-300-300?v=638028199908900000&width=170&height=170&aspect=true",
+    "category_id": 8
+  },
+  {
+    "id": "c421c8bf-36ec-4ec9-9622-d225fb04f00c",
+    "name": "Berenjena negra x kg.",
+    "brand": "x",
+    "price": 2399.0017,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184455-300-300?v=637468592576600000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "134759ab-b551-4972-a8a7-35b5ebdcf5da",
+    "name": "Zapallito largo x kg.",
+    "brand": "x",
+    "price": 2599.0025,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/205629-300-300?v=637606613108270000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "3fcc298d-364a-4fc7-9d96-bde4ebd49e13",
+    "name": "Arándanos 125 g.",
+    "brand": "g.",
+    "price": 2999.006,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/213988-300-300?v=637677534426300000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "bdc0516a-0298-49f3-952f-93c3b083602f",
+    "name": "Repollo colorado x kg.",
+    "brand": "x",
+    "price": 1499.0044,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/201730-300-300?v=637558429517630000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "b18d20f4-1591-4ded-8c1d-7c74cb4e1e96",
+    "name": "Manzana granny especial x kg.",
+    "brand": "especial",
+    "price": 3299,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/213944-300-300?v=637677533665770000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "1fe15eb4-4fe3-4c8d-b3aa-50b5eb32e018",
+    "name": "Papa negra Huella Natural x kg.",
+    "brand": "Huella",
+    "price": 990,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/643269-300-300?v=638808464097930000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "52af0ba3-e511-44f4-8e53-541e2d244ad9",
+    "name": "Remolacha x kg.",
+    "brand": "kg.",
+    "price": 1989.0029,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/201736-300-300?v=637558429608730000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "489c43e9-3822-4c5e-afb0-e12c6436ef62",
+    "name": "Manzana roja Huella Natural x kg.",
+    "brand": "Huella",
+    "price": 3999,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/176823-300-300?v=637468574453170000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "d9344235-3ef7-439c-8964-d8966b7d5032",
+    "name": "Tomate cherry rojo Huella Natural x kg.",
+    "brand": "rojo",
+    "price": 9599.0026,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184397-300-300?v=637468592474570000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "6d850f19-a04b-4e6f-a24c-3ee680fd5a81",
+    "name": "Perejil x 1 atado",
+    "brand": "1",
+    "price": 1299,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/201735-300-300?v=637558429594470000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "45d5e966-76a7-4b50-bff1-a5f41e07d5c4",
+    "name": "Mango x uni",
+    "brand": "uni",
+    "price": 1599.0019,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/248356-300-300?v=637915978879430000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "b6481392-4a80-4c67-ab2c-acc8cf7a8ecf",
+    "name": "Papa x kg.",
+    "brand": "kg.",
+    "price": 990,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184418-300-300?v=637468592509830000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "96e177bc-b297-451b-b68b-12502d5ce487",
+    "name": "Raíz de jengibre x kg.",
+    "brand": "jengibre",
+    "price": 6999,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/201748-300-300?v=637558429784930000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "c4df84cb-290c-4bfe-beb0-bf1593381e90",
+    "name": "Choclo x uni",
+    "brand": "uni",
+    "price": 989.0064,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/208638-300-300?v=637636212745370000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "041187d5-1f19-4d4e-801a-0fa7dc3b082a",
+    "name": "Nuez pelada nacional Blancanuez 100 g.",
+    "brand": "nacional",
+    "price": 3490,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/193238-300-300?v=637515951241330000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "36c64fd6-6040-49a2-ab7e-69e5bab91091",
+    "name": "Frutillas x kg.",
+    "brand": "kg.",
+    "price": 6999.0025,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/176871-300-300?v=637468574591800000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "c88ef0ca-cff5-4d49-a43e-b7aacd2b8d67",
+    "name": "Zapallito redondo x kg.",
+    "brand": "x",
+    "price": 1899.0024,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184463-300-300?v=637468592594130000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "9e0cbc03-9c8c-4c9a-8cef-0a54a314f51d",
+    "name": "Pera x kg.",
+    "brand": "kg.",
+    "price": 1689,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/196201-300-300?v=637522913634700000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "f5d42145-6331-4277-802a-0cb57044b393",
+    "name": "Naranja ombligo premiun x kg.",
+    "brand": "premiun",
+    "price": 999.0032,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/248243-300-300?v=637915977750170000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "9f10e357-3204-4cb0-b039-c60056e154c4",
+    "name": "Tomate perita x kg.",
+    "brand": "x",
+    "price": 2999.004,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184460-300-300?v=637468592590070000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "05a55690-fc49-4998-b4b1-76eb1ce73988",
+    "name": "Zapallo japonés x kg.",
+    "brand": "x",
+    "price": 699,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/196197-300-300?v=637522913606070000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "66127d04-0576-4e92-9725-91f8f8c01231",
+    "name": "Lechuga Capuchina x kg.",
+    "brand": "x",
+    "price": 1899.0049,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184472-300-300?v=637468592611200000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "38eb3a4f-c498-4651-bdb9-bbf6bc319162",
+    "name": "Ajo suelto x kg.",
+    "brand": "x",
+    "price": 12290,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184402-300-300?v=637468592483200000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "fa0f8747-d28d-499a-bfc4-a4140979660d",
+    "name": "Kiwi Huella Natural x kg.",
+    "brand": "Natural",
+    "price": 6999.0022,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/176827-300-300?v=637468574459900000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "072d19d8-d775-4f4b-97dd-49dfb9dc328c",
+    "name": "Batata naranja Huella Natural x kg.",
+    "brand": "Huella",
+    "price": 3490,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184366-300-300?v=637468592421270000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "b981c2c0-b66f-43a0-a789-43322f12a438",
+    "name": "Repollo blanco x kg.",
+    "brand": "x",
+    "price": 1189.0031,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/201734-300-300?v=637558429578030000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "a2fac9d8-e053-433d-89b2-a54a9c60600e",
+    "name": "Pomelo rojo premium x kg.",
+    "brand": "premium",
+    "price": 1399,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/205551-300-300?v=637606591779900000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "6805fced-3db1-4f8e-9454-7752c854e441",
+    "name": "Pepino x kg.",
+    "brand": "kg.",
+    "price": 1749.0052,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/201743-300-300?v=637558429717000000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "86a0b328-380b-4f19-8cf2-1a6ca00d388c",
+    "name": "Puerro x 1 atado",
+    "brand": "1",
+    "price": 1039.0032,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/201727-300-300?v=637558429462300000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "3cc37643-68b8-4958-a746-0286d1af2719",
+    "name": "Rúcula x 1 atado",
+    "brand": "1",
+    "price": 589.0015,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184520-300-300?v=637468592710170000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "24dba5b9-b125-4c2a-9144-2170d1d10f9c",
+    "name": "Acelga x paquete",
+    "brand": "paquete",
+    "price": 1099.0045,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/196198-300-300?v=637522913612970000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "0c0972f6-4ea7-4847-9787-044a7bbc67b6",
+    "name": "Frutillas en bandeja 250 g.",
+    "brand": "bandeja",
+    "price": 2999.0029,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/176896-300-300?v=637468574679200000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "b3d0fd71-58c0-4266-a750-1d31a26ffed5",
+    "name": "Cebolla x kg.",
+    "brand": "kg.",
+    "price": 799,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/196196-300-300?v=637522913600430000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "95e48371-9899-4e8e-a1fe-fe99423551ae",
+    "name": "Banana seleccion x kg.",
+    "brand": "x",
+    "price": 2499.0016,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/490488-300-300?v=638453427125500000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "2b194fb5-e8e9-4b14-bf99-605788484e8d",
+    "name": "Papa x kg.",
+    "brand": "kg.",
+    "price": 849,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184405-300-300?v=637468592488970000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "72e630e8-bc8e-4944-93cb-aad889e271c4",
+    "name": "Zapallo anco x kg.",
+    "brand": "x",
+    "price": 590,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/196194-300-300?v=637522913582200000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "66cebc2f-bf08-40d2-b2e8-385cb46f1cb7",
+    "name": "Palta x uni",
+    "brand": "uni",
+    "price": 999.0014,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/261707-300-300?v=638030957678870000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "78de5682-9022-477f-a299-7b7eb142959f",
+    "name": "Manzana roja x kg.",
+    "brand": "x",
+    "price": 2789,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/176814-300-300?v=637468574430000000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "bff4b7d8-5fd6-49b1-be3d-697534871314",
+    "name": "Mandarina x kg.",
+    "brand": "kg.",
+    "price": 1199.002,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/176863-300-300?v=637468574560630000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "e096033f-06d3-47cd-85aa-6aade342f6bd",
+    "name": "Tomate x kg.",
+    "brand": "kg.",
+    "price": 2299.0054,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184380-300-300?v=637468592448200000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "9a58057d-e352-4b4b-a1fd-6218a9a30c1a",
+    "name": "Naranja de jugo x kg.",
+    "brand": "jugo",
+    "price": 1099,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/176867-300-300?v=637468574576170000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "8286e67a-f35c-4e52-a87d-5f879f361965",
+    "name": "Batata x kg.",
+    "brand": "kg.",
+    "price": 990.0023,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184392-300-300?v=637468592466100000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "cdf54c59-4cd4-4f12-8341-87b6a6cbbe72",
+    "name": "Limon x kg.",
+    "brand": "kg.",
+    "price": 1189,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/196195-300-300?v=637522913590300000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "dd58656a-00f9-42f6-8df7-91b14fefb5d2",
+    "name": "Pimiento rojo x kg",
+    "brand": "x",
+    "price": 5499.0023,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184457-300-300?v=637468592583500000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "106bdca1-1c46-4496-a1e9-344bd1351f75",
+    "name": "Zanahoria Huella Natural x kg.",
+    "brand": "Natural",
+    "price": 1390,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/226755-300-300?v=637715439512570000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "22438907-0636-4fc0-a380-751541ada999",
+    "name": "Pimiento verde x kg.",
+    "brand": "x",
+    "price": 4799.0012,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/201741-300-300?v=637558429692530000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "70dfbc80-019f-49c0-bcfa-a6a9b59886e5",
+    "name": "Papa cepillada x kg.",
+    "brand": "x",
+    "price": 1035,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/184447-300-300?v=637468592562400000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "188450cf-640b-4f1c-a2f0-b1b093888bf8",
+    "name": "Cebolla de verdeo x 1 atado",
+    "brand": "verdeo",
+    "price": 1299.0023,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/201732-300-300?v=637558429550030000&width=170&height=170&aspect=true",
+    "category_id": 5
+  },
+  {
+    "id": "cb40c226-13e2-4e28-8646-c25b92ee6a35",
+    "name": "Queso cremoso La Paulina x kg.",
+    "brand": "La",
+    "price": 12689,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/364370-300-300?v=638264048747430000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "d79c63f1-9a70-4b9a-9867-6c1fa7379a18",
+    "name": "Queso crema Casancrem clásico 500 grs",
+    "brand": "Casancrem",
+    "price": 7699,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/570690-300-300?v=638628664169670000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "39cf06ee-68d4-4104-be5d-b1474b3dd0cb",
+    "name": "Queso cremoso Puyehue horma x kg.",
+    "brand": "Puyehue",
+    "price": 11630,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/364844-300-300?v=638265976217330000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "c22f0b1b-4672-493d-a272-401381703561",
+    "name": "Queso La Serenísima cremón light pote 280 g.",
+    "brand": "Serenísima",
+    "price": 3359,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/669117-300-300?v=638852744547870000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "96f9c5b9-0871-4428-957d-e6a7940282b7",
+    "name": "Queso crema La Paulina tradicional 290 g.",
+    "brand": "La",
+    "price": 2645,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/346219-300-300?v=638234629226800000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "6283e5ac-2429-462c-9f4d-fac15d02c962",
+    "name": "Queso cuartirolo Tremblay x kg.",
+    "brand": "Tremblay",
+    "price": 10640,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/180882-300-300?v=637468586041370000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "9bea17ad-25f1-4778-8162-d44e6645f619",
+    "name": "Queso untable Finlandia light pote 290 g.",
+    "brand": "Finlandia",
+    "price": 2989.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/670036-300-300?v=638851576258870000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "85afc966-df88-42f2-baf8-84f81aea7f1d",
+    "name": "Queso cremoso Cremac x kg.",
+    "brand": "Cremac",
+    "price": 11790,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/180880-300-300?v=637468586036200000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "a6bd67c2-da50-4c91-babb-24d9f76a65d5",
+    "name": "Queso crema Tonadita cremette light 290 g.",
+    "brand": "Tonadita",
+    "price": 2350,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/267688-300-300?v=638066285656970000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "2ce1c0f5-da6e-4c88-aa10-374f92f1cea2",
+    "name": "Queso crema clásico Casancrem 290 grs",
+    "brand": "clásico",
+    "price": 5055,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/684202-300-300?v=638890490298270000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "e027bfce-7bc7-4cda-acc8-2c0eb826611c",
+    "name": "Queso blanco balance Casancrem 500 grs",
+    "brand": "balance",
+    "price": 7589,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/684216-300-300?v=638890491468130000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "b6c2ad2b-63e1-4a0a-a993-771be085f0d7",
+    "name": "Queso crema Tonadita cremette 290 g.",
+    "brand": "Tonadita",
+    "price": 2350,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/267687-300-300?v=638066285648500000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "2e671ab4-c503-4e1f-804f-1eaf64292e06",
+    "name": "Queso untable Finlandia pote 290 g.",
+    "brand": "Finlandia",
+    "price": 2989.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/670034-300-300?v=638851576034630000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "1d3ce461-bcd5-4609-b552-a6b7af41c896",
+    "name": "Queso rallado La Serenísima reggianito flow pack 175 g.",
+    "brand": "La",
+    "price": 6575,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/669156-300-300?v=638845766647530000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "e76cecc3-d727-419c-ab24-807db70e3b17",
+    "name": "Queso tybo lácteos Silvia x 200g.",
+    "brand": "lácteos",
+    "price": 4130,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/366423-300-300?v=638273749431400000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "cda037ac-1384-411a-bc8c-d2b6093ae0b9",
+    "name": "Ricotta semigrasa baja en sodio García 500 g.",
+    "brand": "baja",
+    "price": 3859,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/669118-300-300?v=638845766601730000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "1798586e-4b76-4ab8-adfa-9b5226d6ee2f",
+    "name": "Manteca Classic calidad extra 200 g.",
+    "brand": "calidad",
+    "price": 2904.6,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386972-300-300?v=638852742884200000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "f5756c11-8c75-4c82-ac8e-eb9e6aef3023",
+    "name": "Manteca La Serenísima extra para untar 200 g.",
+    "brand": "Serenísima",
+    "price": 3775,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/636209-300-300?v=638780820785500000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "9c84e799-18bb-4e43-ba21-45591ffdad46",
+    "name": "Manteca Tonadita calidad extra 200 g.",
+    "brand": "calidad",
+    "price": 3460,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/629854-300-300?v=638769474371170000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "794fcaeb-9b23-4512-85a7-f774733c093b",
+    "name": "Levadura fresca prensada Calsa 2 x 50 g.",
+    "brand": "prensada",
+    "price": 950,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/179266-300-300?v=637468581764300000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "e4370206-af86-42d5-bfb4-fec1a73bebd3",
+    "name": "Levadura seca instantánea Levex sobre 20 g.",
+    "brand": "instantánea",
+    "price": 950,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/724077-300-300?v=638943227823030000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "607b3ffb-04d8-4e4a-a873-80b8c70dfbbe",
+    "name": "Levadura seca instantánea Calsa Mi Pan 10 g.",
+    "brand": "instantánea",
+    "price": 515,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/179265-300-300?v=637468581757900000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "dfc26bf6-47c4-4e02-b3f3-2eaf2eff4b24",
+    "name": "Manteca La Paulina 200 g.",
+    "brand": "Paulina",
+    "price": 3669,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/179240-300-300?v=637468581681170000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "ce8aff75-bb35-4f22-8552-7839f6ce6180",
+    "name": "Manteca La serenisima light 200 g.",
+    "brand": "serenisima",
+    "price": 3609,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/636123-300-300?v=638780810815470000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "05921b4e-34c9-4e8a-b293-50ba1f40748e",
+    "name": "Manteca Primer Premio 200 g.",
+    "brand": "Premio",
+    "price": 3079,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/179362-300-300?v=637468582068170000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "98651737-1ff5-4c47-aaff-ac7c29bb31b9",
+    "name": "Manteca La serenisima clásica 100 g.",
+    "brand": "serenisima",
+    "price": 2209,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/636207-300-300?v=638780820586900000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "3a122d3f-1992-4ce1-b5d4-3f5fd3eb61d7",
+    "name": "Manteca SanCor clásica 200 g.",
+    "brand": "clásica",
+    "price": 3890,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/213191-300-300?v=637674021113200000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "20430641-6c4d-43df-a9ac-8d2ee7c57556",
+    "name": "Manteca Primer Premio 100 g.",
+    "brand": "Premio",
+    "price": 1619,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/179359-300-300?v=637468582060030000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "04595f0d-cee0-4ab6-ab5b-373babdc87da",
+    "name": "Levadura fresca prensada Calsa 50 g.",
+    "brand": "prensada",
+    "price": 590,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/179263-300-300?v=637468581748500000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "5b12b78d-bc10-4b6d-afaa-87909790ec96",
+    "name": "Manteca extra calidad Ilolay sin sal 200 g.",
+    "brand": "calidad",
+    "price": 3959,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/687887-300-300?v=638901812386000000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "1e676813-b199-4b8c-a921-287146131039",
+    "name": "Manteca Tonadita calidad extra 100 g.",
+    "brand": "calidad",
+    "price": 2075,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/307493-300-300?v=638137973863730000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "305ae141-3137-4b5f-81a1-20471e347391",
+    "name": "Margarina en pan Danica clásica 200 g.",
+    "brand": "pan",
+    "price": 1139.4,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/396793-300-300?v=638333160307970000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "c45c5296-6e3e-409e-bebc-7073d9a7e6cb",
+    "name": "Promociones",
+    "brand": null,
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 7
+  },
+  {
+    "id": "2134fb37-88f4-4388-bf47-972146348f8d",
+    "name": "Leche UAT parcialmente descremada Carrefour classic brik 1 lt.",
+    "brand": "parcialmente",
+    "price": 1278.8,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386825-300-300?v=638318706171730000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "53e06bc2-85d5-4dde-9e9f-54afa7a4ecf8",
+    "name": "Leche La serenisima liviana 1% 1L",
+    "brand": "serenisima",
+    "price": 1494.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/636143-300-300?v=638780813024830000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "1d5da523-0d5b-4df9-9935-2a5b993d3e48",
+    "name": "Leche UAT entera Carrefour classic brik 1 lt.",
+    "brand": "entera",
+    "price": 1278.8,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386693-300-300?v=638318705567600000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "d88b3eda-caa4-4e9c-9aaf-8e61c260223f",
+    "name": "Leche parcialmente descremada UAT Carrefour classic tetra 1 lt.",
+    "brand": "descremada",
+    "price": 1278.8,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537464-300-300?v=638549442533430000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "2dc11005-dcf3-492a-9121-9ba8800369f8",
+    "name": "Leche La serenisima clásica 3% 1L.",
+    "brand": "serenisima",
+    "price": 1494.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/636141-300-300?v=638780812788100000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "b05855c6-7059-4d87-80c5-118dc70683ae",
+    "name": "Leche entera UAT Carrefour classic tetra 1 lt.",
+    "brand": "UAT",
+    "price": 1278.8,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537462-300-300?v=638549442168230000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "30735186-cd24-4c9f-b1db-744054d8568a",
+    "name": "Leche descremada larga vida La Serenísima cero lactosa 1 l.",
+    "brand": "larga",
+    "price": 2469,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/636105-300-300?v=638780808656800000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "6696af34-5a8c-4e4a-b515-e7af98bd66bb",
+    "name": "Leche descremada La Serenísima UAT proteinas 1 l.",
+    "brand": "La",
+    "price": 2469,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/636139-300-300?v=638780812579170000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "b8211f31-3415-4172-84bd-d0ebd862729c",
+    "name": "Leche La Serenísima ultra entera multivit 3% sachet 1 lt",
+    "brand": "Serenísima",
+    "price": 1740,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/636129-300-300?v=638780811503630000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "cbafc12e-f601-48ac-881a-616d9c50e0c5",
+    "name": "Leche entera larga vida Las tres niñas 1 l.",
+    "brand": "larga",
+    "price": 1979,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/178226-300-300?v=637468578430900000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "a3f5d18c-1864-4712-b3b3-83d5369f55ed",
+    "name": "Leche descremada larga vida Las tres niñas 1 l.",
+    "brand": "larga",
+    "price": 2045,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/178289-300-300?v=637468578576630000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "02863d0a-2aaa-447b-b8ae-da9df81efbaa",
+    "name": "Leche La Serenísima ultra parc descremada multivit 1% sachet 1 lt",
+    "brand": "Serenísima",
+    "price": 1740,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/636125-300-300?v=638780811046100000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "e3d920e9-97f7-44ba-9d85-2d2a3ed425f1",
+    "name": "Leche La Serenísima reducida en lactosa sachet 1 l.",
+    "brand": "Serenísima",
+    "price": 1739,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/636131-300-300?v=638780811707330000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "bdac1b34-eead-479c-a057-a4ef78358169",
+    "name": "Leche ulta parcial descremada Carrefour classic sachet 1 lt.",
+    "brand": "parcial",
+    "price": 1370.8,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386808-300-300?v=638944939868130000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "b9589025-d24f-40d3-bf37-07e6c4d577f9",
+    "name": "Leche La Serenísima UAT parc descremada liviana 1% pet 1 lt",
+    "brand": "Serenísima",
+    "price": 2409,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/636113-300-300?v=638780809524200000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "a1a9a9d0-5465-4a76-90a8-737fb87fd655",
+    "name": "Leche ultra entera Carrefour classic sachet 1 lt.",
+    "brand": "entera",
+    "price": 1370.8,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386844-300-300?v=638941431067300000&width=170&height=170&aspect=true",
+    "category_id": 7
+  },
+  {
+    "id": "ae09851c-b5a7-41f8-baf1-141fcc802eaf",
+    "name": "Panel Carrefour",
+    "brand": "Carrefour",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 7
+  },
+  {
+    "id": "0aff4f5d-d24a-40e8-a1da-cea1f7c671c5",
+    "name": "Puntos Verdes",
+    "brand": "Verdes",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 7
+  },
+  {
+    "id": "647e9aba-5021-47fd-adc6-8516e24955df",
+    "name": "Preguntas frecuentes",
+    "brand": "frecuentes",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 7
+  },
+  {
+    "id": "08ef9d36-763d-4618-89a2-27476dba8731",
+    "name": "ingrese aqui",
+    "brand": "aqui",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 7
+  },
+  {
+    "id": "5ba890be-a4fb-445c-8296-4470d9ec679c",
+    "name": "Aceite de girasol Carrefour Classic  alto omega pet 900 cc.",
+    "brand": "girasol",
+    "price": 2290.8,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/603859-300-300?v=638700617422870000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "52c4983e-bb43-4f0a-ae9f-019e5a3d04af",
+    "name": "Aceite de girasol alto omega Carrefour Classic pet 1.5 lts",
+    "brand": "girasol",
+    "price": 3654.9,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/726614-300-300?v=638944231628630000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "a7cafd2f-6f34-4abc-bed5-36387cd1d1f3",
+    "name": "Aceite de girasol Cocinero 1.5 l.",
+    "brand": "girasol",
+    "price": 3796,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/192351-300-300?v=637515947620670000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "3328a808-fafc-4065-a3d5-dabe10eb6980",
+    "name": "Aceite de girasol Cocinero 900 cc.",
+    "brand": "girasol",
+    "price": 3109,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/192373-300-300?v=637515947923630000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "1cef3170-cf70-45c7-859c-bda285e33fee",
+    "name": "Aceite de girasol Cañuelas 900 cc.",
+    "brand": "girasol",
+    "price": 2849,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/193269-300-300?v=637515951425300000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "8757f0fc-d4c8-41b6-b06d-e476777200c6",
+    "name": "Aceite de girasol Legitimo 1.5 lt.",
+    "brand": "girasol",
+    "price": 4600,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/263189-300-300?v=638042211886030000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "3856de28-b91f-4f08-bef2-3d7dd85918a1",
+    "name": "Aceite de girasol Lira 900 cc.",
+    "brand": "girasol",
+    "price": 3400,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/155427-300-300?v=637457062428630000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "8ee691a8-dc60-4578-af3f-e26ffeab8a52",
+    "name": "Aceite de girasol Lira 1.5 l.",
+    "brand": "girasol",
+    "price": 5405,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/155433-300-300?v=637457062458370000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "8319fd8f-f487-45cf-8674-92766423c8e1",
+    "name": "Aceite de girasol Legitimo 900 cc.",
+    "brand": "girasol",
+    "price": 2740,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/263188-300-300?v=638042211872630000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "0b3c8bf7-0149-4bd8-9e9b-a6bc48be0e9c",
+    "name": "Aceite de maíz Lira 900 cc.",
+    "brand": "maíz",
+    "price": 6309,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/202801-300-300?v=637565307121270000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "3dbf1585-02af-4212-8e32-87f1e71cecd4",
+    "name": "Aceite de girasol Pureza 900 cc.",
+    "brand": "girasol",
+    "price": 3219,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/155418-300-300?v=637457062378730000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "a5c120d3-7a12-4a9e-981b-4feed7ad25ab",
+    "name": "Aceite de girasol Dicomere alt oleico sin gluten 500 cc.",
+    "brand": "girasol",
+    "price": 6400,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/492235-300-300?v=638460416033770000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "4df242e7-4f38-481d-838e-9b923a8e4275",
+    "name": "Aceite de girasol orgánico Pampagourmet en botella 500 cc.",
+    "brand": "girasol",
+    "price": 8019,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/360299-300-300?v=638259959672970000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "8fd9e4f8-b89c-4ec4-9279-3118b7982ed0",
+    "name": "Promociones",
+    "brand": null,
+    "price": null,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/assets/vtex/assets-builder/carrefourar.theme/81.17.0/top-menu/promociones___b239cea88b09aa8957f71c481ae9830f.svg",
+    "category_id": 1
+  },
+  {
+    "id": "0e013cea-a682-4fe7-885e-adfaacd03d8e",
+    "name": "Puré de tomate Carrefour classic 520 g.",
+    "brand": "tomate",
+    "price": 827.1,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386694-300-300?v=638318705570400000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "1677d834-d93c-49a5-ae27-f2c97140b20e",
+    "name": "Puré de tomate Arcor brik 520 g.",
+    "brand": "tomate",
+    "price": 979,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/508471-300-300?v=638488762327200000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "dc6381aa-717f-4ab3-bf53-b8ecb5545758",
+    "name": "Puré de tomates Bulnez 520 g.",
+    "brand": "tomates",
+    "price": 699,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/542683-300-300?v=638569260889600000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "7f05e899-3725-4786-b1c8-d2b6a11d455d",
+    "name": "Puré de tomate La Campagnola tetra 530 g.",
+    "brand": "tomate",
+    "price": 1035,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/483545-300-300?v=638447463681530000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "848f99b3-395a-4194-a3e1-20aeec961432",
+    "name": "Tomate perita entero Carrefour classic en lata 400 cc.",
+    "brand": "entero",
+    "price": 1118.6,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537577-300-300?v=638550124699870000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "4626490f-07a8-40c5-81fd-29bd983c86ec",
+    "name": "Tomate perita entero Bulnez en lata 400 g.",
+    "brand": "entero",
+    "price": 980,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/542682-300-300?v=638569260470130000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "895af4bf-ab62-4fa5-99c1-224abbaf4aa5",
+    "name": "Tomate triturado Carrefour 970 cc.",
+    "brand": "Carrefour",
+    "price": 2352.9,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386833-300-300?v=638872495137870000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "0601cd96-9bc2-4938-9afa-afc85985bf45",
+    "name": "Puré de tomate Salsati 520 g.",
+    "brand": "tomate",
+    "price": 1170,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/381307-300-300?v=638315050509030000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "fb760c1b-84e2-4fcf-9b86-3e6607c6e4f4",
+    "name": "Salsa Knorr Pizza 200 g.",
+    "brand": "Pizza",
+    "price": 623.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/494489-300-300?v=638470569325400000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "a2ea8baf-5da1-45d2-a8fa-856fbe24ae53",
+    "name": "Tomate triturado Don Francisco botella 950 g.",
+    "brand": "Don",
+    "price": 2399,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/243983-300-300?v=637883196615930000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "45d523f1-4ea9-4073-a95d-48fe02453858",
+    "name": "Salsa Knorr pomarola tradicional 340 g.",
+    "brand": "pomarola",
+    "price": 923,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/494494-300-300?v=638470569423870000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "8d1a9f56-7e4d-41c6-96c0-e60b9991ff70",
+    "name": "Tomate perita Arcor 400 g.",
+    "brand": "Arcor",
+    "price": 1269,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/381324-300-300?v=638315050563400000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "0486699c-4b8d-4f53-b6dc-e93d299c95ce",
+    "name": "Salsa Knorr Filetto 340 g.",
+    "brand": "Filetto",
+    "price": 923,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/494516-300-300?v=638470569790000000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "7691c1c6-ec5c-4366-a4c5-cb43a2d4f0f5",
+    "name": "Tomate perita Bulnez cubeteados en lata 400 g.",
+    "brand": "Bulnez",
+    "price": 980,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/460573-300-300?v=638415208081700000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "5eb658fe-6e67-421d-866e-8e1bba1e7669",
+    "name": "Tomate perita cubeteado Arcor 400 g.",
+    "brand": "cubeteado",
+    "price": 1465,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/381279-300-300?v=638315050380570000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "112cfe22-c937-49f9-b1df-6e5732691f5d",
+    "name": "Puré de tomate Arcor tetra 210 g.",
+    "brand": "tomate",
+    "price": 729,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/381266-300-300?v=638315050339270000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "62fe4d9d-a828-4ca0-9540-c456d87e4be6",
+    "name": "Choclo en granos amarillo Carrefour classic en lata 300 g.",
+    "brand": "granos",
+    "price": 1143.9,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537474-300-300?v=638549446177270000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "2ef2573d-430a-42ae-b954-ff3431efbbd7",
+    "name": "Arvejas secas remojadas Carrefour classic en lata 300 g.",
+    "brand": "remojadas",
+    "price": 568.71,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537579-300-300?v=638550125427500000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "743f8822-80cd-4477-8f90-8baa0c667bb1",
+    "name": "Garbanzos secos remojados Carrefour classic en lata 300 g.",
+    "brand": "remojados",
+    "price": 754.8,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537469-300-300?v=638549444450500000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "1e61c87a-168f-4fe8-bbf8-3d5176e5add6",
+    "name": "Arvejas secas remojadas Inalpa lata 300 g.",
+    "brand": "remojadas",
+    "price": 379.33,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/241886-300-300?v=637865793490670000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "8c1a4eaf-23f3-488f-a05a-06fcc19e1893",
+    "name": "Choclo entero amarillo Bulnez en lata 300 g.",
+    "brand": "amarillo",
+    "price": 1090,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537933-300-300?v=638551140719900000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "cbbdcf6d-5c44-4cef-bf12-c992e86f0c66",
+    "name": "Lentejas secas remojadas Bulnez en lata 300 g.",
+    "brand": "remojadas",
+    "price": 749,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537935-300-300?v=638551141463930000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "85065497-5327-4423-a9ab-d987b7b994fc",
+    "name": "Choclo cremoso amarillo Inalpa lata 300 g.",
+    "brand": "amarillo",
+    "price": 533.33,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/243973-300-300?v=637883196531470000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "2e5b834b-33fc-4ecf-aebe-a0c33ce287d2",
+    "name": "Jardinera Inalpa hortalizas y legumbres lata 300 g.",
+    "brand": "hortalizas",
+    "price": 516.67,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/241887-300-300?v=637865793499270000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "5c304409-36ae-403c-a852-d89c64894989",
+    "name": "Pastas secas",
+    "brand": "secas",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 1
+  },
+  {
+    "id": "c45d64c3-6094-4d4f-a933-4cd69e8c69d7",
+    "name": "Fideos largos",
+    "brand": "largos",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 1
+  },
+  {
+    "id": "9232c710-d722-4dae-8bae-93708d043418",
+    "name": "Fideos tallarin N5 Lucchetti 500 g.",
+    "brand": "N5",
+    "price": 896.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/370666-300-300?v=638297065488670000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "60bb384f-0414-4f97-8fc9-08b6666a3484",
+    "name": "Fideos tirabuzones N28 Matarazzo 500 g.",
+    "brand": "N28",
+    "price": 1749,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/408416-300-300?v=638343782741970000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "2ba168fd-ef3e-46d5-9e7f-d216ae936961",
+    "name": "Fideos spaghetti N3 Matarazzo 500 g.",
+    "brand": "N3",
+    "price": 1749,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/408417-300-300?v=638343782752670000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "1e2a0a35-af75-4899-9b7c-548193ec0ebe",
+    "name": "Fideos tallarines Don Vicente en bolsa 500 g.",
+    "brand": "Don",
+    "price": 3199,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/410615-300-300?v=638346391980600000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "98904138-736a-42b3-a8c5-7096f326332f",
+    "name": "Fideos tirabuzon N28 Lucchetti 500 g.",
+    "brand": "N28",
+    "price": 974.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/370663-300-300?v=638297065465000000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "5c16d176-933c-47ed-ac0b-88e09976b1a0",
+    "name": "Fideos tirabuzón Terrabusi 3 vegetales 500 g.",
+    "brand": "Terrabusi",
+    "price": 1349,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/370665-300-300?v=638297065482100000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "3c4e48d8-4be6-4a19-b246-e851b66e8063",
+    "name": "Fideos spaghetti fortificado Favorita 500 g.",
+    "brand": "fortificado",
+    "price": 965,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/178738-300-300?v=637468580137500000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "59dd150f-0d38-43a8-aad3-91355bf22b43",
+    "name": "Fideos cinta caserito Don vicente en bolsa 500 g.",
+    "brand": "caserito",
+    "price": 3150,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/408428-300-300?v=638343782868030000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "d22f7bd1-f436-4e61-bc8a-284280ea7bd7",
+    "name": "Fideo spaghetti Bulnez en paquete 500 g.",
+    "brand": "Bulnez",
+    "price": 749,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/609754-300-300?v=638723989045070000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "85c93e89-bfa6-49e4-aad0-5e18353f7d41",
+    "name": "Fideos spaghetti N7 Lucchetti 500 g.",
+    "brand": "N7",
+    "price": 896.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/408421-300-300?v=638343782795530000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "b8da9742-51e4-4c30-98d7-5289737b4362",
+    "name": "Fideos tallarines N5 Matarazzo 500 g.",
+    "brand": "N5",
+    "price": 1749,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/408418-300-300?v=638343782761330000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "9395c0ea-1cc2-4c0c-92e6-7e9321419ec5",
+    "name": "Fideos cinta tallarin Carrefour classic 500 g.",
+    "brand": "tallarin",
+    "price": 1092,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537453-300-300?v=638549438274800000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "fb507f13-06bd-4be8-9b77-d42a1e6261bd",
+    "name": "Fideos tirabuzon Matarazzo 3 vegetales 500 g.",
+    "brand": "Matarazzo",
+    "price": 2059,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/370656-300-300?v=638297065402300000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "68fb3144-a638-4aa5-a43f-c119a0f31d02",
+    "name": "Fideos Rina Matarazzo spaghetti espinaca 500 g.",
+    "brand": "Matarazzo",
+    "price": 2350,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/422558-300-300?v=638369720753100000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "0e012bf4-6391-4ef2-b5ec-212602235c37",
+    "name": "Fideos tallarines N7 Terrabusi 500 g.",
+    "brand": "N7",
+    "price": 1120,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/408425-300-300?v=638343782838200000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "f85905a3-34f9-4357-9c4a-fdef7314beac",
+    "name": "Fideos cinta fetuccini Don vicente 500 g.",
+    "brand": "fetuccini",
+    "price": 3150,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/408427-300-300?v=638343782859730000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "ebab960e-a412-4f96-90d1-53336a19c569",
+    "name": "Fideos guiseros y para sopas",
+    "brand": "y",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 1
+  },
+  {
+    "id": "f5236788-5075-4746-9737-20b2d70ec1d3",
+    "name": "Fideos mostacholes N52 Matarazzo rayado 500 g.",
+    "brand": "N52",
+    "price": 1749,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/370669-300-300?v=638297065514370000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "67129a26-def5-4de9-ad28-1cf8780301c6",
+    "name": "Fideos mostacholes N52 Lucchetti rayado 500 g.",
+    "brand": "N52",
+    "price": 974.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/551516-300-300?v=638603020919700000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "c1a9a17c-6c9e-435c-b20e-3240dca73efb",
+    "name": "Fideos tirabuzones Favorita fortificado 500 g.",
+    "brand": "Favorita",
+    "price": 965,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/175107-300-300?v=637468568511800000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "8588541b-6acc-4e98-8c34-3dc0b5dcf3c3",
+    "name": "Fideos guiseros moño Carrefour classic 500 g.",
+    "brand": "moño",
+    "price": 1627.5,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537449-300-300?v=638549435687600000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "4a9ef622-3182-40c9-b66b-d4a63efb1018",
+    "name": "Fideos coditos Lucchetti 500 g.",
+    "brand": "Lucchetti",
+    "price": 902.85,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/175366-300-300?v=637468569733530000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "8b21c07c-bcfb-4275-8c6e-6e79b9c78505",
+    "name": "Fideo tirabuzones Bulnez en paquete 500 g.",
+    "brand": "Bulnez",
+    "price": 749,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/551557-300-300?v=638603654744870000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "e176aca8-8923-4944-8010-1403c3e18d47",
+    "name": "Fideos coditos rayados Matarazzo 500 g.",
+    "brand": "rayados",
+    "price": 1640,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/175372-300-300?v=637468569756070000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "c54f5d44-9b91-48d0-9ca1-2cf6bfc7c8e6",
+    "name": "Fideos mostachol Bulnez en paquete 500 g.",
+    "brand": "Bulnez",
+    "price": 749,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/551552-300-300?v=638603648001170000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "51ba4ae2-73ef-4cac-ab5c-b28b6f0ebddc",
+    "name": "Fideos moños Matarazzo 500 g.",
+    "brand": "Matarazzo",
+    "price": 2600,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/175392-300-300?v=637468569832470000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "4a5d91a9-111f-4ad6-9d71-159298b024a7",
+    "name": "Fideos tirabuzones Carrefour classic 500 g.",
+    "brand": "Carrefour",
+    "price": 1092,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386712-300-300?v=638872508479830000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "c3bde1ad-cfd4-4743-a106-e2f870b45562",
+    "name": "Fideos mostacholes rayados Favorita fortificado 500 g.",
+    "brand": "rayados",
+    "price": 965,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/175109-300-300?v=637468568517770000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "4b65b980-5ec3-40a3-abfb-7f884250d9a6",
+    "name": "Fideos integrales tirabuzon Matarazzo 500 g.",
+    "brand": "tirabuzon",
+    "price": 2100,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/370658-300-300?v=638297065420270000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "ff388786-6207-4840-a39d-9f54ed329213",
+    "name": "Fideos guiseros tirabuzon Lucchetti 3 vegetales 500 g.",
+    "brand": "tirabuzon",
+    "price": 1247.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/370664-300-300?v=638297065473600000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "8bb71466-083e-44a4-a145-b243ae93f433",
+    "name": "Fideos codos Bulnez en paquete 500 g.",
+    "brand": "Bulnez",
+    "price": 749,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/551554-300-300?v=638603650554100000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "722ea2b9-8114-4cc7-a579-61fad0fa7f06",
+    "name": "Fideos mostachol rayado Carrefour classic 500 g.",
+    "brand": "rayado",
+    "price": 1092,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537451-300-300?v=638549437246430000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "85996256-5517-48b6-b464-da95cdcc0a60",
+    "name": "Fideos penne rigante Matarazzo 500 g.",
+    "brand": "rigante",
+    "price": 1749,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/370668-300-300?v=638297065505330000&width=170&height=170&aspect=true",
+    "category_id": 1
+  },
+  {
+    "id": "b64343d8-b8f6-426a-9167-b4c7d644e3fc",
+    "name": "Suprema congelada x kg.",
+    "brand": "x",
+    "price": 7290.0038,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/256773-300-300?v=637992994567500000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "eff5b34c-255c-4d1e-a0a6-5e6367aaf939",
+    "name": "Carne picada Novillo x kg",
+    "brand": "Novillo",
+    "price": 5200,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682121-300-300?v=638883634460300000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "0b1f0367-dec4-4195-824d-4f7effa7e8e8",
+    "name": "Pollo entero congelado x kg.",
+    "brand": "congelado",
+    "price": 2790,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/254862-300-300?v=637975559909700000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "129e31e7-f7f7-48e0-adbc-c7caa9595e4b",
+    "name": "Milanesa bola de lomo Novillo x kg.",
+    "brand": "de",
+    "price": 11590,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682444-300-300?v=638883634938600000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "b5b73890-96e5-42e3-b401-5b4c7c7b9735",
+    "name": "Roast beef Novillo x kg.",
+    "brand": "Novillo",
+    "price": 10550,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682169-300-300?v=638883634494430000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "c47720a0-7c8e-4b15-80fc-d252191030bb",
+    "name": "Bife angosto Novillo x kg.",
+    "brand": "Novillo",
+    "price": 11950,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682363-300-300?v=638883634665270000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "02d6e06d-eab7-4b10-9d3b-b20ab4b60b55",
+    "name": "Carré con hueso congelado completa",
+    "brand": "hueso",
+    "price": 6349,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/251646-300-300?v=637944446679230000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "1499a558-6628-4a8d-9891-63b58ece26a0",
+    "name": "Carré de cerdo con hueso x kg.",
+    "brand": "cerdo",
+    "price": 5499.0013,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/243774-300-300?v=637877235181100000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "4cdf9be4-6c1a-4cbd-8ab6-c5f9109d5303",
+    "name": "Osobuco x kg.",
+    "brand": "kg.",
+    "price": 7950,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682430-300-300?v=638883634877300000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "ed3ac9a8-adf4-4529-b3a0-25f724facd41",
+    "name": "Tapa de nalga Novillo x kg.",
+    "brand": "nalga",
+    "price": 11150,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682147-300-300?v=638883634484700000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "f16b5ce6-600d-4ea9-be5c-685d0f53d30d",
+    "name": "Colita de cuadril Novillito x kg.",
+    "brand": "cuadril",
+    "price": 15800,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682140-300-300?v=638883634480800000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "22b09ea6-cfe4-49b4-828b-bb7345bf50c9",
+    "name": "Bife americano Novillo x kg.",
+    "brand": "Novillo",
+    "price": 11800,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682133-300-300?v=638883634473300000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "8b7d53a5-1030-4264-a532-a96073af1e68",
+    "name": "Bondiola de cerdo x kg.",
+    "brand": "cerdo",
+    "price": 5999.0036,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/243776-300-300?v=637877235201900000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "4749d0cf-3d29-4f77-b3a4-b3cf0407375e",
+    "name": "Carne picada Swift congelada 500 g.",
+    "brand": "Swift",
+    "price": 5790,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/255995-300-300?v=637986089941730000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "03a00a13-f936-4830-9b77-62c8c6fcb3e4",
+    "name": "Asado Novillo x kg.",
+    "brand": "x",
+    "price": 9400,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682327-300-300?v=638883634637400000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "0a837790-c03e-498f-8b72-6492ac07b7ef",
+    "name": "Carnaza común Novillo x kg.",
+    "brand": "Novillo",
+    "price": 7300,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682436-300-300?v=638883634887930000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "8e42f502-b0d1-4287-913f-fa5d028a7f1b",
+    "name": "Promociones",
+    "brand": null,
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 3
+  },
+  {
+    "id": "90d3a171-46f9-420f-b1aa-7df21d119e08",
+    "name": "Bondiola congelada completa.",
+    "brand": "completa.",
+    "price": 5999.0036,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/315776-300-300?v=638951040759830000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "414ab56c-d31e-4b34-a113-252e97a7d21b",
+    "name": "Pechito con manta congelado completo x kg.",
+    "brand": "manta",
+    "price": 6690,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/369071-300-300?v=638291035615300000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "41990667-1512-4074-a8eb-7820dc7ba401",
+    "name": "Azotillo Bulnez x kg.",
+    "brand": "x",
+    "price": 5700,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682135-300-300?v=638883634473600000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "d1d1ff90-8df3-4ab8-b82f-6656ce6fc85f",
+    "name": "Bife de chorizo Novillito x kg.",
+    "brand": "chorizo",
+    "price": 16200,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682243-300-300?v=638883634605930000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "1887d8b8-bc6f-40ff-bd03-4a7acdb0fda8",
+    "name": "Peceto feteado Novillito x kg.",
+    "brand": "Novillito",
+    "price": 17200,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682148-300-300?v=638883634485970000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "02726dc7-8a79-42cb-8fdd-df052fd89e70",
+    "name": "Ojo de bife Novillito x kg.",
+    "brand": "bife",
+    "price": 16200,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682357-300-300?v=638883634662770000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "f6b0e10d-3491-4ea3-af83-55eeead0ad9c",
+    "name": "Peceto Novillito x kg.",
+    "brand": "x",
+    "price": 12990.0016,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682166-300-300?v=638883634492700000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "9bea305a-91f2-4ea5-9359-06251cdbc480",
+    "name": "Carré desh congelado completo x kg.",
+    "brand": "congelado",
+    "price": 8990,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/369070-300-300?v=638291035606870000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "3d5091eb-785c-4111-b392-0246dfe054d1",
+    "name": "Paleta x kg.",
+    "brand": "kg.",
+    "price": 11200,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682391-300-300?v=638883634836600000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "9434ce20-c402-41da-bf7c-58cfb23bed06",
+    "name": "Pechito de cerdo x kg.",
+    "brand": "cerdo",
+    "price": 6690,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/243777-300-300?v=637877235213200000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "3e02d32d-ad63-4e57-8357-9419a6f4fcaf",
+    "name": "Cuarto trasero de pollo congelado 1.5 kg",
+    "brand": "de",
+    "price": 4485.0045,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/651531-300-300?v=638816256715900000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "ade84d42-6c61-4c0a-8c5e-a1a358fe421d",
+    "name": "Lomo Novillito x kg.",
+    "brand": "x",
+    "price": 19700,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682109-300-300?v=638883634443770000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "4d877f74-082d-4c8e-ae75-e7d8813a4feb",
+    "name": "Filet de merluza Epuyen congelado 1 kg.",
+    "brand": "merluza",
+    "price": 8449.0015,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/181490-300-300?v=637468587387270000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "87cb22a6-42e1-43da-b367-052d4fe8ea49",
+    "name": "Espinazo Novillo x kg.",
+    "brand": "x",
+    "price": 2950,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682124-300-300?v=638883634463100000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "af50d81a-4da2-4f54-9480-c56ecd8e6c1f",
+    "name": "Paleta de cerdo entera congelada x kg.",
+    "brand": "cerdo",
+    "price": 5490,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/173010-300-300?v=637468551579830000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "6e303296-3182-4127-acb4-3369ddaa9c8f",
+    "name": "Bife ancho Novillo x kg.",
+    "brand": "Novillo",
+    "price": 11200,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/682370-300-300?v=638883634674500000&width=170&height=170&aspect=true",
+    "category_id": 3
+  },
+  {
+    "id": "93f5a8e6-ded3-4edf-931e-b359ed46064e",
+    "name": "Panel Carrefour",
+    "brand": "Carrefour",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 3
+  },
+  {
+    "id": "8c975f44-8798-495e-bae9-6bfb2faa5349",
+    "name": "Puntos Verdes",
+    "brand": "Verdes",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 3
+  },
+  {
+    "id": "a9f09ac1-1a72-4f59-8143-05378f2cd1a1",
+    "name": "Preguntas frecuentes",
+    "brand": "frecuentes",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 3
+  },
+  {
+    "id": "caa78fcd-3031-4bf3-a2a8-3f83c7ea018e",
+    "name": "ingrese aqui",
+    "brand": "aqui",
+    "price": null,
+    "currency": "ARS",
+    "image": null,
+    "category_id": 3
+  },
+  {
+    "id": "b35019a6-31e4-4aea-9c18-329c3a2865e8",
+    "name": "Papas fritas Carrefour classic crema y cebolla 140 g.",
+    "brand": "Carrefour",
+    "price": 3375,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386521-300-300?v=638872485877830000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "06193e77-818d-47d5-b847-d69818dc1f49",
+    "name": "Papas fritas Carrefour clásicas 140 g.",
+    "brand": "Carrefour",
+    "price": 3375,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386525-300-300?v=638872485388100000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "75c87a80-e474-4120-bf6e-6f2bad492e2d",
+    "name": "Nachos Macritas restaurant style 250 g.",
+    "brand": "restaurant",
+    "price": 3959,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/348587-300-300?v=638241626551030000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "f27aa457-9d54-4448-a242-34e3266611ef",
+    "name": "Palitos Krachitos salados 110 g.",
+    "brand": "salados",
+    "price": 1269,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/308254-300-300?v=638143277928670000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "2c939fdd-c26b-4148-8075-0b998227a4f9",
+    "name": "Palitos de maíz sabor queso Carrefour classic 145 g.",
+    "brand": "maíz",
+    "price": 1854,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386599-300-300?v=638872527552570000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "e986bbe1-1a76-4dbf-a25a-19b592126fb0",
+    "name": "Galletitas crackers Rex original 125 g.",
+    "brand": "Rex",
+    "price": 1253.85,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/318909-300-300?v=638920143656270000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "4962c5be-0325-42d4-9361-f89650c51e87",
+    "name": "Papas fritas Carrefour Classic en bolsa 250 grs",
+    "brand": "Carrefour",
+    "price": 3486.8,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/597129-300-300?v=638671935821900000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "b35fec41-6ad1-4888-bc1a-dec2c2d2d7fe",
+    "name": "Galletitas crackers Kesitas 125 g.",
+    "brand": "Kesitas",
+    "price": 1965,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/318979-300-300?v=638181155097700000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "e4d3fc7a-9c61-4046-b6ec-a1570e2e96f7",
+    "name": "Papas fritas Carrefour classic corte americado 150 g.",
+    "brand": "Carrefour",
+    "price": 2213.5,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/386786-300-300?v=638872521371170000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "20ea73a7-c77e-4230-b32d-4fcfcf6d49fb",
+    "name": "Palitos de maíz Krachitos con queso 170 g.",
+    "brand": "maíz",
+    "price": 2530,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/308266-300-300?v=638143278037970000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "8fbe0503-0a6e-4bff-9dac-905a67e4a0ad",
+    "name": "Galletitas Saladix snacks jamón 100 g.",
+    "brand": "snacks",
+    "price": 1469,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/319000-300-300?v=638181155163830000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "64d3de22-c24f-4c5e-aa53-c468a7449b52",
+    "name": "Galletitas crackers Rex original 75 g.",
+    "brand": "Rex",
+    "price": 805.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/603969-300-300?v=638701453404370000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "fdf9d445-13a7-4b39-8bbb-743fd5a6f08e",
+    "name": "Papas fritas acanaladas Pehuamar 135 g.",
+    "brand": "acanaladas",
+    "price": 2511.75,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/538175-300-300?v=638554455496930000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "8bd1c6d0-2841-413e-8fdf-230f69769e7c",
+    "name": "Maní pelado salado Croppers en bolsa 105 g.",
+    "brand": "salado",
+    "price": 1200,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/379080-300-300?v=638313567863070000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "1c0b09f7-a327-4ec0-b5ca-fb2b82b16b4c",
+    "name": "Aritos de arroz Dos Hermanos crema y cebolla 80 g.",
+    "brand": "arroz",
+    "price": 1429,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/179397-300-300?v=637468582161570000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "565ad8ce-3766-42db-aade-8d862a5af571",
+    "name": "Papas fritas corte americano Krachitos 275 grs",
+    "brand": "corte",
+    "price": 5149,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/596704-300-300?v=638671089068500000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "571881a3-1371-4a4f-9ff4-7cff4bc9a3f6",
+    "name": "Nachos sabor a queso Doritos 129 g.",
+    "brand": "a",
+    "price": 2699.4,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/538173-300-300?v=638554455491930000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "ce8f5518-abac-4c4f-b731-2af42f8b9e05",
+    "name": "Papas fritas Lays clásicas 134 g.",
+    "brand": "Lays",
+    "price": 2925,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/538152-300-300?v=638554455416230000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "a25dc580-9de5-4222-b0a4-f88c592203dd",
+    "name": "Papas fritas Lays clásicas 330 g.",
+    "brand": "Lays",
+    "price": 5472.35,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/538164-300-300?v=638554455456870000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "6f36f088-87c1-479c-b112-ab49fdc812da",
+    "name": "Papas fritas Carrefour Classic de barbacoa 140 g.",
+    "brand": "Carrefour",
+    "price": 3375,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/537576-300-300?v=638550124280500000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "8e978898-fabd-43d0-a31c-ce4fbaeaae91",
+    "name": "Mini tostaditas Twistos jamón ibérico 95 g.",
+    "brand": "Twistos",
+    "price": 1885,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/206487-300-300?v=637612695184430000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "8c86c4ae-1a3d-46ae-b0ac-4dbdf20f9227",
+    "name": "Papas fritas Pringles original 104 g.",
+    "brand": "Pringles",
+    "price": 4950,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/408500-300-300?v=638343783486800000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "e4a98764-3780-47b6-99ec-84e2454b300b",
+    "name": "Chizitos de maíz Pehuamar Maicitos 125 g.",
+    "brand": "maíz",
+    "price": 3000,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/538183-300-300?v=638554455559700000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "068f6c99-0524-421c-829f-1c65df706873",
+    "name": "Maní pelado y salado  en bolsa 500 g.",
+    "brand": "y",
+    "price": 3785,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/372660-300-300?v=638303797953500000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "c8c784cd-59e5-46d7-8a1e-1f3ca9b9b68a",
+    "name": "Palitos sabor a queso Pehuamar 165 g.",
+    "brand": "a",
+    "price": 2809,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/538159-300-300?v=638554455449300000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "340f44f3-229a-452b-89dd-17db582bc259",
+    "name": "Papas fritas Carrefour Classic sabor jamón serrano en tubo 140 grs",
+    "brand": "Carrefour",
+    "price": 3487.5,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/623430-300-300?v=638749798309400000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "7d6db0a8-7c7e-4400-8148-f1cf73b3b873",
+    "name": "Papas fritas Krachitos pay 55 g.",
+    "brand": "Krachitos",
+    "price": 1449,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/308242-300-300?v=638143277824600000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "18ac7fae-1673-493e-bb2e-a34f09e36693",
+    "name": "Mini tostaditas Twistos sabor quesos 95 grs",
+    "brand": "Twistos",
+    "price": 1885,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/629587-300-300?v=638768659206470000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "fcf34ffb-bb53-4935-b221-deffc74a49e9",
+    "name": "Mini tostaditas Twistos de jamón 40 grs",
+    "brand": "Twistos",
+    "price": 1137.5,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/574529-300-300?v=638636605319930000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "7f880618-f0af-4b5e-b1b3-3e315bbdd686",
+    "name": "Papas fritas Pringles de crema y cebolla 109 g.",
+    "brand": "Pringles",
+    "price": 4950,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/408501-300-300?v=638343783494300000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "3161fb18-529d-4209-b564-4018ce1f8991",
+    "name": "Nachos sabor a queso Doritos 200 g.",
+    "brand": "a",
+    "price": 4499.4,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/538136-300-300?v=638554455368800000&width=170&height=170&aspect=true",
+    "category_id": 9
+  },
+  {
+    "id": "6626f62b-f662-43a9-9947-b23aff0b4dfd",
+    "name": "Baguetin Carrefour Classic sabor jamón 70 grs",
+    "brand": "Classic",
+    "price": 872.69,
+    "currency": "ARS",
+    "image": "https://carrefourar.vtexassets.com/arquivos/ids/688545-300-300?v=638906849309770000&width=170&height=170&aspect=true",
+    "category_id": 9
+  }
+]
