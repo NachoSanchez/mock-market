@@ -13,17 +13,23 @@ import { useRouter } from 'next/navigation';
 type UserForm = { email: string; firstName: string; lastName: string; dob: string };
 type AddressForm = { street: string; number: string; city: string; state: string; zip: string; notes?: string };
 type PaymentForm = { cardName: string; cardNumber: string; expiry: string; cvv: string };
+type StoredOrder = import('@/hooks/useCart').Cart & { orderId: string };
+
+function generateOrderId() {
+  const seg = () => Math.random().toString(36).slice(2, 6).toUpperCase();
+  return `${seg()}-${Date.now().toString().slice(-4)}-${seg()}`;
+}
 
 // --- formatters ---
 function formatCardNumber(value: string): string {
-  const digits = value.replace(/\D/g, '').slice(0, 19);
-  return (digits.match(/.{1,4}/g) ?? []).join(' ');
+    const digits = value.replace(/\D/g, '').slice(0, 19);
+    return (digits.match(/.{1,4}/g) ?? []).join(' ');
 }
 
 function formatExpiry(value: string): string {
-  const digits = value.replace(/\D/g, '').slice(0, 4);
-  if (digits.length <= 2) return digits;            
-  return `${digits.slice(0, 2)}/${digits.slice(2)}`;
+    const digits = value.replace(/\D/g, '').slice(0, 4);
+    if (digits.length <= 2) return digits;
+    return `${digits.slice(0, 2)}/${digits.slice(2)}`;
 }
 
 
@@ -103,11 +109,24 @@ export default function CheckoutPage() {
     const confirm = async () => {
         if (!allValid || processing) return;
         setProcessing(true);
-        // Simula espera de 3s
         await new Promise((r) => setTimeout(r, 3000));
-        // Vaciar carrito y redirigir
+
+        const orderId = generateOrderId();
+
+        // 1) Guardar exactamente el Cart + orderId (sin email)
+        const order: StoredOrder = {
+            orderId,
+            lineItems: cart.lineItems,
+            updatedAt: Date.now(),
+        };
+
+        try {
+            sessionStorage.setItem(`mm_last_order_${orderId}`, JSON.stringify(order));
+        } catch {}
+
+        // 2) Vaciar carrito y redirigir con ?thanks=<orderId>
         clear();
-        router.push('/'); // o '/success'
+        router.push(`/?thanks=${encodeURIComponent(orderId)}`);
     };
 
     return (
@@ -235,14 +254,13 @@ export default function CheckoutPage() {
                                 <Stack direction="row" justifyContent="space-between" sx={{ mt: 1 }}>
                                     <Button onClick={back}>Atrás</Button>
                                     <Button
-                                        size="large"
                                         variant="contained"
                                         color="secondary"
                                         onClick={confirm}
                                         disabled={!allValid || processing}
                                         sx={{ mt: 2 }}
                                     >
-                                        { processing ? "Confirmando..." : "Completar compra"}
+                                        {processing ? "Confirmando..." : "Completar compra"}
                                     </Button>
                                 </Stack>
                             </Stack>
@@ -253,18 +271,6 @@ export default function CheckoutPage() {
                 {/* Sidebar resumen */}
                 <Grid item xs={12} md={4}>
                     <CartSummary />
-              {/*       <Box sx={{ mt: 2 }}>
-                        <Button
-                            fullWidth
-                            size="large"
-                            variant="contained"
-                            onClick={confirm}
-                            disabled={!allValid || processing}
-                            sx={{ mt: 2 }}
-                        >
-                            { processing ? "Confirmando..." : "Completar compra"}
-                        </Button>
-                    </Box> */}
                 </Grid>
             </Grid>
         </>
