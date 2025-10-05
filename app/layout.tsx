@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import Navbar from '@/components/navbar';
-import { CartProvider } from '@/hooks/useCart';
 import { Container } from '@mui/material';
 import Providers from './providers';
+import Footer from '@/components/Footer';
 //import './globals.css';
 
 
@@ -17,12 +17,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		<html lang="es">
 			<body style={{ background: "#F5F5F5" }}>
 				<Providers>
-					<CartProvider>
-						<Navbar />
-						<Container maxWidth="xl" sx={{ py: 3 }}>
-							{children}
-						</Container>
-					</CartProvider>
+					<Navbar />
+					<Container maxWidth="xl" sx={{ py: 3 }}>
+						{children}
+						<Footer />
+					</Container>
 				</Providers>
 			</body>
 		</html>

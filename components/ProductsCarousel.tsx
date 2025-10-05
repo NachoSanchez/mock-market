@@ -3,7 +3,7 @@
 import * as React from 'react';
 import Link from 'next/link';
 import useEmblaCarousel from 'embla-carousel-react';
-import { Box, Typography, IconButton, Paper } from '@mui/material';
+import { Box, Typography, IconButton, Paper, Stack } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
@@ -70,15 +70,51 @@ export default function ProductsCarousel({
 
     return (
         <Box sx={{ mt: 6, mb: 0 }}>
-            <Typography variant="h5" fontWeight={800}>
-                <Link
-                    href={`/c/${encodeURIComponent(categorySlug)}`}
-                    style={{ textDecoration: 'none', color: 'inherit' }}
-                    aria-label={`Ver categoría ${title}`}
-                >
-                    {`${getCategoryEmoji(categorySlug)} ${title}`}
-                </Link>
-            </Typography>
+            <Stack direction="row" justifyContent="space-between">
+                <Typography variant="h5" fontWeight={800}>
+                    <Link
+                        href={`/c/${encodeURIComponent(categorySlug)}`}
+                        style={{ textDecoration: 'none', color: 'inherit' }}
+                        aria-label={`Ver categoría ${title}`}
+                    >
+                        {`${getCategoryEmoji(categorySlug)} ${title}`}
+                    </Link>
+                </Typography>
+
+                <Stack direction="row" gap={1}>
+                    <IconButton
+                        aria-label="Anterior"
+                        onClick={scrollPrev}
+                        disabled={!prevEnabled}
+                        sx={{
+                            pointerEvents: 'auto', 
+                            bgcolor: 'primary.main',
+                            color: "primary.contrastText",
+                            boxShadow: 1,
+                            '&:hover': { bgcolor: 'primary.dark' },
+                            opacity: prevEnabled ? 1 : 0.5,
+                        }}
+                    >
+                        <ChevronLeftIcon />
+                    </IconButton>
+
+                    <IconButton
+                        aria-label="Siguiente"
+                        onClick={scrollNext}
+                        disabled={!nextEnabled}
+                        sx={{
+                            pointerEvents: 'auto',
+                            bgcolor: 'primary.main',
+                            color: "primary.contrastText",
+                            boxShadow: 1,
+                            '&:hover': { bgcolor: 'primary.dark' },
+                            opacity: nextEnabled ? 1 : 0.5,
+                        }}
+                    >
+                        <ChevronRightIcon />
+                    </IconButton>
+                </Stack>
+            </Stack>
 
             {/* Contenedor relativo para centrar flechas sobre el carrusel */}
             <Box sx={{ position: 'relative', width: "100%" }}>
@@ -137,7 +173,7 @@ export default function ProductsCarousel({
                 </Box>
             </Box>
 
-            {/* Overlay de controles centrados verticalmente */}
+            {/* Overlay de controles centrados verticalmente 
             <Box
                 aria-hidden
                 sx={{
@@ -150,36 +186,9 @@ export default function ProductsCarousel({
                     pointerEvents: 'none', // no bloquea drag
                 }}
             >
-                <IconButton
-                    aria-label="Anterior"
-                    onClick={scrollPrev}
-                    disabled={!prevEnabled}
-                    sx={{
-                        pointerEvents: 'auto', // vuelve clickeable el botón
-                        bgcolor: 'background.paper',
-                        boxShadow: 1,
-                        '&:hover': { bgcolor: 'background.paper' },
-                        opacity: prevEnabled ? 1 : 0.5,
-                    }}
-                >
-                    <ChevronLeftIcon />
-                </IconButton>
 
-                <IconButton
-                    aria-label="Siguiente"
-                    onClick={scrollNext}
-                    disabled={!nextEnabled}
-                    sx={{
-                        pointerEvents: 'auto',
-                        bgcolor: 'background.paper',
-                        boxShadow: 1,
-                        '&:hover': { bgcolor: 'background.paper' },
-                        opacity: nextEnabled ? 1 : 0.5,
-                    }}
-                >
-                    <ChevronRightIcon />
-                </IconButton>
             </Box>
+            */}
         </Box>
         </Box >
     );

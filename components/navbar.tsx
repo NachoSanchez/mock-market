@@ -22,7 +22,6 @@ import {
     Divider,
     Stack,
     Chip,
-    Badge,
     ClickAwayListener,
     CircularProgress,
     Collapse,
@@ -35,6 +34,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import { getCategoryEmoji } from '@/lib/categoryEmoji';
 import CartIcon from './CartIcon';
 import CartSummary from './CartSummary';
+import { useUser } from '@/hooks/useUser';
+import { useCart } from '@/hooks/useCart';
 
 // --- Types ---
 export type Category = { id: number; name: string; slug: string };
@@ -59,6 +60,8 @@ export default function Navbar() {
     const router = useRouter();
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+    const { user, login, register, logout } = useUser();
+    const { cart } = useCart();
 
     // Categories (load once)
     const [categories, setCategories] = React.useState<Category[]>([]);
@@ -66,9 +69,16 @@ export default function Navbar() {
         let active = true;
         const ac = new AbortController();
         fetchJSON<Category[]>('/api/categories', ac.signal)
-            .then((data) => { if (active) setCategories(data); })
-            .catch(() => { if (active) setCategories([]); });
-        return () => { active = false; ac.abort(); };
+            .then((data) => {
+                if (active) setCategories(data);
+            })
+            .catch(() => {
+                if (active) setCategories([]);
+            });
+        return () => {
+            active = false;
+            ac.abort();
+        };
     }, []);
 
     // Search state
@@ -93,7 +103,10 @@ export default function Navbar() {
         const ac = new AbortController();
         inFlight.current = ac;
         setLoadingSug(true);
-        fetchJSON<{ items: Product[] }>(`/api/products?${new URLSearchParams({ q, pageSize: '3' })}`, ac.signal)
+        fetchJSON<{ items: Product[] }>(
+            `/api/products?${new URLSearchParams({ q, pageSize: '3' })}`,
+            ac.signal
+        )
             .then((data) => {
                 setSuggestions(data.items ?? []);
                 setOpenSug(true);
@@ -122,16 +135,6 @@ export default function Navbar() {
         router.push(`/q/${encodeURIComponent(term)}`);
     };
 
-    // Auth state via localStorage (mock)
-    type User = { email: string } | null;
-    const [user, setUser] = React.useState<User>(null);
-    React.useEffect(() => {
-        try {
-            const raw = localStorage.getItem('mm_user');
-            if (raw) setUser(JSON.parse(raw));
-        } catch { }
-    }, []);
-
     const [openLogin, setOpenLogin] = React.useState(false);
     const [openRegister, setOpenRegister] = React.useState(false);
     const [openCart, setOpenCart] = React.useState(false);
@@ -150,7 +153,6 @@ export default function Navbar() {
 
     return (
         <AppBar position="sticky" color="default" elevation={1} sx={{ top: 0 }}>
-
             {/* Top row: brand + (search or icon) + actions */}
             <Toolbar
                 sx={{
@@ -164,7 +166,14 @@ export default function Navbar() {
             >
                 {/* Brand */}
                 <Box sx={{ display: 'flex', alignItems: 'center', mr: 1 }}>
-                    <Typography component={Link} href="/" variant="h6" fontWeight={800} color="inherit" sx={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 0.5 }}>
+                    <Typography
+                        component={Link}
+                        href="/"
+                        variant="h6"
+                        fontWeight={800}
+                        color="primary"
+                        sx={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 0.5 }}
+                    >
                         <span aria-hidden>🛒</span>
                         <span>MockMarket</span>
                     </Typography>
@@ -176,7 +185,12 @@ export default function Navbar() {
                         inputRef={anchorRef}
                         value={query}
                         onChange={(e) => onChangeQuery(e.target.value)}
-                        onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); goSearchPage(query); } }}
+                        onKeyDown={(e) => {
+                            if (e.key === 'Enter') {
+                                e.preventDefault();
+                                goSearchPage(query);
+                            }
+                        }}
                         placeholder="Buscar productos..."
                         fullWidth
                         size="small"
@@ -210,8 +224,12 @@ export default function Navbar() {
                             </Button>
                         ) : (
                             <Stack direction="row" spacing={1}>
-                                <Button variant="text" onClick={() => setOpenLogin(true)}>Identificarse</Button>
-                                <Button variant="outlined" onClick={() => setOpenRegister(true)}>Registrarse</Button>
+                                <Button variant="text" onClick={() => setOpenLogin(true)}>
+                                    Identificarse
+                                </Button>
+                                <Button variant="outlined" onClick={() => setOpenRegister(true)}>
+                                    Registrarse
+                                </Button>
                             </Stack>
                         )}
                     </Box>
@@ -223,12 +241,25 @@ export default function Navbar() {
 
             {/* Mobile search bar (aparece al tocar la lupa) */}
             <Collapse in={mobileSearchOpen} unmountOnExit>
-                <Box sx={{ px: 2, py: 1, borderBottom: '1px solid', borderColor: 'divider', display: { xs: 'block', sm: 'none' } }}>
+                <Box
+                    sx={{
+                        px: 2,
+                        py: 1,
+                        borderBottom: '1px solid',
+                        borderColor: 'divider',
+                        display: { xs: 'block', sm: 'none' },
+                    }}
+                >
                     <TextField
                         inputRef={anchorRef}
                         value={query}
                         onChange={(e) => onChangeQuery(e.target.value)}
-                        onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); goSearchPage(query); } }}
+                        onKeyDown={(e) => {
+                            if (e.key === 'Enter') {
+                                e.preventDefault();
+                                goSearchPage(query);
+                            }
+                        }}
                         placeholder="Buscar productos..."
                         fullWidth
                         size="small"
@@ -254,7 +285,7 @@ export default function Navbar() {
                     gap: 1,
                     borderTop: '1px solid',
                     borderColor: 'divider',
-                    p: 1
+                    p: 1,
                 }}
             >
                 {user ? (
@@ -263,8 +294,12 @@ export default function Navbar() {
                     </Button>
                 ) : (
                     <Stack direction="row" spacing={1}>
-                        <Button variant="text" onClick={() => setOpenLogin(true)} size="small">Identificarse</Button>
-                        <Button variant="outlined" onClick={() => setOpenRegister(true)} size="small">Registrarse</Button>
+                        <Button variant="text" onClick={() => setOpenLogin(true)} size="small">
+                            Identificarse
+                        </Button>
+                        <Button variant="outlined" onClick={() => setOpenRegister(true)} size="small">
+                            Registrarse
+                        </Button>
                     </Stack>
                 )}
             </Toolbar>
@@ -283,7 +318,6 @@ export default function Navbar() {
                     />
                 ))}
             </Toolbar>
-
 
             {/* Search suggestions popper */}
             <Popper
@@ -308,7 +342,12 @@ export default function Navbar() {
                             )}
                             {!loadingSug &&
                                 suggestions.map((p) => (
-                                    <ListItemButton key={p.id} component={Link} href={`/p/${p.id}`} onClick={() => setOpenSug(false)}>
+                                    <ListItemButton
+                                        key={p.id}
+                                        component={Link}
+                                        href={`/p/${p.id}`}
+                                        onClick={() => setOpenSug(false)}
+                                    >
                                         <ListItemAvatar>
                                             <Avatar variant="rounded" src={p.image ?? undefined} sx={{ width: 40, height: 40 }} />
                                         </ListItemAvatar>
@@ -333,16 +372,18 @@ export default function Navbar() {
                 <Box sx={{ width: { xs: 320, sm: 380 }, p: 2 }} role="presentation">
                     <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 1 }}>
                         <Typography variant="h6">Identificarse</Typography>
-                        <IconButton onClick={() => setOpenLogin(false)}><CloseIcon /></IconButton>
+                        <IconButton onClick={() => setOpenLogin(false)}>
+                            <CloseIcon />
+                        </IconButton>
                     </Stack>
                     <form
                         onSubmit={(e) => {
                             e.preventDefault();
                             const form = new FormData(e.currentTarget as HTMLFormElement);
                             const email = String(form.get('email') || '').trim();
+                            const password = String(form.get('password') || '');
                             if (email) {
-                                localStorage.setItem('mm_user', JSON.stringify({ email }));
-                                setUser({ email });
+                                login({ email, password }); // guarda sólo email
                                 setOpenLogin(false);
                             }
                         }}
@@ -350,13 +391,16 @@ export default function Navbar() {
                         <Stack spacing={2}>
                             <TextField name="email" type="email" label="Email" required fullWidth />
                             <TextField name="password" type="password" label="Contraseña" required fullWidth />
-                            <Button type="submit" variant="contained">Ingresar</Button>
+                            <Button type="submit" variant="contained">
+                                Ingresar
+                            </Button>
                         </Stack>
                     </form>
+
                     {user && (
                         <Box sx={{ mt: 3 }}>
                             <Divider sx={{ mb: 2 }} />
-                            <Button color="inherit" onClick={() => { localStorage.removeItem('mm_user'); setUser(null); }}>
+                            <Button color="inherit" onClick={() => logout()}>
                                 Cerrar sesión
                             </Button>
                         </Box>
@@ -369,16 +413,22 @@ export default function Navbar() {
                 <Box sx={{ width: { xs: 320, sm: 420 }, p: 2 }} role="presentation">
                     <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 1 }}>
                         <Typography variant="h6">Registrarse</Typography>
-                        <IconButton onClick={() => setOpenRegister(false)}><CloseIcon /></IconButton>
+                        <IconButton onClick={() => setOpenRegister(false)}>
+                            <CloseIcon />
+                        </IconButton>
                     </Stack>
                     <form
                         onSubmit={(e) => {
                             e.preventDefault();
                             const form = new FormData(e.currentTarget as HTMLFormElement);
                             const email = String(form.get('email') || '').trim();
-                            if (email) {
-                                localStorage.setItem('mm_user', JSON.stringify({ email }));
-                                setUser({ email });
+                            const password = String(form.get('password') || '');
+                            const confirmPassword = String(form.get('password2') || '');
+                            const firstName = String(form.get('firstName') || '').trim();
+                            const lastName = String(form.get('lastName') || '').trim();
+                            const dob = String(form.get('dob') || '').trim(); // yyyy-mm-dd
+                            if (email && firstName && lastName) {
+                                register({ email, password, confirmPassword, firstName, lastName, dob }); // guarda sin passwords
                                 setOpenRegister(false);
                             }
                         }}
@@ -389,9 +439,21 @@ export default function Navbar() {
                                 <TextField name="firstName" label="Nombres" required fullWidth />
                                 <TextField name="lastName" label="Apellidos" required fullWidth />
                             </Stack>
-                            <TextField name="dob" type="date" label="Fecha de nacimiento" InputLabelProps={{ shrink: true }} fullWidth />
+                            <TextField
+                                name="dob"
+                                type="date"
+                                label="Fecha de nacimiento"
+                                InputLabelProps={{ shrink: true }}
+                                fullWidth
+                            />
                             <TextField name="password" type="password" label="Contraseña" required fullWidth />
-                            <TextField name="password2" type="password" label="Confirmar contraseña" required fullWidth />
+                            <TextField
+                                name="password2"
+                                type="password"
+                                label="Confirmar contraseña"
+                                required
+                                fullWidth
+                            />
                             <Box>
                                 <label style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
                                     <input name="terms" type="checkbox" required />
@@ -404,7 +466,9 @@ export default function Navbar() {
                                     <span>Acepto uso de datos</span>
                                 </label>
                             </Box>
-                            <Button type="submit" variant="contained">Crear cuenta</Button>
+                            <Button type="submit" variant="contained">
+                                Crear cuenta
+                            </Button>
                         </Stack>
                     </form>
                 </Box>
@@ -412,13 +476,24 @@ export default function Navbar() {
 
             {/* Cart Drawer */}
             <Drawer anchor="right" open={openCart} onClose={() => setOpenCart(false)}>
-                <Box sx={{ width: { xs: 320, sm: 420, lg: 570 }, p: 2 }} role="presentation">
+                <Box sx={{ width: { xs: 320, sm: 420, lg: 570 }, height: "90vh", p: 2 }} role="presentation">
                     <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 1 }}>
                         <Typography variant="h6">Mi carrito</Typography>
-                        <IconButton onClick={() => setOpenCart(false)}><CloseIcon /></IconButton>
+                        <IconButton onClick={() => setOpenCart(false)}>
+                            <CloseIcon />
+                        </IconButton>
                     </Stack>
                     <Divider sx={{ mb: 2 }} />
+
                     <CartSummary onClose={() => setOpenCart(false)} />
+                    { cart.lineItems.length > 0 && (
+                        <>
+                            <Divider/>
+                            <Button href='/checkout' variant='contained' sx={{ mt: 2 }} fullWidth>
+                                Ir al Checkout
+                            </Button>
+                        </>
+                    )}
                 </Box>
             </Drawer>
         </AppBar>

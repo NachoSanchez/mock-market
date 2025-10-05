@@ -84,7 +84,7 @@ export default async function ProductPage({
 
                 {/* Detalle */}
                 <Grid item xs={12} md={4}>
-                    <Stack spacing={2} direction="column" justifyContent="space-between" sx={{ height: "100%"}}>
+                    <Stack spacing={2} direction="column" justifyContent="space-between" sx={{ height: "80%"}}>
                         <Stack direction="column" gap={2}>
                             <Typography variant="h4" fontWeight={800}>
                                 {product.name}

@@ -27,7 +27,7 @@ export default function CartSummary({ onClose }: { onClose?: () => void }) {
     return (
         <Box sx={{ display: 'grid', gap: 2 }}>
             {/* Lista */}
-            <Stack spacing={2} sx={{ p: 1, maxHeight: 750, overflow: "auto" }}>
+            <Stack spacing={2} sx={{ p: 1, maxHeight: "70vh", minHeight: "50vh", overflow: "auto" }}>
                 {cart.lineItems.map((li) => {
                     const unit = Number(li.product.price ?? 0);
                     const subtotal = unit * li.quantity;
