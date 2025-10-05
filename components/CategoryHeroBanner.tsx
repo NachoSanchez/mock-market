@@ -2,7 +2,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { getCategoryEmoji } from "@/lib/categoryEmoji";
 
 declare global {
@@ -74,6 +74,7 @@ function rotateByHash<T>(arr: T[], seed: string): T[] {
 }
 
 export default function CategoryHeroBanner({ slug, categoryName, pollIntervalMs = 0 }: Props) {
+    const theme = useTheme();
     const [heroTitle, setHeroTitle] = useState<string | null>(null);
     const [heroBgUrl, setHeroBgUrl] = useState<string | null>(null);
     const hasDynamic = !!heroTitle || !!heroBgUrl;
@@ -107,6 +108,29 @@ export default function CategoryHeroBanner({ slug, categoryName, pollIntervalMs 
         return BASE_POSITIONS.map((pos, i) => ({ ...pos, key: `pos-${i}`, emoji: rotated[i % rotated.length] }));
     }, [emojiPool, slug]);
 
+    const categoryBaseColor = (slug: string) => {
+        switch(slug) {
+            case "frutas-y-verduras":
+                return theme.palette.success.main;
+            case "congelados":
+                return theme.palette.common.white;
+            case "lacteos": 
+                return theme.palette.info.light;
+            case "bebidas-sin-alcohol":
+                return theme.palette.info.dark;
+            case "vinos-tintos": 
+                return theme.palette.secondary.main;
+            case "almacen":
+                return theme.palette.success.light;
+            case "carnes":
+                return theme.palette.error.main;
+            case "gaseosas": 
+                return theme.palette.info.dark;
+            default:
+                return theme.palette.primary.main;
+        }
+    }
+
     return (
         <Box
             role="banner"
@@ -129,7 +153,7 @@ export default function CategoryHeroBanner({ slug, categoryName, pollIntervalMs 
                     }
                     : {
                         color: theme.palette.getContrastText(categoryColor),
-                        background: `linear-gradient(135deg, ${theme.palette.primary.light} 0%, ${categoryColor} 100%)`,
+                        background: `linear-gradient(135deg, ${categoryBaseColor(slug)} 0%, ${categoryColor} 100%)`,
                     }),
             })}
         >
@@ -168,7 +192,7 @@ export default function CategoryHeroBanner({ slug, categoryName, pollIntervalMs 
             )}
 
             <Typography
-                variant="h4"
+                variant="h2"
                 fontWeight={800}
                 sx={{
                     position: "relative",
