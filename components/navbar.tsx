@@ -254,16 +254,17 @@ export default function Navbar() {
                     gap: 1,
                     borderTop: '1px solid',
                     borderColor: 'divider',
+                    p: 1
                 }}
             >
                 {user ? (
-                    <Button onClick={() => setOpenLogin(true)} startIcon={<PersonIcon />} variant="text">
+                    <Button onClick={() => setOpenLogin(true)} startIcon={<PersonIcon />} variant="text" size="small">
                         {user.email}
                     </Button>
                 ) : (
                     <Stack direction="row" spacing={1}>
-                        <Button variant="text" onClick={() => setOpenLogin(true)}>Identificarse</Button>
-                        <Button variant="outlined" onClick={() => setOpenRegister(true)}>Registrarse</Button>
+                        <Button variant="text" onClick={() => setOpenLogin(true)} size="small">Identificarse</Button>
+                        <Button variant="outlined" onClick={() => setOpenRegister(true)} size="small">Registrarse</Button>
                     </Stack>
                 )}
             </Toolbar>
