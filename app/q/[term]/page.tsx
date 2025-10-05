@@ -44,7 +44,7 @@ export default async function SearchPage({
                 <Typography variant="h5" fontWeight={800} sx={{ mb: 2 }}>
                     Resultados para “{decodeURIComponent(term)}”
                 </Typography>
-                
+
                 <SortSelect />
             </Stack>
 

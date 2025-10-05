@@ -56,9 +56,9 @@ export default async function ProductPage({
 
     return (
         <>
-            <Grid container spacing={6}>
+            <Grid container spacing={6} justifyContent="space-between">
                 {/* Imagen */}
-                <Grid item xs={12} md={8}>
+                <Grid item xs={12} md={7}>
                     <Box
                         sx={{
                             border: '1px solid',
@@ -68,8 +68,8 @@ export default async function ProductPage({
                             display: 'grid',
                             placeItems: 'center',
                             bgcolor: 'background.paper',
-                            // cuadrado responsivo
                             aspectRatio: '1 / 1',
+                            margin: "0 auto"
                         }}
                     >
                         {product.image ? (
@@ -84,7 +84,7 @@ export default async function ProductPage({
 
                 {/* Detalle */}
                 <Grid item xs={12} md={4}>
-                    <Stack spacing={2} direction="column" justifyContent="space-between">
+                    <Stack spacing={2} direction="column" justifyContent="space-between" sx={{ height: "100%"}}>
                         <Stack direction="column" gap={2}>
                             <Typography variant="h4" fontWeight={800}>
                                 {product.name}

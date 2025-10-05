@@ -18,7 +18,7 @@ function useSlidesToShow() {
     const isSm = useMediaQuery(theme.breakpoints.between('sm', 'md')); // 600–900
     const isMd = useMediaQuery(theme.breakpoints.between('md', 'lg')); // 900–1200
     const isLg = useMediaQuery(theme.breakpoints.between('lg', 'xl')); // 1200–1536
-    if (isXs) return 2;
+    if (isXs) return 1;
     if (isSm) return 2;
     if (isMd) return 3;
     if (isLg) return 4;
