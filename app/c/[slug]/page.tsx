@@ -7,6 +7,7 @@ import PaginationBar from '@/components/PaginationBar';
 import type { Product } from '@/hooks/useCart';
 import { getCategoryEmoji } from '@/lib/categoryEmoji';
 import SortSelect from '@/components/SortSelect';
+import CategoryHeroBanner from '@/components/CategoryHeroBanner';
 
 type Category = { id: number; name: string; slug: string };
 type CategoryPayload = {
@@ -45,8 +46,14 @@ export default async function CategoryPage({
 
     return (
         <Container sx={{ py: 3 }}>
-            <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ mb: 2 }}>
-                <Typography variant="h5" fontWeight={800} sx={{ mb: 2 }}>
+            <CategoryHeroBanner
+                slug={slug}
+                categoryName={data.category?.name ?? 'Categoría'}
+                // pollIntervalMs={20000} // <- cuando conectes mcis.fetch, podés refrescar en “tiempo real”
+            />
+
+            <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ my: 2 }}>
+                <Typography variant="h6" sx={{ mb: 2 }}>
                     <span style={{ marginRight: 8 }}>{getCategoryEmoji(slug)}</span>
                     {data.category?.name ?? 'Categoría'}
                 </Typography>
