@@ -1548,24 +1548,6 @@
     "category_id": 8
   },
   {
-    "id": "fda5fb80-8c8b-4ed6-8a0e-16fae7b92d3c",
-    "name": "Elaboración Carrefour",
-    "brand": "Carrefour",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 8
-  },
-  {
-    "id": "98e3e485-5116-49aa-af01-bdba6271c5be",
-    "name": "Especialidades dulces",
-    "brand": "dulces",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 8
-  },
-  {
     "id": "2f8e78b9-78d4-4c8d-9aaa-1d2de31a7528",
     "name": "Medialunas con manteca x 12 uni",
     "brand": "manteca",
@@ -1707,24 +1689,6 @@
     "price": 5490,
     "currency": "ARS",
     "image": "https://carrefourar.vtexassets.com/arquivos/ids/175060-300-300?v=637468568257530000&width=170&height=170&aspect=true",
-    "category_id": 8
-  },
-  {
-    "id": "dc2a4ce9-8d42-41bb-9e6d-84a8b0d606ce",
-    "name": "Elaboración Carrefour",
-    "brand": "Carrefour",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 8
-  },
-  {
-    "id": "0d5a4c6e-a41b-46e9-8a09-bc3b901741f6",
-    "name": "Especialidades saladas",
-    "brand": "saladas",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
     "category_id": 8
   },
   {
@@ -2592,15 +2556,6 @@
     "category_id": 7
   },
   {
-    "id": "c45c5296-6e3e-409e-bebc-7073d9a7e6cb",
-    "name": "Promociones",
-    "brand": null,
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 7
-  },
-  {
     "id": "2134fb37-88f4-4388-bf47-972146348f8d",
     "name": "Leche UAT parcialmente descremada Carrefour classic brik 1 lt.",
     "brand": "parcialmente",
@@ -2745,42 +2700,6 @@
     "category_id": 7
   },
   {
-    "id": "ae09851c-b5a7-41f8-baf1-141fcc802eaf",
-    "name": "Panel Carrefour",
-    "brand": "Carrefour",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 7
-  },
-  {
-    "id": "0aff4f5d-d24a-40e8-a1da-cea1f7c671c5",
-    "name": "Puntos Verdes",
-    "brand": "Verdes",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 7
-  },
-  {
-    "id": "647e9aba-5021-47fd-adc6-8516e24955df",
-    "name": "Preguntas frecuentes",
-    "brand": "frecuentes",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 7
-  },
-  {
-    "id": "08ef9d36-763d-4618-89a2-27476dba8731",
-    "name": "ingrese aqui",
-    "brand": "aqui",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 7
-  },
-  {
     "id": "5ba890be-a4fb-445c-8296-4470d9ec679c",
     "name": "Aceite de girasol Carrefour Classic  alto omega pet 900 cc.",
     "brand": "girasol",
@@ -2895,15 +2814,6 @@
     "price": 8019,
     "currency": "ARS",
     "image": "https://carrefourar.vtexassets.com/arquivos/ids/360299-300-300?v=638259959672970000&width=170&height=170&aspect=true",
-    "category_id": 1
-  },
-  {
-    "id": "8fd9e4f8-b89c-4ec4-9279-3118b7982ed0",
-    "name": "Promociones",
-    "brand": null,
-    "price": null,
-    "currency": "ARS",
-    "image": "https://carrefourar.vtexassets.com/assets/vtex/assets-builder/carrefourar.theme/81.17.0/top-menu/promociones___b239cea88b09aa8957f71c481ae9830f.svg",
     "category_id": 1
   },
   {
@@ -3123,24 +3033,6 @@
     "category_id": 1
   },
   {
-    "id": "5c304409-36ae-403c-a852-d89c64894989",
-    "name": "Pastas secas",
-    "brand": "secas",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 1
-  },
-  {
-    "id": "c45d64c3-6094-4d4f-a933-4cd69e8c69d7",
-    "name": "Fideos largos",
-    "brand": "largos",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 1
-  },
-  {
     "id": "9232c710-d722-4dae-8bae-93708d043418",
     "name": "Fideos tallarin N5 Lucchetti 500 g.",
     "brand": "N5",
@@ -3282,15 +3174,6 @@
     "price": 3150,
     "currency": "ARS",
     "image": "https://carrefourar.vtexassets.com/arquivos/ids/408427-300-300?v=638343782859730000&width=170&height=170&aspect=true",
-    "category_id": 1
-  },
-  {
-    "id": "ebab960e-a412-4f96-90d1-53336a19c569",
-    "name": "Fideos guiseros y para sopas",
-    "brand": "y",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
     "category_id": 1
   },
   {
@@ -3582,15 +3465,6 @@
     "category_id": 3
   },
   {
-    "id": "8e42f502-b0d1-4287-913f-fa5d028a7f1b",
-    "name": "Promociones",
-    "brand": null,
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 3
-  },
-  {
     "id": "90d3a171-46f9-420f-b1aa-7df21d119e08",
     "name": "Bondiola congelada completa.",
     "brand": "completa.",
@@ -3732,42 +3606,6 @@
     "price": 11200,
     "currency": "ARS",
     "image": "https://carrefourar.vtexassets.com/arquivos/ids/682370-300-300?v=638883634674500000&width=170&height=170&aspect=true",
-    "category_id": 3
-  },
-  {
-    "id": "93f5a8e6-ded3-4edf-931e-b359ed46064e",
-    "name": "Panel Carrefour",
-    "brand": "Carrefour",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 3
-  },
-  {
-    "id": "8c975f44-8798-495e-bae9-6bfb2faa5349",
-    "name": "Puntos Verdes",
-    "brand": "Verdes",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 3
-  },
-  {
-    "id": "a9f09ac1-1a72-4f59-8143-05378f2cd1a1",
-    "name": "Preguntas frecuentes",
-    "brand": "frecuentes",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
-    "category_id": 3
-  },
-  {
-    "id": "caa78fcd-3031-4bf3-a2a8-3f83c7ea018e",
-    "name": "ingrese aqui",
-    "brand": "aqui",
-    "price": null,
-    "currency": "ARS",
-    "image": null,
     "category_id": 3
   },
   {

@@ -4,7 +4,6 @@ export interface Category {
     slug: string;
 }
 
-
 export interface Product {
     id: string; // uuid v4
     name: string;
