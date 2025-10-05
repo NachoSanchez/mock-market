@@ -192,7 +192,7 @@ export default function CategoryHeroBanner({ slug, categoryName, pollIntervalMs 
             )}
 
             <Typography
-                variant="h2"
+                variant="h4"
                 fontWeight={800}
                 sx={{
                     position: "relative",

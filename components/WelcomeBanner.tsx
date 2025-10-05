@@ -189,7 +189,7 @@ export default function WelcomeBanner({
 
                     {/* Texto principal */}
                     <Typography
-                        variant="h2"
+                        variant="h4"
                         fontWeight={800}
                         sx={{
                             position: "relative",
