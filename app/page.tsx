@@ -2,6 +2,7 @@ import ProductsCarousel from '@/components/ProductsCarousel';
 import type { Product } from '@/hooks/useCart';
 import type { Category } from '@/components/navbar';
 import { fetchJSON } from '@/lib/server';
+import WelcomeBanner from '@/components/WelcomeBanner';
 
 export const revalidate = 60;
 
@@ -17,6 +18,8 @@ export default async function HomePage() {
 
 	return (
 		<main>
+			<WelcomeBanner/>
+			
 			{sections.map((s) => (
 				<ProductsCarousel
 					key={s.category.id}
