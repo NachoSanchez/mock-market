@@ -51,6 +51,7 @@ export default function ProductCard({ product }: { product: Product }) {
                     <img
                         src={product.image}
                         alt={product.name}
+                        height={220}
                         style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
                     />
                 ) : null}

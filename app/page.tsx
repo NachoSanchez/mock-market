@@ -19,7 +19,6 @@ export default async function HomePage() {
 	return (
 		<main>
 			<WelcomeBanner/>
-			
 			{sections.map((s) => (
 				<ProductsCarousel
 					key={s.category.id}

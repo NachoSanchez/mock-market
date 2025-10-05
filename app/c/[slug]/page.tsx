@@ -1,7 +1,7 @@
 // app/c/[slug]/page.tsx
 import Grid from '@mui/material/GridLegacy';
 import { fetchJSON } from '@/lib/server';
-import { Container, Stack, Typography } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import ProductCard from '@/components/ProductCard';
 import PaginationBar from '@/components/PaginationBar';
 import type { Product } from '@/hooks/useCart';
@@ -45,7 +45,7 @@ export default async function CategoryPage({
     );
 
     return (
-        <Container sx={{ py: 3 }}>
+        <>
             <CategoryHeroBanner
                 slug={slug}
                 categoryName={data.category?.name ?? 'Categoría'}
@@ -70,6 +70,6 @@ export default async function CategoryPage({
             </Grid>
 
             <PaginationBar total={data.total} page={data.page} pageSize={data.pageSize} />
-        </Container>
+        </>
     );
 }

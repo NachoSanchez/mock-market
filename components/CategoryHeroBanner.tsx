@@ -114,12 +114,11 @@ export default function CategoryHeroBanner({ slug, categoryName, pollIntervalMs 
                 position: "relative",
                 borderRadius: 1,
                 overflow: "hidden",
-                height: 160, //{ xs: 180, sm: 220, md: 260 },
+                minHeight: { xs: 220, sm: 240 },
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 textAlign: "center",
-                px: 2,
                 // Default: gradiente entre el violeta del tema y el color de la categoría
                 ...(hasDynamic
                     ? {
@@ -130,7 +129,7 @@ export default function CategoryHeroBanner({ slug, categoryName, pollIntervalMs 
                     }
                     : {
                         color: theme.palette.getContrastText(categoryColor),
-                        background: `linear-gradient(135deg, ${theme.palette.secondary.main} 0%, ${categoryColor} 100%)`,
+                        background: `linear-gradient(135deg, ${theme.palette.primary.light} 0%, ${categoryColor} 100%)`,
                     }),
             })}
         >

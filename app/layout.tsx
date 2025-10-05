@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body style={{ background: "#F5F5F5" }}>
 				<Providers>
 					<Navbar />
-					<Container maxWidth="xl" sx={{ py: 3 }}>
+					<Container maxWidth="xl" sx={{ py: 3, px: 2 }}>
 						{children}
 						<Footer />
 					</Container>

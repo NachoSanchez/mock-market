@@ -121,7 +121,7 @@ export default function WelcomeBanner({
                 position: "relative",
                 borderRadius: 1,
                 overflow: "hidden",
-                minHeight: { xs: 220, sm: 260, md: 300 },
+                minHeight: { xs: 220, sm: 240 },
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",

@@ -1,7 +1,7 @@
 // app/q/[term]/page.tsx
 import Grid from '@mui/material/GridLegacy';
 import { fetchJSON } from '@/lib/server';
-import { Container, Stack, Typography } from '@mui/material';
+import {  Stack, Typography } from '@mui/material';
 import ProductCard from '@/components/ProductCard';
 import PaginationBar from '@/components/PaginationBar';
 import type { Product } from '@/hooks/useCart';
@@ -39,7 +39,7 @@ export default async function SearchPage({
     const data = await fetchJSON<SearchPayload>(`/api/products?${qs}`, 60);
 
     return (
-        <Container sx={{ py: 3 }}>
+        <>
             <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ mb: 2 }}>
                 <Typography variant="h5" fontWeight={800} sx={{ mb: 2 }}>
                     Resultados para “{decodeURIComponent(term)}”
@@ -57,6 +57,6 @@ export default async function SearchPage({
             </Grid>
 
             <PaginationBar total={data.total} page={data.page} pageSize={data.pageSize} />
-        </Container>
+        </>
     );
 }

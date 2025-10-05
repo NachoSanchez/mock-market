@@ -234,6 +234,16 @@ export default function CheckoutPage() {
 
                                 <Stack direction="row" justifyContent="space-between" sx={{ mt: 1 }}>
                                     <Button onClick={back}>Atrás</Button>
+                                    <Button
+                                        size="large"
+                                        variant="contained"
+                                        color="secondary"
+                                        onClick={confirm}
+                                        disabled={!allValid || processing}
+                                        sx={{ mt: 2 }}
+                                    >
+                                        { processing ? "Confirmando..." : "Completar compra"}
+                                    </Button>
                                 </Stack>
                             </Stack>
                         )}
@@ -243,8 +253,7 @@ export default function CheckoutPage() {
                 {/* Sidebar resumen */}
                 <Grid item xs={12} md={4}>
                     <CartSummary />
-                    <Box sx={{ mt: 2 }}>
-                        {/* En mobile, un botón extra al final por comodidad */}
+              {/*       <Box sx={{ mt: 2 }}>
                         <Button
                             fullWidth
                             size="large"
@@ -255,7 +264,7 @@ export default function CheckoutPage() {
                         >
                             { processing ? "Confirmando..." : "Completar compra"}
                         </Button>
-                    </Box>
+                    </Box> */}
                 </Grid>
             </Grid>
         </>
