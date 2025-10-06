@@ -34,7 +34,9 @@ export default function ThankYouModal({
         setOpen(true);
     }, [openInitially, orderId]);
 
-    React.useEffect(() => clear(), []);
+    React.useEffect(() => {
+        if (openInitially) clear();
+    }, []);
 
     const handleClose = () => {
         setOpen(false);
