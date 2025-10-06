@@ -9,6 +9,7 @@ import CartSummary from '@/components/CartSummary';
 import { useUser } from '@/hooks/useUser';
 import { useCart } from '@/hooks/useCart';
 import { useRouter } from 'next/navigation';
+import CheckoutGuard from '@/components/CheckoutGuard';
 
 type UserForm = { email: string; firstName: string; lastName: string; dob: string };
 type AddressForm = { street: string; number: string; city: string; state: string; zip: string; notes?: string };
@@ -130,7 +131,7 @@ export default function CheckoutPage() {
     };
 
     return (
-        <>
+        <CheckoutGuard>
             <Typography variant="h5" fontWeight={800} sx={{ mb: 2 }}>
                 Checkout
             </Typography>
@@ -273,6 +274,6 @@ export default function CheckoutPage() {
                     <CartSummary />
                 </Grid>
             </Grid>
-        </>
+        </CheckoutGuard>
     );
 }
