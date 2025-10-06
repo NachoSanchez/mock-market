@@ -31,6 +31,9 @@ const theme = createTheme({
           borderColor: alpha(TOMATO_MAIN, 0.5),
           '&:hover': { borderColor: TOMATO_MAIN, backgroundColor: alpha(TOMATO_MAIN, 0.06) },
         },
+        root: {
+          textTransform: 'none'
+        }
       },
     },
     MuiChip: {

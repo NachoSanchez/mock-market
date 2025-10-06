@@ -189,7 +189,7 @@ export default function CheckoutPage() {
                                 <Stack direction="row" justifyContent="space-between" sx={{ mt: 1 }}>
                                     <Box />
                                     <Button variant="contained" onClick={saveUserStep} disabled={!validUser}>
-                                        Guardar y continuar
+                                        Continuar
                                     </Button>
                                 </Stack>
                             </Stack>
@@ -260,7 +260,7 @@ export default function CheckoutPage() {
                                         disabled={!allValid || processing}
                                        // sx={{ mt: 2 }}
                                     >
-                                        {processing ? "Confirmando..." : "Completar compra"}
+                                        {processing ? "Confirmando..." : "Completar Compra"}
                                     </Button>
                                 </Stack>
                             </Stack>
