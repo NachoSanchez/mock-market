@@ -104,7 +104,7 @@ export default function Navbar() {
         inFlight.current = ac;
         setLoadingSug(true);
         fetchJSON<{ items: Product[] }>(
-            `/api/products?${new URLSearchParams({ q, pageSize: '3' })}`,
+            `/api/products?${new URLSearchParams({ q, pageSize: '5' })}`,
             ac.signal
         )
             .then((data) => {
