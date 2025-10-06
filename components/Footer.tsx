@@ -125,7 +125,7 @@ export default function Footer() {
                 <Divider sx={{ borderColor: alpha('#000', 0.2), mb: 2 }} />
 
                 <Typography variant="caption" sx={{ opacity: 0.9 }}>
-                    MockMarket es propiedad intelectual de Hackforce 2025.
+                    Hackforce
                 </Typography>
             </Container>
         </Box>
