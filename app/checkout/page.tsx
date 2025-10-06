@@ -126,7 +126,6 @@ export default function CheckoutPage() {
         } catch {}
 
         // 2) Vaciar carrito y redirigir con ?thanks=<orderId>
-        clear();
         router.push(`/?thanks=${encodeURIComponent(orderId)}`);
     };
 
@@ -259,7 +258,7 @@ export default function CheckoutPage() {
                                         color="secondary"
                                         onClick={confirm}
                                         disabled={!allValid || processing}
-                                        sx={{ mt: 2 }}
+                                       // sx={{ mt: 2 }}
                                     >
                                         {processing ? "Confirmando..." : "Completar compra"}
                                     </Button>

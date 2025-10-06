@@ -34,6 +34,8 @@ export default function ThankYouModal({
         setOpen(true);
     }, [openInitially, orderId]);
 
+    React.useEffect(() => clear(), []);
+
     const handleClose = () => {
         setOpen(false);
         try {
@@ -118,7 +120,7 @@ export default function ThankYouModal({
                                             </Typography>
                                         </Box>
                                         <Typography fontWeight={700}>
-                                            {p.currency} {sub.toFixed(2)}
+                                            $ {sub.toFixed(2)}
                                         </Typography>
                                     </Stack>
                                     <Divider sx={{ my: 1.5, borderColor: "rgba(255,255,255,0.12)" }} />
@@ -131,7 +133,7 @@ export default function ThankYouModal({
                 <Stack direction="row" justifyContent="space-between" sx={{ mt: 1 }}>
                     <Typography variant="subtitle1" sx={{ opacity: 0.9 }}>Total</Typography>
                     <Typography variant="h6" fontWeight={900}>
-                        {currency} {total.toFixed(2)}
+                         $ {total.toFixed(2)}
                     </Typography>
                 </Stack>
             </DialogContent>
