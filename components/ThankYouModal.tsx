@@ -8,6 +8,7 @@ import {
 import { useRouter } from "next/navigation";
 import { useCart, type Cart, type LineItem } from "@/hooks/useCart";
 import { useUser } from "@/hooks/useUser";
+import { formatARS } from "@/lib/format";
 
 type StoredOrder = Cart & { orderId: string };
 
@@ -122,7 +123,7 @@ export default function ThankYouModal({
                                             </Typography>
                                         </Box>
                                         <Typography fontWeight={700}>
-                                            $ {sub.toFixed(2)}
+                                            {formatARS(sub)}
                                         </Typography>
                                     </Stack>
                                     <Divider sx={{ my: 1.5, borderColor: "rgba(255,255,255,0.12)" }} />
@@ -135,7 +136,7 @@ export default function ThankYouModal({
                 <Stack direction="row" justifyContent="space-between" sx={{ mt: 1 }}>
                     <Typography variant="subtitle1" sx={{ opacity: 0.9 }}>Total</Typography>
                     <Typography variant="h6" fontWeight={900}>
-                         $ {total.toFixed(2)}
+                        {formatARS(total)}
                     </Typography>
                 </Stack>
             </DialogContent>
