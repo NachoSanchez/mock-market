@@ -5,6 +5,7 @@ import { Container } from '@mui/material';
 import Providers from './providers';
 import Footer from '@/components/Footer';
 import SfInit from './SfInit';
+import IdentityEvents from './IdentityEvents';
 //import './globals.css';
 
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						{children}
 						<Footer />
 					</Container>
+					<IdentityEvents />
 				</Providers>
 
 				{/* Beacon global */}

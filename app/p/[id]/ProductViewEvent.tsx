@@ -27,12 +27,17 @@ export default function ProductViewEvent({ product }: { product: Product }) {
                 SI?.CatalogObjectInteractionName?.ViewCatalogObject ??
                 "View Catalog Object";
 
+            console.log("***", product);
+
             SI.sendEvent({
                 interaction: {
                     name,
                     catalogObject: {
                         type: "Product",
                         id: product.id,
+                        attributes: {
+                            category: product.category?.name
+                        }
                     },
                 },
             });
