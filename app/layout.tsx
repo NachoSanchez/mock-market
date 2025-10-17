@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import Navbar from '@/components/navbar';
 import { Container } from '@mui/material';
 import Providers from './providers';
@@ -23,6 +24,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						<Footer />
 					</Container>
 				</Providers>
+
+				{/* Beacon global */}
+				<Script
+					id="sf-c360a"
+					src="https://cdn.c360a.salesforce.com/beacon/c360a/636f02d0-3483-4dfd-a693-e34b85f6494d/scripts/c360a.min.js"
+					strategy="afterInteractive"   // o "beforeInteractive" si necesitás que esté antes de cualquier JS
+				/>
 			</body>
 		</html>
 	);
