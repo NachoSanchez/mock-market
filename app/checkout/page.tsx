@@ -11,14 +11,95 @@ import { useCart } from '@/hooks/useCart';
 import { useRouter } from 'next/navigation';
 import CheckoutGuard from '@/components/CheckoutGuard';
 
+// === ⬇️ Helpers SDK (añadir) ===============================
+function siReady() {
+    const SI = (window as any).SalesforceInteractions;
+    return SI && SI.sendEvent ? SI : null;
+}
+
+type SDKOrderLineItem = {
+    catalogObjectType: 'Product';
+    catalogObjectId: string;
+    quantity: number;
+    price?: number;
+    currency?: string;
+    attributes?: Record<string, any>;
+};
+
+function mapToOrderLineItems(cart: import('@/hooks/useCart').Cart): SDKOrderLineItem[] {
+    return cart.lineItems.map(li => ({
+        catalogObjectType: 'Product',
+        catalogObjectId: li.product.id,
+        quantity: li.quantity,
+        price: li.product.price ?? undefined,
+        currency: li.product.currency ?? undefined,
+        attributes: {
+            name: li.product.name,
+            brand: li.product.brand ?? undefined,
+            imageUrl: li.product.image ?? undefined,
+            categoryId: li.product.category_id ?? undefined,
+        }
+    }));
+}
+
+function calcTotalValue(lines: SDKOrderLineItem[]) {
+    return lines.reduce((sum, li) => sum + ((li.price ?? 0) * li.quantity), 0);
+}
+
+function sendReplaceCart(cart: import('@/hooks/useCart').Cart) {
+    const SI = siReady();
+    if (!SI) return;
+    SI.sendEvent({
+        interaction: {
+            name: (SI.CartInteractionName?.ReplaceCart ?? 'Replace Cart'),
+            lineItems: cart.lineItems.map(li => ({
+                catalogObjectId: li.product.id,
+                catalogObjectType: 'Product',
+                quantity: li.quantity,
+                price: li.product.price ?? undefined,
+                currency: li.product.currency ?? undefined,
+                attributes: {
+                    name: li.product.name,
+                    brand: li.product.brand ?? undefined,
+                    imageUrl: li.product.image ?? undefined,
+                    categoryId: li.product.category_id ?? undefined,
+                }
+            }))
+        }
+    });
+}
+
+function sendPurchase(orderId: string, cart: import('@/hooks/useCart').Cart) {
+    const SI = siReady();
+    if (!SI) return;
+    const lineItems = mapToOrderLineItems(cart);
+    const totalValue = calcTotalValue(lineItems);
+    // Toma la moneda del primer ítem como referencia, ajusta si usás multimoneda
+    const currency = lineItems.find(li => li.currency)?.currency;
+
+    SI.sendEvent({
+        interaction: {
+            name: (SI.OrderInteractionName?.Purchase ?? 'Purchase'),
+            order: {
+                id: orderId,
+                totalValue,
+                currency,
+                lineItems
+            }
+            // attributes: { promoCode: "SAVE10" } // opcional
+        }
+    });
+}
+// === ⬆️ Helpers SDK (fin) ===================================
+
 type UserForm = { email: string; firstName: string; lastName: string; dob: string };
 type AddressForm = { street: string; number: string; city: string; state: string; zip: string; notes?: string };
 type PaymentForm = { cardName: string; cardNumber: string; expiry: string; cvv: string };
 type StoredOrder = import('@/hooks/useCart').Cart & { orderId: string };
 
 function generateOrderId() {
-  const seg = () => Math.random().toString(36).slice(2, 6).toUpperCase();
-  return `${seg()}-${Date.now().toString().slice(-4)}-${seg()}`;
+    const seg = () => Math.random().toString(36).slice(2, 6).toUpperCase();
+    return `${seg()}-${Date.now().toString().slice(-4)}-${seg()}`;
 }
 
 // --- formatters ---
@@ -70,6 +151,10 @@ export default function CheckoutPage() {
         }));
     }, [user?.email, user?.firstName, user?.lastName, user?.dob]);
 
+    React.useEffect(() => {
+        if (cart.lineItems.length > 0) sendReplaceCart(cart);
+    }, [cart.updatedAt]);
+
     // ---------- Validation ----------
     const validUser =
         userForm.email.trim().length > 3 &&
@@ -114,6 +199,10 @@ export default function CheckoutPage() {
 
         const orderId = generateOrderId();
 
+        try {
+            sendPurchase(orderId, cart);
+        } catch { }
+
         // 1) Guardar exactamente el Cart + orderId (sin email)
         const order: StoredOrder = {
             orderId,
@@ -123,7 +212,7 @@ export default function CheckoutPage() {
 
         try {
             sessionStorage.setItem(`mm_last_order_${orderId}`, JSON.stringify(order));
-        } catch {}
+        } catch { }
 
         // 2) Vaciar carrito y redirigir con ?thanks=<orderId>
         router.push(`/?thanks=${encodeURIComponent(orderId)}`);
@@ -258,7 +347,7 @@ export default function CheckoutPage() {
                                         color="secondary"
                                         onClick={confirm}
                                         disabled={!allValid || processing}
-                                       // sx={{ mt: 2 }}
+                                    // sx={{ mt: 2 }}
                                     >
                                         {processing ? "Confirmando..." : "Completar Compra"}
                                     </Button>
