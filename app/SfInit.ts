@@ -12,6 +12,8 @@ export default function SfInit() {
             if (!alive) return;
             if (!SI) { t = setTimeout(init, 40); return; }
 
+            SI.init();
+
             // Consent (ajustá según tu CMP)
             SI.Consent?.set?.({ web: { consent: "OptIn" } });
 
