@@ -8,6 +8,7 @@ import type { Product } from '@/hooks/useCart';
 import { getCategoryEmoji } from '@/lib/categoryEmoji';
 import SortSelect from '@/components/SortSelect';
 import CategoryHeroBanner from '@/components/CategoryHeroBanner';
+import CategoryViewEvent from './CategoryViewEvent';
 
 type Category = { id: number; name: string; slug: string };
 type CategoryPayload = {
@@ -46,6 +47,7 @@ export default async function CategoryPage({
 
     return (
         <>
+            <CategoryViewEvent category={data.category} />
             <CategoryHeroBanner
                 slug={slug}
                 categoryName={data.category?.name ?? 'Categoría'}

@@ -12,10 +12,13 @@ export default function SfInit() {
             if (!alive) return;
             if (!SI) { t = setTimeout(init, 40); return; }
 
-            SI.init();
-
-            // Consent (ajustá según tu CMP)
-            SI.Consent?.set?.({ web: { consent: "OptIn" } });
+            SI.init({
+                consents: [        { 
+                    purpose: SI.ConsentPurpose.Tracking, 
+                    provider: "Provider", 
+                    status: SI.ConsentStatus.OptIn 
+                }]
+            });
 
             // Logs (número o string, según tu versión)
             SI.setLoggingLevel?.(4); // o "debug"
