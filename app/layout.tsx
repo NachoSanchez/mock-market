@@ -4,6 +4,7 @@ import Navbar from '@/components/navbar';
 import { Container } from '@mui/material';
 import Providers from './providers';
 import Footer from '@/components/Footer';
+import SfInit from './SfInit';
 //import './globals.css';
 
 
@@ -29,8 +30,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<Script
 					id="sf-c360a"
 					src="https://cdn.c360a.salesforce.com/beacon/c360a/636f02d0-3483-4dfd-a693-e34b85f6494d/scripts/c360a.min.js"
-					strategy="afterInteractive"   // o "beforeInteractive" si necesitás que esté antes de cualquier JS
+					strategy="beforeInteractive"   // o "beforeInteractive" si necesitás que esté antes de cualquier JS
 				/>
+
+				<SfInit/>
 			</body>
 		</html>
 	);

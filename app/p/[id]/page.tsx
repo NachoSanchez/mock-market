@@ -1,6 +1,6 @@
 // app/p/[id]/page.tsx
 import Grid from '@mui/material/GridLegacy';
-import { Container, Box, Typography, Stack, Chip, Divider } from '@mui/material';
+import { Box, Typography, Stack, Chip, Divider } from '@mui/material';
 import Link from 'next/link';
 import { fetchJSON } from '@/lib/server';
 import { formatARS } from '@/lib/format';
@@ -8,6 +8,7 @@ import AddToCartButton from '@/components/AddToCartButton';
 import ProductsCarousel from '@/components/ProductsCarousel';
 import { getCategoryEmoji } from '@/lib/categoryEmoji';
 import { upscaleCarrefourImage } from '@/lib/images';
+import ProductViewEvent from './ProductViewEvent';
 
 export const revalidate = 60;
 
@@ -56,6 +57,7 @@ export default async function ProductPage({
 
     return (
         <>
+            <ProductViewEvent product={product} />
             <Grid container spacing={6} justifyContent="space-between">
                 {/* Imagen */}
                 <Grid item xs={12} md={7}>
