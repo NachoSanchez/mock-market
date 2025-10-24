@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import Navbar from '@/components/navbar';
 import { Container } from '@mui/material';
@@ -6,6 +6,7 @@ import Providers from './providers';
 import Footer from '@/components/Footer';
 import SfInit from './SfInit';
 import IdentityEvents from './IdentityEvents';
+import AgentforceEmbed from './AgentforceEmbed';
 //import './globals.css';
 
 
@@ -14,6 +15,11 @@ export const metadata: Metadata = {
 	description: 'Catálogo mock con Next 15 + MUI',
 };
 
+export const viewport: Viewport = {
+	width: 'device-width',
+	initialScale: 1,
+	minimumScale: 1,
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
@@ -36,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				/>
 
 				<SfInit/>
+				<AgentforceEmbed />
 			</body>
 		</html>
 	);
