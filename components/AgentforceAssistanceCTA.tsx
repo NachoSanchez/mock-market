@@ -3,17 +3,19 @@
 import { useEffect, useRef, useState } from 'react';
 
 type Props = {
-    /** Texto a mostrar en el CTA */
     message?: string;
-    /** Offset respecto al botón nativo del chat */
-    offsetY?: number; // px hacia arriba
-    offsetX?: number; // px hacia la izquierda (positivo = más a la izquierda)
-    /** Z-index del CTA */
+    offsetY?: number;
+    offsetX?: number;
     zIndex?: number;
-    /** Recordar cierre del CTA en localStorage (en días). Usa 0 para no recordar. */
     rememberDismissDays?: number;
-    /** Id del botón nativo (por si cambia en el futuro) */
     chatButtonSelector?: string;
+
+    /** Color base de fondo (default: rgb(156,39,176) ) */
+    bgBase?: string;
+    /** Color destino del degradé (default: #CDBDFF) */
+    bgTo?: string;
+    /** Emojis decorativos “al corte” */
+    emojis?: string[];
 };
 
 const STORAGE_KEY = 'agentforceCtaDismissedAt';
@@ -25,6 +27,9 @@ export default function AgentforceAssistantCTA({
     zIndex = 9999,
     rememberDismissDays = 7,
     chatButtonSelector = '#embeddedMessagingConversationButton',
+    bgBase = 'rgb(156, 39, 176)', // 💜 pedido
+    bgTo = '#CDBDFF',            // degradé suave hacia lila
+    emojis = ['🛒', '🥐', '🧃', '🍫'], // set marketinero
 }: Props) {
     const [visible, setVisible] = useState(false);
     const [buttonRect, setButtonRect] = useState<DOMRect | null>(null);
@@ -32,17 +37,15 @@ export default function AgentforceAssistantCTA({
     const observerRef = useRef<MutationObserver | null>(null);
     const resizeObsRef = useRef<ResizeObserver | null>(null);
 
-    // Comprueba si debemos mantener oculto por recordatorio de cierre
     useEffect(() => {
         if (rememberDismissDays > 0) {
             const raw = localStorage.getItem(STORAGE_KEY);
             if (raw) {
                 const closedAt = Number(raw);
                 const ms = rememberDismissDays * 24 * 60 * 60 * 1000;
-                if (Date.now() - closedAt < ms) return; // sigue recordando el cierre
+                if (Date.now() - closedAt < ms) return;
             }
         }
-        // Intento inmediato
         const tryFind = () => {
             const btn = document.querySelector(chatButtonSelector) as HTMLButtonElement | null;
             if (btn) {
@@ -50,20 +53,14 @@ export default function AgentforceAssistantCTA({
                 setButtonRect(btn.getBoundingClientRect());
                 setVisible(true);
 
-                // Observa cambios de tamaño/posición del botón (p.ej. cambios de viewport)
                 if ('ResizeObserver' in window) {
-                    const ro = new ResizeObserver(() => {
-                        setButtonRect(btn.getBoundingClientRect());
-                    });
+                    const ro = new ResizeObserver(() => setButtonRect(btn.getBoundingClientRect()));
                     ro.observe(btn);
                     resizeObsRef.current = ro;
                 }
-
-                // También actualiza en resize/scroll
                 const onWinChange = () => setButtonRect(btn.getBoundingClientRect());
                 window.addEventListener('resize', onWinChange);
                 window.addEventListener('scroll', onWinChange, true);
-
                 return () => {
                     window.removeEventListener('resize', onWinChange);
                     window.removeEventListener('scroll', onWinChange, true);
@@ -76,12 +73,9 @@ export default function AgentforceAssistantCTA({
         const cleanup = tryFind();
         if (cleanup) return cleanup;
 
-        // Si aún no existe, observa el DOM hasta que aparezca
         const mo = new MutationObserver(() => {
             const done = tryFind();
-            if (done) {
-                observerRef.current?.disconnect();
-            }
+            if (done) observerRef.current?.disconnect();
         });
         mo.observe(document.documentElement, { childList: true, subtree: true });
         observerRef.current = mo;
@@ -96,7 +90,6 @@ export default function AgentforceAssistantCTA({
         const btn = buttonRef.current;
         if (btn) {
             btn.click();
-            // oculta el CTA al abrir el chat (evita duplicación de foco visual)
             setVisible(false);
             if (rememberDismissDays > 0) {
                 localStorage.setItem(STORAGE_KEY, String(Date.now()));
@@ -113,7 +106,6 @@ export default function AgentforceAssistantCTA({
 
     if (!visible || !buttonRect) return null;
 
-    // Calcula posición anclada a la esquina inf. derecha (como el botón nativo)
     const right = Math.max(window.innerWidth - buttonRect.right + offsetX, 0);
     const bottom = Math.max(window.innerHeight - buttonRect.bottom + offsetY, 0);
 
@@ -124,12 +116,14 @@ export default function AgentforceAssistantCTA({
                 aria-live="polite"
                 aria-label="Asistente virtual disponible"
                 className="agentforce-cta"
-                style={{
-                    right: `${right}px`,
-                    bottom: `${bottom}px`,
-                    zIndex,
-                }}
+                style={{ right: `${right}px`, bottom: `${bottom}px`, zIndex }}
             >
+                {/* Emojis “al corte” */}
+                <span className="emoji emoji--tl" aria-hidden>{emojis[0 % emojis.length]}</span>
+                <span className="emoji emoji--tr" aria-hidden>{emojis[1 % emojis.length]}</span>
+                <span className="emoji emoji--bl" aria-hidden>{emojis[2 % emojis.length]}</span>
+                <span className="emoji emoji--br" aria-hidden>{emojis[3 % emojis.length]}</span>
+
                 <div className="agentforce-cta__bubble" onClick={handleOpen}>
                     <span className="agentforce-cta__msg">{message}</span>
                 </div>
@@ -153,29 +147,27 @@ export default function AgentforceAssistantCTA({
           font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, 'Noto Sans',
             'Apple Color Emoji', 'Segoe UI Emoji';
           animation: af-slide-in 240ms ease-out;
+          /* área para “cortar” los emojis */
+          overflow: visible;
         }
 
+        /* Burbujita con degradé violeta */
         .agentforce-cta__bubble {
-          max-width: min(72vw, 340px);
-          background: #111;         /* combina con --eswButtonColor por defecto */
+          max-width: min(72vw, 360px);
+          background: linear-gradient(135deg, ${bgBase} 0%, ${bgTo} 100%);
           color: #fff;
-          border-radius: 14px;
-          padding: 10px 14px;
-          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+          border-radius: 16px;
+          padding: 12px 16px;
+          box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
           cursor: pointer;
-          line-height: 1.25;
+          line-height: 1.24;
           font-size: 14px;
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          position: relative;
         }
+        .agentforce-cta__bubble:hover { filter: brightness(1.05); }
 
-        .agentforce-cta__bubble:hover {
-          filter: brightness(1.05);
-        }
-
-        .agentforce-cta__msg {
-          display: inline-block;
-          user-select: none;
-        }
+        .agentforce-cta__msg { display: inline-block; user-select: none; }
 
         .agentforce-cta__close {
           appearance: none;
@@ -192,27 +184,42 @@ export default function AgentforceAssistantCTA({
           cursor: pointer;
           box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
         }
+        .agentforce-cta__close:hover { background: #f3f3f3; }
 
-        .agentforce-cta__close:hover {
-          background: #f3f3f3;
+        /* Emojis decorativos “al corte” */
+        .emoji {
+          position: absolute;
+          font-size: clamp(28px, 6.5vw, 40px);
+          user-select: none;
+          text-shadow: 0 2px 10px rgba(0,0,0,.18);
+          filter: saturate(115%);
+          pointer-events: none;
+        }
+        /* top-left: que asome medio emoji */
+        .emoji--tl { 
+          left: -14px; top: -14px; transform: rotate(-12deg);
+        }
+        /* top-right */
+        .emoji--tr { 
+          right: 52px; top: -18px; transform: rotate(9deg);
+        }
+        /* bottom-left */
+        .emoji--bl { 
+          left: -10px; bottom: -16px; transform: rotate(12deg);
+        }
+        /* bottom-right cerca del botón del chat */
+        .emoji--br { 
+          right: 36px; bottom: -12px; transform: rotate(-8deg);
         }
 
         @keyframes af-slide-in {
-          from {
-            opacity: 0;
-            transform: translateY(8px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
+          from { opacity: 0; transform: translateY(8px); }
+          to   { opacity: 1; transform: translateY(0); }
         }
 
         @media (max-width: 480px) {
-          .agentforce-cta__bubble {
-            max-width: 82vw;
-            font-size: 13px;
-          }
+          .agentforce-cta__bubble { max-width: 82vw; font-size: 13px; }
+          .emoji { font-size: clamp(24px, 8vw, 36px); }
         }
       `}</style>
         </>
