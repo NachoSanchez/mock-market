@@ -36,118 +36,99 @@ export default function AgentforceAssistantCTA({
     bgTo = '#CDBDFF',
     emojis = ['🛒', '🥐', '🧃', '🍫'],
 }: Props) {
-    const [visible, setVisible] = useState(false);
-    const [buttonRect, setButtonRect] = useState<DOMRect | null>(null);
-    const buttonRef = useRef<HTMLButtonElement | null>(null);
-    const observerRef = useRef<MutationObserver | null>(null);
-    const resizeObsRef = useRef<ResizeObserver | null>(null);
+    const [visible, setVisible] = useState(false);               // controla render
+    const [lastPos, setLastPos] = useState({ right: 30, bottom: 25 }); // posición persistente
+    const btnRef = useRef<HTMLButtonElement | null>(null);
+    const moRef = useRef<MutationObserver | null>(null);
+    const intRef = useRef<number | null>(null);
 
-    // Comprueba si debemos mantener oculto por recordatorio de cierre (sessionStorage)
+    // Lee bottom/right del CSS del botón; cae a defaults si no están listos.
+    const measureFromCSS = (btn: HTMLElement) => {
+        const cs = getComputedStyle(btn);
+        const cssRight = parseFloat(cs.right);
+        const cssBottom = parseFloat(cs.bottom);
+        const baseRight = Number.isFinite(cssRight) ? cssRight : 30;
+        const baseBottom = Number.isFinite(cssBottom) ? cssBottom : 25;
+        const next = {
+            right: Math.max(baseRight + offsetX, 0),
+            bottom: Math.max(baseBottom + offsetY, 0),
+        };
+        setLastPos((prev) => (prev.right !== next.right || prev.bottom !== next.bottom ? next : prev));
+    };
+
+    const tryAttachButton = () => {
+        const btn = document.querySelector(chatButtonSelector) as HTMLButtonElement | null;
+        if (!btn) return false;
+        btnRef.current = btn;
+        measureFromCSS(btn);
+        setVisible(true); // <- queda visible aunque luego el botón “desaparezca” un instante
+        return true;
+    };
+
     useEffect(() => {
+        // respetar “recordar cierre” en sessionStorage
         if (rememberDismissDays > 0) {
             const raw = sessionStorage.getItem(STORAGE_KEY);
-            if (raw) {
-                const closedAt = Number(raw);
-                const ms = rememberDismissDays * 24 * 60 * 60 * 1000;
-                if (Date.now() - closedAt < ms) return; // sigue recordando el cierre
-            }
+            if (raw && Date.now() - Number(raw) < rememberDismissDays * 864e5) return;
         }
 
-        // Intento inmediato
-        const tryFind = () => {
-            const btn = document.querySelector(chatButtonSelector) as HTMLButtonElement | null;
-            if (btn) {
-                buttonRef.current = btn;
-                setButtonRect(btn.getBoundingClientRect());
-                setVisible(true);
+        // 1) intentar encontrar el botón ya
+        let attached = tryAttachButton();
 
-                // Observa cambios de tamaño/posición del botón (p.ej. cambios de viewport)
-                if ('ResizeObserver' in window) {
-                    const ro = new ResizeObserver(() => {
-                        // sólo actualiza si cambió algo para evitar flicker
-                        const rect = btn.getBoundingClientRect();
-                        setButtonRect((prev) => {
-                            if (!prev) return rect;
-                            const same =
-                                Math.round(prev.top) === Math.round(rect.top) &&
-                                Math.round(prev.left) === Math.round(rect.left) &&
-                                Math.round(prev.right) === Math.round(rect.right) &&
-                                Math.round(prev.bottom) === Math.round(rect.bottom);
-                            return same ? prev : rect;
-                        });
-                    });
-                    ro.observe(btn);
-                    resizeObsRef.current = ro;
-                }
-
-                // También actualiza en resize/scroll
-                const onWinChange = () => {
-                    const rect = btn.getBoundingClientRect();
-                    setButtonRect((prev) => {
-                        if (!prev) return rect;
-                        const same =
-                            Math.round(prev.top) === Math.round(rect.top) &&
-                            Math.round(prev.left) === Math.round(rect.left) &&
-                            Math.round(prev.right) === Math.round(rect.right) &&
-                            Math.round(prev.bottom) === Math.round(rect.bottom);
-                        return same ? prev : rect;
-                    });
-                };
-                window.addEventListener('resize', onWinChange);
-                window.addEventListener('scroll', onWinChange, true);
-
-                return () => {
-                    window.removeEventListener('resize', onWinChange);
-                    window.removeEventListener('scroll', onWinChange, true);
-                    resizeObsRef.current?.disconnect();
-                };
-            }
-            return undefined;
-        };
-
-        const cleanup = tryFind();
-        if (cleanup) return cleanup;
-
-        // Si aún no existe, observa el DOM hasta que aparezca
+        // 2) observar el DOM hasta que aparezca / reaparezca
         const mo = new MutationObserver(() => {
-            const done = tryFind();
-            if (done) {
-                observerRef.current?.disconnect();
-            }
+            if (!btnRef.current) attached = tryAttachButton();
         });
         mo.observe(document.documentElement, { childList: true, subtree: true });
-        observerRef.current = mo;
+        moRef.current = mo;
+
+        // 3) refrescar posición cada 500ms si el botón existe (sin depender del layout thrash)
+        const tick = () => {
+            const btn = btnRef.current;
+            if (btn && document.body.contains(btn)) {
+                measureFromCSS(btn);
+            }
+            // si NO existe, NO ocultamos: mantenemos lastPos y visible=true ⇒ sin flicker
+        };
+        intRef.current = window.setInterval(tick, 500);
+        window.addEventListener('resize', tick);
+
+        // si en el primer render aún no estaba, mantenemos visible=false hasta verlo una vez
+        if (!attached) {
+            // fallback suave: mostramos el CTA igual a los 2s usando defaults por si el botón tarda mucho
+            const t = window.setTimeout(() => {
+                if (!btnRef.current) {
+                    setVisible(true);
+                    setLastPos({ right: Math.max(30 + offsetX, 0), bottom: Math.max(25 + offsetY, 0) });
+                }
+            }, 2000);
+            return () => {
+                window.clearTimeout(t);
+                if (intRef.current) clearInterval(intRef.current);
+                mo.disconnect();
+                window.removeEventListener('resize', tick);
+            };
+        }
 
         return () => {
-            observerRef.current?.disconnect();
-            resizeObsRef.current?.disconnect();
+            if (intRef.current) clearInterval(intRef.current);
+            mo.disconnect();
+            window.removeEventListener('resize', tick);
         };
-    }, [chatButtonSelector, rememberDismissDays]);
+    }, [chatButtonSelector, offsetX, offsetY, rememberDismissDays]);
 
     const handleOpen = () => {
-        const btn = buttonRef.current;
-        if (btn) {
-            btn.click();
-            // oculta el CTA al abrir el chat (evita duplicación de foco visual)
-            setVisible(false);
-            if (rememberDismissDays > 0) {
-                sessionStorage.setItem(STORAGE_KEY, String(Date.now()));
-            }
-        }
+        btnRef.current?.click();
+        setVisible(false);
+        if (rememberDismissDays > 0) sessionStorage.setItem(STORAGE_KEY, String(Date.now()));
     };
 
     const handleDismiss = () => {
         setVisible(false);
-        if (rememberDismissDays > 0) {
-            sessionStorage.setItem(STORAGE_KEY, String(Date.now()));
-        }
+        if (rememberDismissDays > 0) sessionStorage.setItem(STORAGE_KEY, String(Date.now()));
     };
 
-    if (!visible || !buttonRect) return null;
-
-    // Calcula posición anclada a la esquina inf. derecha (como el botón nativo)
-    const right = Math.max(window.innerWidth - buttonRect.right + offsetX, 0);
-    const bottom = Math.max(window.innerHeight - buttonRect.bottom + offsetY, 0);
+    if (!visible) return null;
 
     return (
         <>
