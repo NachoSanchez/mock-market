@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import SfInit from './SfInit';
 import IdentityEvents from './IdentityEvents';
 import AgentforceEmbed from './AgentforceEmbed';
+import AgentforceAssistantCTA from '@/components/AgentforceAssistanceCTA';
 //import './globals.css';
 
 
@@ -43,6 +44,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 				<SfInit/>
 				<AgentforceEmbed />
+				<AgentforceAssistantCTA
+					message="Hola, soy tu asistente virtual. ¡Hablame cuando me necesites!"
+					offsetY={84}     // separa el CTA del botón (hacia arriba)
+					offsetX={0}      // mueve a la izquierda si el botón tiene mucho right
+					rememberDismissDays={7}
+				/>
 			</body>
 		</html>
 	);
