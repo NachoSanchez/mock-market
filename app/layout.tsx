@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					bgBase="rgb(156, 39, 176)"
 					bgTo="#CDBDFF"
 					emojis={['🛒', '🥐', '🧃', '🍫']}
-					rememberDismissDays={7}
+					rememberDismissDays={1}
 				/>
 			</body>
 		</html>

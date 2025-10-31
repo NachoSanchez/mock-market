@@ -3,177 +3,136 @@
 import { useEffect, useRef, useState } from 'react';
 
 type Props = {
-    message?: string;
-    offsetY?: number; // px hacia arriba
-    offsetX?: number; // px hacia la izquierda
-    zIndex?: number;
-    rememberDismissDays?: number;
-    chatButtonSelector?: string;
-    bgBase?: string; // ej: 'rgb(156, 39, 176)'
-    bgTo?: string;   // ej: '#CDBDFF'
-    emojis?: string[];
+  message?: string;
+  offsetY?: number;     // extra hacia arriba
+  offsetX?: number;     // extra hacia la izquierda
+  zIndex?: number;
+  rememberDismissDays?: number;
+  chatButtonSelector?: string;
+  bgBase?: string;      // ej: 'rgb(156, 39, 176)'
+  bgTo?: string;        // ej: '#CDBDFF'
+  emojis?: string[];    // decorativos “al corte”
 };
 
 const STORAGE_KEY = 'agentforceCtaDismissedAt';
 
 export default function AgentforceAssistantCTA({
-    message = 'Hola, soy tu asistente virtual. ¡Hablame cuando me necesites!',
-    offsetY = 84,
-    offsetX = 0,
-    zIndex = 2147483000,
-    rememberDismissDays = 7,
-    chatButtonSelector = '#embeddedMessagingConversationButton',
-    bgBase = 'rgb(156, 39, 176)',
-    bgTo = '#CDBDFF',
-    emojis = ['🛒', '🥐', '🧃', '🍫'],
+  message = 'Hola, soy tu asistente virtual. ¡Hablame cuando me necesites!',
+  offsetY = 84,
+  offsetX = 0,
+  zIndex = 2147483000,
+  rememberDismissDays = 7,
+  chatButtonSelector = '#embeddedMessagingConversationButton',
+  bgBase = 'rgb(156, 39, 176)',
+  bgTo = '#CDBDFF',
+  emojis = ['🛒', '🥐', '🧃', '🍫'],
 }: Props) {
-    const [visible, setVisible] = useState(false);
-    const [buttonRect, setButtonRect] = useState<DOMRect | null>(null);
+  const [visible, setVisible] = useState(false);
+  const [pos, setPos] = useState<{ right: number; bottom: number }>({ right: 30 + offsetX, bottom: 25 + offsetY });
+  const btnRef = useRef<HTMLButtonElement | null>(null);
+  const intRef = useRef<number | null>(null);
+  const moRef = useRef<MutationObserver | null>(null);
 
-    const buttonRef = useRef<HTMLButtonElement | null>(null);
-    const observerRef = useRef<MutationObserver | null>(null);
-    const resizeObsRef = useRef<ResizeObserver | null>(null);
-    const rafIdRef = useRef<number | null>(null);
+  // Lee bottom/right REALES del botón (CSS computed), evita flicker.
+  const measureByCSS = (btn: HTMLElement) => {
+    const cs = getComputedStyle(btn);
+    const right = parseFloat(cs.right || '30');
+    const bottom = parseFloat(cs.bottom || '25');
+    setPos(prev => {
+      const nr = { right: Math.max(right + offsetX, 0), bottom: Math.max(bottom + offsetY, 0) };
+      return (prev.right !== nr.right || prev.bottom !== nr.bottom) ? nr : prev;
+    });
+  };
 
-    // helper: setRect solo si cambió (evita re-renders innecesarios/flicker)
-    const setRectIfChanged = (rect: DOMRect) => {
-        setButtonRect(prev => {
-            if (!prev) return rect;
-            const same =
-                Math.round(prev.top) === Math.round(rect.top) &&
-                Math.round(prev.left) === Math.round(rect.left) &&
-                Math.round(prev.right) === Math.round(rect.right) &&
-                Math.round(prev.bottom) === Math.round(rect.bottom);
-            return same ? prev : rect;
-        });
+  useEffect(() => {
+    // respetar “recordar cierre”
+    if (rememberDismissDays > 0) {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw && Date.now() - Number(raw) < rememberDismissDays * 864e5) return;
+    }
+
+    const findBtn = () => {
+      const btn = document.querySelector(chatButtonSelector) as HTMLButtonElement | null;
+      if (!btn) return false;
+      btnRef.current = btn;
+      measureByCSS(btn);
+      setVisible(true);
+      return true;
     };
 
-    useEffect(() => {
-        // respeta "recordar cierre"
-        if (rememberDismissDays > 0) {
-            const raw = localStorage.getItem(STORAGE_KEY);
-            if (raw) {
-                const closedAt = Number(raw);
-                const ms = rememberDismissDays * 24 * 60 * 60 * 1000;
-                if (Date.now() - closedAt < ms) return; // mantener oculto
-            }
-        }
+    if (!findBtn()) {
+      // observa DOM hasta que aparezca
+      const mo = new MutationObserver(() => {
+        if (findBtn()) mo.disconnect();
+      });
+      mo.observe(document.documentElement, { childList: true, subtree: true });
+      moRef.current = mo;
+    }
 
-        const scheduleMeasure = (btn: HTMLElement) => {
-            if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
-            rafIdRef.current = requestAnimationFrame(() => {
-                setRectIfChanged(btn.getBoundingClientRect());
-            });
-        };
-
-        const tryFind = () => {
-            const btn = document.querySelector(chatButtonSelector) as HTMLButtonElement | null;
-            if (btn) {
-                buttonRef.current = btn;
-                scheduleMeasure(btn);
-                setVisible(true);
-
-                // Observa cambios de tamaño/posición
-                if ('ResizeObserver' in window) {
-                    const ro = new ResizeObserver(() => scheduleMeasure(btn));
-                    ro.observe(btn);
-                    resizeObsRef.current = ro;
-                }
-
-                const onWinChange = () => scheduleMeasure(btn);
-                window.addEventListener('resize', onWinChange);
-                window.addEventListener('scroll', onWinChange, { capture: true, passive: true });
-
-                return () => {
-                    window.removeEventListener('resize', onWinChange);
-                    window.removeEventListener('scroll', onWinChange, { capture: true } as any);
-                    resizeObsRef.current?.disconnect();
-                    if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
-                };
-            }
-            return undefined;
-        };
-
-        const cleanup = tryFind();
-        if (cleanup) return cleanup;
-
-        // Si aún no existe el botón, observa el DOM hasta que aparezca
-        const mo = new MutationObserver(() => {
-            const done = tryFind();
-            if (done) observerRef.current?.disconnect();
-        });
-        mo.observe(document.documentElement, { childList: true, subtree: true });
-        observerRef.current = mo;
-
-        return () => {
-            observerRef.current?.disconnect();
-            resizeObsRef.current?.disconnect();
-            if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
-        };
-    }, [chatButtonSelector, rememberDismissDays]);
-
-    const handleOpen = () => {
-        const btn = buttonRef.current;
-        if (btn) {
-            btn.click();
-            setVisible(false);
-            if (rememberDismissDays > 0) {
-                localStorage.setItem(STORAGE_KEY, String(Date.now()));
-            }
-        }
+    // re-medición estable
+    const tick = () => {
+      const b = btnRef.current;
+      if (b) measureByCSS(b);
     };
+    intRef.current = window.setInterval(tick, 500);
+    window.addEventListener('resize', tick);
 
-    const handleDismiss = () => {
-        setVisible(false);
-        if (rememberDismissDays > 0) {
-            localStorage.setItem(STORAGE_KEY, String(Date.now()));
-        }
+    return () => {
+      if (intRef.current) clearInterval(intRef.current);
+      window.removeEventListener('resize', tick);
+      moRef.current?.disconnect();
     };
+  }, [chatButtonSelector, offsetX, offsetY, rememberDismissDays]);
 
-    if (!visible || !buttonRect) return null;
+  const handleOpen = () => {
+    btnRef.current?.click();
+    setVisible(false);
+    if (rememberDismissDays > 0) localStorage.setItem(STORAGE_KEY, String(Date.now()));
+  };
 
-    // anclado a la esquina inferior derecha (igual que el botón nativo)
-    const right = Math.max(window.innerWidth - buttonRect.right + offsetX, 0);
-    const bottom = Math.max(window.innerHeight - buttonRect.bottom + offsetY, 0);
+  const handleDismiss = () => {
+    setVisible(false);
+    if (rememberDismissDays > 0) localStorage.setItem(STORAGE_KEY, String(Date.now()));
+  };
 
-    return (
-        <>
-            <div
-                role="dialog"
-                aria-live="polite"
-                aria-label="Asistente virtual disponible"
-                className="agentforce-cta"
-                style={{
-                    right: `${right}px`,
-                    bottom: `${bottom}px`,
-                    zIndex,
-                    ['--af-bg-base' as any]: bgBase,
-                    ['--af-bg-to' as any]: bgTo,
-                }}
-            >
-                {/* Emojis “al corte” (debajo de la burbuja/texto) */}
-                <span className="emoji emoji--tl" aria-hidden>{emojis[0 % emojis.length]}</span>
-                <span className="emoji emoji--tr" aria-hidden>{emojis[1 % emojis.length]}</span>
-                <span className="emoji emoji--bl" aria-hidden>{emojis[2 % emojis.length]}</span>
-                <span className="emoji emoji--br" aria-hidden>{emojis[3 % emojis.length]}</span>
+  if (!visible) return null;
 
-                {/* Burbuja CTA */}
-                <div className="agentforce-cta__bubble" onClick={handleOpen}>
-                    <span className="agentforce-cta__msg">{message}</span>
-                </div>
+  return (
+    <>
+      <div
+        role="dialog"
+        aria-live="polite"
+        aria-label="Asistente virtual disponible"
+        className="agentforce-cta"
+        style={{
+          right: `${pos.right}px`,
+          bottom: `${pos.bottom}px`,
+          zIndex,
+          ['--af-bg-base' as any]: bgBase,
+          ['--af-bg-to' as any]: bgTo,
+        }}
+      >
+        <div className="agentforce-cta__bubble" onClick={handleOpen}>
+          {/* Emojis “al corte” DENTRO de la burbuja, detrás del texto */}
+          <span className="emoji emoji--tl" aria-hidden>{emojis[0 % emojis.length]}</span>
+          <span className="emoji emoji--tr" aria-hidden>{emojis[1 % emojis.length]}</span>
+          <span className="emoji emoji--bl" aria-hidden>{emojis[2 % emojis.length]}</span>
+          <span className="emoji emoji--br" aria-hidden>{emojis[3 % emojis.length]}</span>
 
-                {/* Cerrar */}
-                <button
-                    type="button"
-                    className="agentforce-cta__close"
-                    aria-label="Cerrar mensaje del asistente"
-                    onClick={handleDismiss}
-                >
-                    ×
-                </button>
-            </div>
+          <span className="agentforce-cta__msg">{message}</span>
+        </div>
 
-            <style jsx>{`
+        <button
+          type="button"
+          className="agentforce-cta__close"
+          aria-label="Cerrar mensaje del asistente"
+          onClick={handleDismiss}
+        >
+          ×
+        </button>
+      </div>
+
+      <style jsx>{`
         .agentforce-cta {
           position: fixed;
           display: flex;
@@ -182,35 +141,35 @@ export default function AgentforceAssistantCTA({
           pointer-events: auto;
           font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, 'Noto Sans',
             'Apple Color Emoji', 'Segoe UI Emoji';
-          animation: af-slide-in 240ms ease-out;
+          animation: af-in 220ms ease-out;
           overflow: visible;
-          isolation: isolate; /* stacking context limpio */
+          isolation: isolate; /* stacking propio */
         }
 
         /* Burbuja con degradé violeta */
         .agentforce-cta__bubble {
-          max-width: min(76vw, 400px);
+          max-width: min(78vw, 420px);
           background: linear-gradient(135deg, var(--af-bg-base) 0%, var(--af-bg-to) 100%);
           color: #fff;
           border-radius: 16px;
-          padding: 14px 18px;
+          padding: 16px 20px;
           box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
           cursor: pointer;
           line-height: 1.3;
-          font-size: 16px;         /* ⬆️ más grande */
-          font-weight: 700;        /* ⬆️ negrita */
+          font-size: 17px;     /* más grande */
+          font-weight: 800;    /* más negrita */
           border: 1px solid rgba(255, 255, 255, 0.12);
-          position: relative;
-          z-index: 2;              /* por encima de los emojis */
+          position: relative;   /* para posicionar emojis */
+          overflow: visible;    /* deja asomar los emojis */
+          z-index: 2;
         }
-
         .agentforce-cta__bubble:hover { filter: brightness(1.05); }
 
         .agentforce-cta__msg {
           display: inline-block;
           user-select: none;
           position: relative;
-          z-index: 3;              /* texto sobre todo */
+          z-index: 3;  /* texto por encima de los emojis */
         }
 
         .agentforce-cta__close {
@@ -231,7 +190,7 @@ export default function AgentforceAssistantCTA({
         }
         .agentforce-cta__close:hover { background: #f3f3f3; }
 
-        /* Emojis decorativos “al corte” — detrás de la burbuja */
+        /* Emojis decorativos — detrás del texto pero dentro de la burbuja */
         .emoji {
           position: absolute;
           font-size: clamp(28px, 6.5vw, 40px);
@@ -239,23 +198,20 @@ export default function AgentforceAssistantCTA({
           text-shadow: 0 2px 10px rgba(0,0,0,.18);
           filter: saturate(115%);
           pointer-events: none;
-          z-index: 1;              /* debajo de la burbuja y del texto */
+          z-index: 1;   /* debajo del texto, encima del fondo */
         }
         .emoji--tl { left: -14px; top: -14px; transform: rotate(-12deg); }
-        .emoji--tr { right: 52px; top: -18px; transform: rotate(9deg); }
+        .emoji--tr { right: 12px; top: -18px; transform: rotate(9deg); }
         .emoji--bl { left: -10px; bottom: -16px; transform: rotate(12deg); }
-        .emoji--br { right: 36px; bottom: -12px; transform: rotate(-8deg); }
+        .emoji--br { right: -8px; bottom: -12px; transform: rotate(-8deg); }
 
-        @keyframes af-slide-in {
-          from { opacity: 0; transform: translateY(8px); }
-          to   { opacity: 1; transform: translateY(0); }
-        }
+        @keyframes af-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
         @media (max-width: 480px) {
-          .agentforce-cta__bubble { max-width: 84vw; font-size: 15px; }
+          .agentforce-cta__bubble { max-width: 86vw; font-size: 16px; }
           .emoji { font-size: clamp(24px, 8vw, 36px); }
         }
       `}</style>
-        </>
-    );
+    </>
+  );
 }
