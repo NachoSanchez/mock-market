@@ -186,87 +186,110 @@ export default function AgentforceAssistantCTA({
             </div>
 
             <style jsx>{`
-        .agentforce-cta {
-          position: fixed;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          pointer-events: auto;
-          font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, 'Noto Sans',
-            'Apple Color Emoji', 'Segoe UI Emoji';
-          animation: af-slide-in 220ms ease-out;
-          overflow: visible;
-          isolation: isolate; /* stacking context limpio */
-        }
+            .agentforce-cta {
+                position: fixed;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                pointer-events: auto;
+                font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, 'Noto Sans',
+                    'Apple Color Emoji', 'Segoe UI Emoji';
+                animation: af-slide-in 220ms ease-out;
+                overflow: visible;
+                isolation: isolate; /* stacking context limpio */
+            }
 
-        /* Burbuja con degradé violeta y estilo marketinero */
-        .agentforce-cta__bubble {
-          max-width: min(78vw, 420px);
-          background: linear-gradient(135deg, var(--af-bg-base) 0%, var(--af-bg-to) 100%);
-          color: #fff;
-          border-radius: 16px;
-          padding: 16px 20px;
-          box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
-          cursor: pointer;
-          line-height: 1.3;
-          font-size: 17px;     /* más grande */
-          font-weight: 800;    /* negrita */
-          border: 1px solid rgba(255, 255, 255, 0.12);
-          position: relative;   /* para posicionar emojis */
-          overflow: visible;    /* deja asomar los emojis */
-          z-index: 2;           /* encima del fondo del contenedor */
-        }
-        .agentforce-cta__bubble:hover { filter: brightness(1.05); }
+            /* Burbuja con degradé violeta y estilo marketinero */
+            .agentforce-cta__bubble {
+                max-width: min(78vw, 420px);
+                background: linear-gradient(135deg, var(--af-bg-base) 0%, var(--af-bg-to) 100%);
+                color: #fff;
+                border-radius: 16px;
+                padding: 16px 20px;
+                box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+                cursor: pointer;
+                line-height: 1.3;
+                font-size: 17px;     /* más grande */
+                font-weight: 800;    /* negrita */
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                position: relative;   /* para posicionar emojis */
+                overflow: visible;    /* deja asomar los emojis */
+                z-index: 2;           /* encima del fondo del contenedor */
+            }
+            .agentforce-cta__bubble:hover { filter: brightness(1.05); }
 
-        .agentforce-cta__msg {
-          display: inline-block;
-          user-select: none;
-          position: relative;
-          z-index: 3;  /* texto por encima de los emojis */
-        }
+            .agentforce-cta__bubble::after {
+                content: '';
+                position: absolute;
+                /* ajustá estos dos si querés mover la colita */
+                right: 22px;        /* más chico = más cerca del borde derecho */
+                bottom: -7px;       /* más negativo = más afuera de la burbuja */
+                width: 14px;
+                height: 14px;
+                background: linear-gradient(135deg, var(--af-bg-base) 0%, var(--af-bg-to) 100%);
+                transform: rotate(45deg);         /* rombo = triángulo visual */
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+                z-index: 2;                        /* por encima del fondo, debajo del texto */
+                border: 1px solid rgba(255, 255, 255, 0.12); /* borde como la burbuja */
+            }
 
-        .agentforce-cta__close {
-          appearance: none;
-          background: #fff;
-          color: #111;
-          border: 1px solid rgba(0, 0, 0, 0.1);
-          border-radius: 999px;
-          width: 28px;
-          height: 28px;
-          line-height: 26px;
-          text-align: center;
-          font-size: 18px;
-          font-weight: 600;
-          cursor: pointer;
-          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
-          z-index: 4; /* arriba de todo */
-        }
-        .agentforce-cta__close:hover { background: #f3f3f3; }
+            .agentforce-cta__msg {
+                display: inline-block;
+                user-select: none;
+                position: relative;
+                z-index: 3;  /* texto por encima de los emojis */
+            }
 
-        /* Emojis decorativos — detrás del texto pero dentro de la burbuja */
-        .emoji {
-          position: absolute;
-          font-size: clamp(28px, 6.5vw, 40px);
-          user-select: none;
-          text-shadow: 0 2px 10px rgba(0,0,0,.18);
-          filter: saturate(115%);
-          pointer-events: none;
-          z-index: 1;   /* debajo del texto, encima del fondo */
-        }
-        .emoji--tl { left: -14px; top: -14px; transform: rotate(-12deg); }
-        .emoji--tr { right: 12px; top: -18px; transform: rotate(9deg); }
-        .emoji--bl { left: -10px; bottom: -16px; transform: rotate(12deg); }
-        .emoji--br { right: -8px; bottom: -12px; transform: rotate(-8deg); }
+            .agentforce-cta__close {
+                appearance: none;
+                background: #fff;
+                color: #111;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 999px;
+                width: 28px;
+                height: 28px;
+                line-height: 26px;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 600;
+                cursor: pointer;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+                z-index: 4; /* arriba de todo */
+            }
+            .agentforce-cta__close:hover { background: #f3f3f3; }
 
-        @keyframes af-slide-in {
-          from { opacity: 0; transform: translateY(8px); }
-          to   { opacity: 1; transform: translateY(0); }
-        }
+            /* Emojis decorativos — detrás del texto pero dentro de la burbuja */
+            .emoji {
+                position: absolute;
+                font-size: clamp(28px, 6.5vw, 40px);
+                user-select: none;
+                text-shadow: 0 2px 10px rgba(0,0,0,.18);
+                filter: saturate(115%);
+                pointer-events: none;
+                z-index: 1;   /* debajo del texto, encima del fondo */
+            }
+            .emoji--tl { left: -14px; top: -14px; transform: rotate(-12deg); }
+            .emoji--tr { right: 12px; top: -18px; transform: rotate(9deg); }
+            .emoji--bl { left: -10px; bottom: -16px; transform: rotate(12deg); }
+            .emoji--br { right: -8px; bottom: -12px; transform: rotate(-8deg); }
 
-        @media (max-width: 480px) {
-          .agentforce-cta__bubble { max-width: 86vw; font-size: 16px; }
-          .emoji { font-size: clamp(24px, 8vw, 36px); }
-        }
+            @keyframes af-slide-in {
+                from { opacity: 0; transform: translateY(8px); }
+                to   { opacity: 1; transform: translateY(0); }
+            }
+
+            @media (max-width: 480px) {
+                .agentforce-cta__bubble { max-width: 86vw; font-size: 16px; }
+                .emoji { font-size: clamp(24px, 8vw, 36px); }
+                
+                /* Opcional: afinado mobile */
+                .agentforce-cta__bubble::after {
+                    right: 18px;
+                    width: 12px;
+                    height: 12px;
+                    bottom: -6px;
+                }
+            }
       `}</style>
         </>
     );
