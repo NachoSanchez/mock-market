@@ -44,10 +44,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 				<SfInit/>
 				<AgentforceEmbed />
-				<AgentforceAssistantCTA
+	      		<AgentforceAssistantCTA
 					message="Hola, soy tu asistente virtual. ¡Hablame cuando me necesites!"
-					offsetY={84}     // separa el CTA del botón (hacia arriba)
-					offsetX={0}      // mueve a la izquierda si el botón tiene mucho right
+					bgBase="rgb(156, 39, 176)"
+					bgTo="#CDBDFF"
+					emojis={['🛒', '🥐', '🧃', '🍫']}
 					rememberDismissDays={7}
 				/>
 			</body>
