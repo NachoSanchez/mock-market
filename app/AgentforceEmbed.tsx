@@ -49,7 +49,7 @@ export default function AgentforceEmbed() {
         };
 
         const onReady = () => applyPrechatFromUser();
-        window.addEventListener('onEmbeddedMessagingReady', onReady);
+        //window.addEventListener('onEmbeddedMessagingReady', onReady);
 
         // Si ya estaba listo al montar (navegación interna)
         if (window.embeddedservice_bootstrap) applyPrechatFromUser();
