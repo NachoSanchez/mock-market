@@ -39,9 +39,9 @@ export default function AgentforceEmbed() {
             if (!esb?.prechatAPI) return;
 
             const fields: Record<string, { value: string; isEditableByEndUser: boolean }> = {};
-            if (user.firstName) fields._firstName = { value: user.firstName, isEditableByEndUser: false };
-            if (user.lastName) fields._lastName = { value: user.lastName, isEditableByEndUser: false };
-            if (user.email) fields._email = { value: user.email, isEditableByEndUser: false };
+            if (user.firstName) fields.FirstName = { value: user.firstName, isEditableByEndUser: false };
+            if (user.lastName) fields.LastName = { value: user.lastName, isEditableByEndUser: false };
+            if (user.email) fields.Email = { value: user.email, isEditableByEndUser: false };
 
             if (Object.keys(fields).length > 0) {
                 esb.prechatAPI.setHiddenPrechatFields(fields);
