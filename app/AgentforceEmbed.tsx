@@ -31,7 +31,7 @@ const BOOTSTRAP_SRC = `${SNIPPET_URL}/assets/js/bootstrap.min.js`;
 export default function AgentforceEmbed() {
     const { user } = useUser();
 
-/*     // Aplica los datos del usuario al Pre-Chat API cuando el widget esté listo
+    // Aplica los datos del usuario al Pre-Chat API cuando el widget esté listo
     useEffect(() => {
         const applyPrechatFromUser = () => {
             if (!user) return;
@@ -57,7 +57,7 @@ export default function AgentforceEmbed() {
         return () => {
             window.removeEventListener('onEmbeddedMessagingReady', onReady);
         };
-    }, [user]); */
+    }, [user]); 
 
     return (
         <>
