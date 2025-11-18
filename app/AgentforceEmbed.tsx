@@ -30,7 +30,7 @@ const ORG_ID = '00Dal00000YAcer';
 const DEPLOYMENT = 'Hackforce_Customer_Service';
 const SNIPPET_URL = 'https://devsunitedcore.my.site.com/ESWHackforceCustomerSer1763479558805';
 const SCRT_URL = 'https://devsunitedcore.my.salesforce-scrt.com';
-const BOOTSTRAP_SRC = 'https://devsunitedcore.my.site.com/ESWHackforceCustomerSer1763479558805/assets/js/bootstrap.min.js%27';
+const BOOTSTRAP_SRC = 'https://devsunitedcore.my.site.com/ESWHackforceCustomerSer1763479558805/assets/js/bootstrap.min.js';
 
 // Equivalente a tu function initEmbeddedMessaging() del snippet
 function initEmbeddedMessaging() {
@@ -46,6 +46,8 @@ function initEmbeddedMessaging() {
         esb.init(ORG_ID, DEPLOYMENT, SNIPPET_URL, {
             scrt2URL: SCRT_URL,
         });
+
+
     } catch (err) {
         console.error('[Agentforce] Error loading Embedded Messaging: ', err);
     }
