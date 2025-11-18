@@ -22,12 +22,6 @@ declare global {
     }
 }
 
-const ORG_ID = "00Dal00000YAcer";
-const DEPLOYMENT = "Hackforce_Customer_Support'";
-const SNIPPET_URL = "https://devsunitedcore.my.site.com/ESWHackforceCustomerSup1761334159792";
-const SCRT_URL = 'https://devsunitedcore.my.salesforce-scrt.com';
-const BOOTSTRAP_SRC = `${SNIPPET_URL}/assets/js/bootstrap.min.js`;
-
 export default function AgentforceEmbed() {
     const { user } = useUser();
 
@@ -62,24 +56,26 @@ export default function AgentforceEmbed() {
     return (
         <>
             {/* Bootstrap del widget */}
-            <Script id="agentforce-bootstrap" src={BOOTSTRAP_SRC} strategy="afterInteractive" />
+            <Script id="agentforce-bootstrap" src="https://devsunitedcore.my.site.com/ESWHackforceCustomerSer1763479558805/assets/js/bootstrap.min.js" strategy="afterInteractive" />
 
             {/* Init del widget */}
             <Script id="agentforce-init" strategy="afterInteractive">
                 {`
-          (function(){
-            try {
-              embeddedservice_bootstrap.settings.language = 'es_MX';
-              embeddedservice_bootstrap.init(
-                '${ORG_ID}',
-                '${DEPLOYMENT}',
-                '${SNIPPET_URL}',
-                { scrt2URL: '${SCRT_URL}' }
-              );
-            } catch (err) {
-              console.error('[Agentforce] Error loading Embedded Messaging:', err);
-            }
-          })();
+            (function(){
+                try {
+                    embeddedservice_bootstrap.settings.language = 'es_MX';
+                    embeddedservice_bootstrap.init(
+                        '00Dal00000YAcer',
+                        'Hackforce_Customer_Service',
+                        'https://devsunitedcore.my.site.com/ESWHackforceCustomerSer1763479558805',
+                        {
+                            scrt2URL: 'https://devsunitedcore.my.salesforce-scrt.com'
+                        }
+                    );
+                } catch (err) {
+                    console.error('[Agentforce] Error loading Embedded Messaging:', err);
+                }
+            })();
         `}
             </Script>
         </>
