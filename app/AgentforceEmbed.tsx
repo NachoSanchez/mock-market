@@ -4,40 +4,53 @@ import { useEffect } from 'react';
 import Script from 'next/script';
 import { useUser } from '@/hooks/useUser';
 
-declare global {
-    interface Window {
-        embeddedservice_bootstrap?: {
-            settings: any;
-            init: (
-                orgId: string,
-                deployment: string,
-                snippetUrl: string,
-                options?: { scrt2URL?: string }
-            ) => void;
-            prechatAPI?: {
-                setHiddenPrechatFields: (
-                    fields: Record<string, { value: string; isEditableByEndUser: boolean }>
-                ) => void;
-                setVisiblePrechatFields?: (
-                    fields: Record<string, { value: string; isEditableByEndUser: boolean }>
-                ) => void;
+/* ---------- Tipos locales ---------- */
+
+type PrechatField = {
+    value: string;
+    isEditableByEndUser: boolean;
+};
+
+interface EmbeddedServiceBootstrap {
+    settings: any;
+    init: (
+        orgId: string,
+        deployment: string,
+        snippetUrl: string,
+        options?: {
+            scrt2URL?: string;
+            context?: {
+                Email?: string | null;
+                [key: string]: unknown;
             };
-        };
-    }
+        }
+    ) => void;
+    prechatAPI?: {
+        setHiddenPrechatFields: (fields: Record<string, PrechatField>) => void;
+        setVisiblePrechatFields?: (fields: Record<string, PrechatField>) => void;
+    };
 }
+
+/* ---------- Constantes de configuración ---------- */
 
 const ORG_ID = '00Dal00000YAcer';
 const DEPLOYMENT = 'Hackforce_Customer_Service';
 const SNIPPET_URL = 'https://devsunitedcore.my.site.com/ESWHackforceCustomerSer1763479558805';
 const SCRT_URL = 'https://devsunitedcore.my.salesforce-scrt.com';
-const BOOTSTRAP_SRC = 'https://devsunitedcore.my.site.com/ESWHackforceCustomerSer1763479558805/assets/js/bootstrap.min.js';
+const BOOTSTRAP_SRC =
+    'https://devsunitedcore.my.site.com/ESWHackforceCustomerSer1763479558805/assets/js/bootstrap.min.js';
 
-// Equivalente a tu function initEmbeddedMessaging() del snippet
-function initEmbeddedMessaging() {
+/* ---------- Init equivalente al snippet ---------- */
+
+function initEmbeddedMessaging(email?: string) {
     try {
-        const esb = window.embeddedservice_bootstrap;
+        const esb = (window as any)
+            .embeddedservice_bootstrap as EmbeddedServiceBootstrap | undefined;
+
         if (!esb) {
-            console.error('[Agentforce] embeddedservice_bootstrap no está disponible todavía');
+            console.error(
+                '[Agentforce] embeddedservice_bootstrap no está disponible todavía'
+            );
             return;
         }
 
@@ -45,9 +58,11 @@ function initEmbeddedMessaging() {
 
         esb.init(ORG_ID, DEPLOYMENT, SNIPPET_URL, {
             scrt2URL: SCRT_URL,
+            // extendemos con context.Email para que llegue al backend de Agentforce
+            context: {
+                Email: email ?? undefined,
+            },
         });
-
-
     } catch (err) {
         console.error('[Agentforce] Error loading Embedded Messaging: ', err);
     }
@@ -61,13 +76,12 @@ export default function AgentforceEmbed() {
         const applyPrechatFromUser = () => {
             if (!user) return;
 
-            const esb = window.embeddedservice_bootstrap;
+            const esb = (window as any)
+                .embeddedservice_bootstrap as EmbeddedServiceBootstrap | undefined;
+
             if (!esb?.prechatAPI) return;
 
-            const fields: Record<
-                string,
-                { value: string; isEditableByEndUser: boolean }
-            > = {};
+            const fields: Record<string, PrechatField> = {};
 
             if (user.firstName) {
                 fields.FirstName = {
@@ -96,15 +110,20 @@ export default function AgentforceEmbed() {
         const onReady = () => applyPrechatFromUser();
 
         // Evento que dispara Salesforce cuando el widget está listo
-        window.addEventListener('onEmbeddedMessagingReady', onReady);
+        window.addEventListener('onEmbeddedMessagingReady', onReady as EventListener);
 
         // Por si ya estaba listo (navegación interna)
-        if (window.embeddedservice_bootstrap?.prechatAPI) {
+        const esb = (window as any)
+            .embeddedservice_bootstrap as EmbeddedServiceBootstrap | undefined;
+        if (esb?.prechatAPI) {
             applyPrechatFromUser();
         }
 
         return () => {
-            window.removeEventListener('onEmbeddedMessagingReady', onReady);
+            window.removeEventListener(
+                'onEmbeddedMessagingReady',
+                onReady as EventListener
+            );
         };
     }, [user]);
 
@@ -116,7 +135,7 @@ export default function AgentforceEmbed() {
                 src={BOOTSTRAP_SRC}
                 strategy="afterInteractive"
                 onLoad={() => {
-                    initEmbeddedMessaging();
+                    initEmbeddedMessaging(user?.email);
                 }}
             />
         </>
